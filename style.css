@@ -1,5 +1,5 @@
 /*
-Theme Name: prestro
+Theme Name: prestro-bis
 Theme URI: http://themesware.com/product/presto/ 
 Author: ThemesWare
 Author URI: http://themesware.com/
@@ -260,6 +260,75 @@ textarea {
 .site-footer:after {
     clear: both;
 }
+.site-header {
+    height: 71px;
+}
+
+/* =Traiteur Page
+------------------------------------------------*/
+.container-traiteur {
+    width: 100%;
+    padding: 0;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-left-background,
+.img-center-background,
+.img-right-background {
+  position: absolute;
+  z-index: -1;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+  width: 100%;
+}
+
+/*.img-left-background {
+  background-image: url(../img/traiteur-accueil.jpg);
+}
+
+.img-center-background {
+  background-image: url(../img/Accueil-Event.jpg);
+}
+
+.img-right-background {
+  background-image: url(../img/location-accueil.jpg);
+}*/
+
+.img-foreground {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entre {
+  width: 70%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Roboto';
+  border-radius: 5px;
+  letter-spacing: 5px;
+}
+
+.entre:hover,
+.entre:focus,
+.entre:active{
+    text-decoration: none;
+    color: white;
+}
 
 /* =Content
 ----------------------------------------------- */
@@ -315,6 +384,7 @@ textarea {
     margin-right: 10px;
 }
 .entry-title {
+    /*font-size: 26px;*/
     color: #46d246;
     text-align: center;
     font-family: 'GreatVibes', sans-serif;
@@ -568,14 +638,17 @@ li.recentcomments {
 }
 /*Style for header menu*/
 
-body.home .navbar.prestro-navbar{background: rgba(0,0,0,0.6)}
+body.home .navbar.prestro-navbar{background: rgba(0,0,0,0.6); position: fixed;
+    width: 100%;}
      
 .navbar.prestro-navbar {
     background-color: rgba(0,0,0,0.35);
     font-weight: 200;
     margin-bottom: 0;
+    /*border-bottom: 1px solid #eee;*/
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 .prestro-navbar .prestro-nav > li > a {
     line-height: 25px;
@@ -597,14 +670,12 @@ body.home .navbar.prestro-navbar{background: rgba(0,0,0,0.6)}
 .prestro-navbar {
     border: none;
 }
-.main-nav .prestro-nav > li > a {
-	font-family: 'Roboto';
-	font-weight: 300;
-	font-size: 17px;
-}
 .main-nav .prestro-nav > li > a:focus, .main-nav .prestro-nav > li > a:hover, .main-nav .prestro-nav > li > a:active , .main-nav .prestro-nav > li.current-menu-item a{
     background: transparent !important;
     color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 17px;
 }
 .current-menu-ancestor > a{color: #FFFFFF !important;}
 .main-nav li > .sub-menu li{
@@ -626,7 +697,9 @@ ul.nav ul.submenu{
 }
 .main-nav .prestro-nav > li > a{
     padding: 20px 15px;
-    color: #e1e1e1;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Roboto';
 }
 .main-nav .prestro-nav > li a:before, .main-nav .prestro-nav > li a:after{
     background : none repeat scroll 0 0 #46d246;
@@ -911,8 +984,12 @@ p.logged-in-as {
     transition: background-color 0.1s linear;
 }
 .scroll-to-top:hover {
-    background: #2ba7e0;
+    background: #46d246;
     opacity: .8;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .btn-default:hover, .label-default:hover {
     background-color: #4079b2;
@@ -972,9 +1049,6 @@ p.logged-in-as {
     color: #007cb5;
 }
 /*-------------------header style starts-------------------*/
-.site-header {
-	height: 80px;
-}
 body.home .site-header{
     position: absolute;
     top: 0;
@@ -992,25 +1066,26 @@ body.blog.admin-bar .site-header {
 body.admin-bar .site-header {
     top: 28px /* Make this 32px if MP6 is installed */
 }
+nav.isStuck {
+    top: 28px !important;
+    display: none;
+}
 .site-logo img{
     max-height: 54px;
     max-width: 115px;
 }
 
 #prestro-top-nav .nav > li{padding: 0 5px;float: left}
+.isStuck .prestro-nav > li > a{line-height: 15px}
 #prestro-top-nav .nav > li a{padding: 10px auto;border-top: 3px solid transparent;border-bottom: 3px solid transparent}
-#logo span {
-	color: #6fdc6f;
-	font-size: 2.5em;
-	font-family: 'GreatVibes',serif
-}
-#logo span:hover {
-	color: #fff;
-	text-shadow: 1px 1px 5px #000, 0 0 20px yellow, 0 0 8px #66ff99;
-	transition: text-shadow .3s;
-}
+#logo span{color: #6fdc6f;font-size: 2.5em;font-family: 'GreatVibes',serif}
 .float-header #mainnav ul li a{
     padding: 15px 10px;
+}
+#logo span:hover {
+    color: #fff;
+    text-shadow: 1px 1px 5px #000, 0 0 20px yellow, 0 0 8px #66ff99;
+    transition: text-shadow .3s;
 }
 .float-header #mainnav li{
     padding: 0 10px;
@@ -1158,6 +1233,13 @@ body.admin-bar .site-header {
 .stay-connect p:nth-child(2) i{
     padding-right: 15px;
 }
+.home_slider .flex-control-nav li a {
+    border: 2px solid #fff;
+    padding: 6px;
+}
+/*.navbar .prestro-nav li a{
+    text-transform: uppercase;
+}*/
 .navbar .prestro-nav li a:hover{
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
@@ -1165,10 +1247,10 @@ body.admin-bar .site-header {
     text-shadow: 1px 1px 5px #000, 0 0 20px yellow, 0 0 8px #66ff99;
 }
 .social_icon a:hover{
-    border-radius: 10px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .stay-connect p:nth-child(3) a{
     color: #46d246 !important; 
@@ -1191,6 +1273,7 @@ body.admin-bar .site-header {
     background: rgba(0,0,0,0.75);
     width: 200px !important;
 }
+.isStuck .navbar-header #logo{padding-top: 5px}
 .navbar-header > #logo{padding-top: 10px}
 .main-nav li > .sub-menu li:hover{
     background: rgba(0,0,0,0.75);
@@ -1271,7 +1354,7 @@ textarea.ninja-forms-field{
     margin-top: 15px;
 }
 .stay-connect p:nth-child(4) i{
-    color: #46d246;
+    color: #6fdc6f;
 }
 #secondary.widget-area{
     margin-top: 25px;
@@ -1410,7 +1493,12 @@ label,.textwidget,.site-footer,.entry-content,.why-us h3,.why-us p{font-family: 
     font-size: 40px;
     padding-top: 30px;
 }
+.isStuck{
+    z-index: 9;
+}
 #logo img{padding-top: 10px}
+.navbar.prestro-navbar{/*border-bottom: 1px solid #ccc*/}
+.isStuck #logo img{padding-top: 5px}
 
 /*Animation styles*/
 h3.animateblock,.services .animateblock{
@@ -1561,6 +1649,52 @@ h3.animateblock.animated{
     color: #fff;
     padding: 10px;
 }
+.nivo-caption {
+    background: rgba(0,0,0,0.8);
+    /*bottom: 300px;
+    left: 400px;*/
+    max-width: 100%;
+    width: 550px;
+    height: 200px;
+}
+@media screen and (max-width: 768px) {
+    .nivo-caption {
+        width: 70%;
+        height: 70%;
+        margin-top: 45px;
+    }
+    .nivo-caption .slide-info > h2 {
+        font-size: 23px;
+    }
+    .nivo-caption .slide-info > p {
+        font-size: 9px;
+    }
+}
+/*.nivo-caption {
+    position: relative;
+    width: 50%;
+    bottom: -10px;
+}*/
+.nivo-container-custom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.nivo-caption:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}*/
 .slide_link > a {
     background: #46d246;
     color: #fff;
@@ -1738,6 +1872,32 @@ h3.animateblock.animated{
 .blog_sec{padding: 100px 0}
 /*blog section end*/
 
+/*Site preloader style*/
+#preloader {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10050;
+}
+.loading-circle {
+    border-color: #007cb5 rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    height: 60px;
+    left: 49%;
+    position: absolute;
+    top: 49%;
+    width: 60px;
+}
+.fa-spin {
+    -webkit-animation: 2s linear 0s normal none infinite running fa-spin;
+    -moz-animation: 2s linear 0s normal none infinite running fa-spin;
+    animation: 2s linear 0s normal none infinite running fa-spin;
+}
 .res-line,.res-title{display: none}
 .widget_recent_entries .footer-post-title{float: none;margin-left: 15px}
 .widget_recent_entries .footer-post-title{width: auto}
