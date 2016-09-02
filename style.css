@@ -1158,10 +1158,6 @@ body.admin-bar .site-header {
 .stay-connect p:nth-child(2) i{
     padding-right: 15px;
 }
-.home_slider .flex-control-nav li a {
-    border: 2px solid #fff;
-    padding: 6px;
-}
 .navbar .prestro-nav li a:hover{
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
