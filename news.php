@@ -3,7 +3,7 @@
 <div id="home-slider" class="nivoSlider">
 	<?php
     $args = array(
-	    'cat' => $catID,
+	    'category_name' => 'news',
 	    'posts_per_page' => esc_attr(get_theme_mod('slider_loop'))
     );
     $slider_query = new WP_Query($args);
@@ -25,7 +25,7 @@
 	 			the_ID();
 	 			echo "\" class=\"nivo-html-caption\">\n\t<div class=\"slide-info\">\n\t\t<h2>";
 	 			the_title();
-	 			echo "</h2>\n\t\t<p>".wp_trim_words(get_the_content(),'15')."</p>\n\t</div>\n</div>\n";
+	 			echo "</h2>\n\t\t<p>".get_the_content()."</p>\n\t</div>\n</div>\n";
 	 		}
 	 	}
 	?>
