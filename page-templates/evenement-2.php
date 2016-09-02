@@ -10,7 +10,12 @@ get_header();
 ?>
 
 <div class="col-md-2">
-<div class="panel-group">
+<nav>
+    <?php
+        wp_nav_menu( array('container_class' => 'sidebar-left', 'theme_location' => 'second'));
+    ?>
+</nav>
+<!--<div class="panel-group">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -99,7 +104,7 @@ get_header();
         </ul>
       </div>
     </div>
-  </div>
+  </div>-->
 </div>
 
 <?php get_footer(); ?>

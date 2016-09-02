@@ -1,3 +1,22 @@
 .list-group-item {
     color: black;
 }
+
+
+.panel-group {
+    margin-bottom: 0;
+}
+
+.panel {
+    border: 0px;
+}
+
+.panel-default > .panel-heading {
+    background-color: black;
+    color: white;
+}
+
+a:hover,a:focus {
+    color: #fff !important ;
+    
+}
