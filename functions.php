@@ -39,6 +39,7 @@ if (!function_exists('prestro_setup')) :
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
             'primary' => esc_html__('Primary Menu', 'prestro'),
+            'second' => esc_html__('Second Menu', 'prestro'),
             'footer-links' => esc_html__('Footer Links', 'prestro') // secondary menu in footer
         ));
 

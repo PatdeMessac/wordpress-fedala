@@ -1687,8 +1687,6 @@ h3.animateblock.animated{
 }
 .nivo-caption {
     background: rgba(0,0,0,0.8);
-    /*bottom: 300px;
-    left: 400px;*/
     max-width: 100%;
     width: 550px;
     height: 200px;
@@ -1746,6 +1744,29 @@ h3.animateblock.animated{
 	height: 400px;
 }
 .nivoSlider img{height: 100% !important;}
+
+.nivoSlider .blockquote-reverse {
+	border: none;
+}
+
+.nivoSlider .blockquote-reverse p {
+	font-family: 'GreatVibes', serif;
+	font-size: 3rem;
+}
+
+#bottom-slider blockquote {
+	text-align: center;
+}
+
+#bottom-slider blockquote footer {
+	text-align: right;
+}
+
+#bottom-slider .nivo-caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /*Style for Opening Hour sections*/
 .welcome p span{color: #007cb5;font-size: 18px}
