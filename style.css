@@ -2028,3 +2028,25 @@ h3.animateblock.animated{
     max-width: 460px;
     width: 460px;
 }
+.container-fluid{
+    padding-right:0px;
+    padding-left:0px;
+}
+.presentation{
+   background-color:#FFF;
+   color:#8a8c90;
+   height:300px;
+}
+.paralax{
+   background-color:blue;
+   height:400px;
+}
+.services{
+   background-color:red;
+   height:500px;
+}
+.temoignages{
+   background-color:blue;
+   height:400px;
+}
+
