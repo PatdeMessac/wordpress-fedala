@@ -1992,3 +1992,23 @@ h3.animateblock.animated{
     max-width: 460px;
     width: 460px;
 }
+.container-fluid{
+    padding-right:0px;
+    padding-left:0px;
+}
+.presentation{
+   background-color:blue;
+   height:300px;
+}
+.paralax{
+   background-color:white;
+   height:400px;
+}
+.services{
+   background-color:red;
+   height:500px;
+}
+.temoignages{
+   background-color:blue;
+   height:400px;
+}

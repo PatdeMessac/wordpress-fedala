@@ -8,8 +8,10 @@
  */
 get_header();
 ?>
-<div class="container">
-<div class="presentation col-md-12"></div>
+<div class="container-fluid">
+<div class="presentation col-md-12">
+
+</div>
 
 <div class="paralax col-md-12"></div>
 
