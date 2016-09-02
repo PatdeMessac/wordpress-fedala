@@ -56,6 +56,16 @@ jQuery(window).load(function () {
         nextText: '<i class="fa fa-chevron-right"></i>', // Next directionNav text
         randomStart: true             // Start on a random slide
     });
+    jQuery('#bottom-slider').nivoSlider({
+        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+        pauseTime: 4000, // How long each slide will show
+        directionNav: true, // Next & Prev navigation
+        controlNav: false, // 1,2,3... navigation
+        pauseOnHover: true, // Stop animation while hovering
+        prevText: '<i class="fa fa-chevron-left"></i>', // Prev directionNav text
+        nextText: '<i class="fa fa-chevron-right"></i>', // Next directionNav text
+        randomStart: true             // Start on a random slide
+    });
 });
 /*-------Scrolling Effects-------*/
 jQuery(function ($) {
