@@ -290,6 +290,42 @@ textarea {
   transition: 2s;
   width: 100%;
 }
+.price-bloc {
+    background-color: #fff;
+    color: #000;
+}
+.priceground {
+    height: 500px;
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bordercenter {
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.entire-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.entire-list > ul > li {
+    font-size: 20px;
+    list-style-type: none;
+}
+.bouton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.bouton > button {
+    width: 100px;
+}
 
 /*.img-left-background {
   background-image: url(../img/traiteur-accueil.jpg);
@@ -1986,7 +2022,8 @@ h3.animateblock.animated{
     padding-left:0px;
 }
 .presentation{
-   background-color:blue;
+   background-color:#FFF;
+   color:#8a8c90;
    height:300px;
 }
 .paralax{
