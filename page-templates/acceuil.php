@@ -37,5 +37,6 @@ get_header();
 <div class="temoignages col-md-12"></div>
 
 </div>
+</div>
 
 <?php get_footer(); ?>
