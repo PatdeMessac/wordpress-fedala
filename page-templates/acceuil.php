@@ -19,8 +19,9 @@ get_header();
 <div class="services col-md-12"></div>
 
 
-<div class="temoignages col-md-12"></div>
-
+<div class="temoignages col-md-12">
+	<?php include('temoignages.php'); ?>
+</div>
 </div>
 
 <?php get_footer(); ?>
