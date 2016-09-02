@@ -24,9 +24,14 @@
 		 			$slider_query->the_post();
 		 			echo "\t<div id=\"slidecaption";
 		 			the_ID();
-		 			echo "\" class=\"nivo-html-caption\">\n\t\t<div class=\"slide-info\">\n\t\t\t<h2>";
+		 			echo "\" class=\"nivo-html-caption\">\n\t\t<div class=\"slide-info\">\n";
+		 			echo "\t\t\t<blockquote class=\"blockquote-reverse\">";
+		 			echo "\t\t\t\t<p>".get_the_content()."</p>\n";
+		 			echo "\t\t\t\t<footer>";
 		 			the_title();
-		 			echo "</h2>\n\t\t\t<p>".get_the_content()."</p>\n\t\t</div>\n\t</div>\n";
+		 			echo "</footer>\n";
+		 			echo "\t\t\t</blockquote>";
+		 			echo "\t\t</div>\n\t</div>\n";
 		 		}
 		 	}
 		?>
