@@ -2,13 +2,7 @@
 /* ----------------------------- 
  Pre Loader
  ----------------------------- */
-jQuery(window).load(function () {
-    jQuery('.loading-icon').delay(500).fadeOut();
-    jQuery('#preloader').delay(800).fadeOut('slow');
-});
 jQuery(document).ready(function () {
-    // script for site preloader
-    new WOW().init();
     //For fancybox
     jQuery(".fancybox").fancybox();
     var width = jQuery(window).width();

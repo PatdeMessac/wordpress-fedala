@@ -19,7 +19,6 @@
     .site-info, .copyright {
         text-align: center;
     }
-    .nivo-caption{bottom: 100px;left: 5px;width: 470px}
     .opening_hour .border_div{border-right: 0 none;margin-bottom: 15px}
 }
 @media screen and (max-width: 767px){
@@ -73,7 +72,6 @@
 }
 @media screen and (max-width: 480px){
     .title_heading > h2,.iwt-title{font-size: 20px}
-    .nivo-caption{display: none !important}
     .port_content.dishes-content > h3 > a{
         font-size: 17px;
     }

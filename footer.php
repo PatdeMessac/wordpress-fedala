@@ -68,7 +68,7 @@
     </footer><!-- #colophon -->
     <div class="site-info container">
         <div class="copyright">
-            <?php echo get_theme_mod("prestro_copyright",'Copyright &copy; '. date_i18n( 'Y' ) .' . Designed by ThemesWare.','prestro'); ?>
+            <?php echo get_theme_mod("prestro_copyright",'Copyright &copy; '. date_i18n( 'Y' ) .' . Designed by Code Académie.','prestro'); ?>
         </div>
     </div><!-- .site-info -->
 </div>

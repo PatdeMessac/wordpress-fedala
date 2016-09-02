@@ -88,7 +88,7 @@
         });
 
         //Create caption
-        slider.append($('<div class="nivo-caption"></div>'));
+        slider.append($('<div class="nivo-container-custom"><div class="nivo-caption"></div></div>'));
         
         // Process caption function
         var processCaption = function(settings){
