@@ -290,6 +290,42 @@ textarea {
   transition: 2s;
   width: 100%;
 }
+.price-bloc {
+    background-color: #fff;
+    color: #000;
+}
+.priceground {
+    height: 500px;
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.bordercenter {
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.entire-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.entire-list > ul > li {
+    font-size: 20px;
+    list-style-type: none;
+}
+.bouton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.bouton > button {
+    width: 100px;
+}
 
 /*.img-left-background {
   background-image: url(../img/traiteur-accueil.jpg);
@@ -1233,10 +1269,6 @@ nav.isStuck {
 .stay-connect p:nth-child(2) i{
     padding-right: 15px;
 }
-.home_slider .flex-control-nav li a {
-    border: 2px solid #fff;
-    padding: 6px;
-}
 /*.navbar .prestro-nav li a{
     text-transform: uppercase;
 }*/
@@ -1644,7 +1676,8 @@ h3.animateblock.animated{
 /*dishes section end*/
 
 /*nivo slider style*/
-#home-slider .nivo-prevNav,#home-slider .nivo-nextNav {
+.nivo-prevNav,
+.nivo-nextNav {
     background: #000;
     color: #fff;
     padding: 10px;
@@ -1670,11 +1703,6 @@ h3.animateblock.animated{
         font-size: 9px;
     }
 }
-/*.nivo-caption {
-    position: relative;
-    width: 50%;
-    bottom: -10px;
-}*/
 .nivo-container-custom {
     position: absolute;
     bottom: 0;
@@ -1685,16 +1713,6 @@ h3.animateblock.animated{
     justify-content: center;
     align-items: center;
 }
-/*.nivo-caption:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-.content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}*/
 .slide_link > a {
     background: #46d246;
     color: #fff;
@@ -1716,7 +1734,14 @@ h3.animateblock.animated{
 .slide-info > h2{color: #fff;font-family: 'GreatVibes',serif}
 .gallery-slide .line-center,.gallery-slide h3{margin-bottom: 15px}
 .gallery-slide,.welcome .container{overflow: hidden;padding: 100px 0}
-.nivoSlider{overflow: visible;height: 670px;max-height: 100%}
+.nivoSlider {
+	overflow: visible;
+	height: 670px;
+	max-height: 100%
+}
+#bottom-slider {
+	height: 400px;
+}
 .nivoSlider img{height: 100% !important;}
 
 /*Style for Opening Hour sections*/
@@ -1818,7 +1843,7 @@ h3.animateblock.animated{
     border: none;
     padding: 0;
 }
-.page-template-page-templates .row{
+.page-template-page-templates {
     margin: 0;
 }
 #secondary.widget-area{
@@ -2002,7 +2027,7 @@ h3.animateblock.animated{
    height:300px;
 }
 .paralax{
-   background-color:blue;
+   background-color:white;
    height:400px;
 }
 .services{
@@ -2010,7 +2035,5 @@ h3.animateblock.animated{
    height:500px;
 }
 .temoignages{
-   background-color:blue;
    height:400px;
 }
-

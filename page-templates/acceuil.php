@@ -8,8 +8,10 @@
  */
 get_header();
 ?>
-    <div class="container-fluid">
-        <div class="presentation col-md-12">
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="presentation col-md-12">
         <div class="col-md-12 text-center">
              <h2>Fedala</h2>
         </div>
@@ -18,9 +20,9 @@ get_header();
            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus sed architecto ut quasi laboriosam quam provident fuga voluptate aspernatur nisi maiores earum magnam, quidem ipsam omnis necessitatibus molestiae laborum! </br>
            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus sed architecto ut quasi laboriosam quam provident fuga voluptate aspernatur nisi maiores earum magnam, quidem ipsam omnis necessitatibus molestiae laborum! </p>
         </div>
-        </div>
+		</div>
 
-        <div class="paralax col-md-12"></div>
+		<div class="paralax col-md-12"></div>
 
 
         <div class="row services">
@@ -49,7 +51,12 @@ get_header();
 </div>
 <div class="temoignages col-md-12"></div>
 
-</div>
+
+		<div class="temoignages col-md-12">
+			<?php include('temoignages.php'); ?>
+		</div>
+
+	</div>
 </div>
 
 <?php get_footer(); ?>
