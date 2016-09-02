@@ -267,6 +267,8 @@ textarea {
 }
 .hentry {
     margin: 0 0 1.5em;
+    width: 1000px;
+    
 }
 .byline,
 .updated {
@@ -288,6 +290,7 @@ textarea {
 }
 #content {
     margin-bottom: 40px;
+    margin-top: 70px
 }
 .free-quote h3,.free-quote a{
     margin: 0;
@@ -569,7 +572,7 @@ li.recentcomments {
 body.home .navbar.prestro-navbar{background: rgba(0,0,0,0.6)}
      
 .navbar.prestro-navbar {
-    background-color: rgba(0,0,0,0.35);
+    background-color: #000;
     font-weight: 200;
     margin-bottom: 0;
     border-bottom: 1px solid #eee;
