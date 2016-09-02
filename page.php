@@ -28,6 +28,22 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
+      <?php if (is_front_page() && ! is_home()) : ?>
+
+         <!-- parallax - début -->
+         	<!-- TODO -->
+         <!-- parallax - fin -->
+
+         <!-- services - début -->
+         	<!-- TODO -->
+         <!-- services - fin -->
+
+         <!-- témoignages - début -->
+         	<!-- TODO -->
+         <!-- témoignages - fin -->
+      
+      <?php endif; ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
