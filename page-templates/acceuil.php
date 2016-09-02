@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full width Page Template
+ * Template Name: Accueil
  *
  * @package WordPress
  * @subpackage prestro
