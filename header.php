@@ -24,41 +24,11 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
-			<?php include('navbar.php') ?>
+			<?php include('navbar.php'); ?>
 				<div id="primary" class="fp-content-area">
 			    <main id="main" class="site-main slider-wrapper" role="main">
-			      <?php if (is_front_page() && ! is_home()) : ?>
-			        <div class="home_slider">
-					      <div id="home-slider" class="nivoSlider">
-						      <?php
-							      $args = array(
-									    'cat' => $catID,
-									    'posts_per_page' => esc_attr(get_theme_mod('slider_loop'))
-							      );
-							      $slider_query = new WP_Query($args);
-					        ?>
-					        <?php
-					        	if ($slider_query->have_posts()) :
-					        	while ($slider_query->have_posts()) : $slider_query->the_post();
-					        ?>
-					        <?php
-					        	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-										$url = $thumb['0'];
-									?>
-					        <img title="#slidecaption<?php the_ID(); ?>" src="<?php if(has_post_thumbnail()) { echo $url; } else { echo esc_url(get_template_directory_uri().'/images/slider-1.jpg'); } ?>" alt="" />
-									<?php endwhile;endif; ?>
-								</div>
-						   	<?php
-						   		if ($slider_query->have_posts()) :
-						   		while ($slider_query->have_posts()) : $slider_query->the_post();
-						   	?>
-						    <div id="slidecaption<?php the_ID(); ?>" class="nivo-html-caption">
-									<div class="slide-info">
-										<h2><?php the_title();?></h2>
-										<p><?php echo wp_trim_words(get_the_content(),'15'); ?></p>
-									</div>
-									<p class="slide_link"><a href="<?php echo esc_url( get_permalink() );?>"><?php _e('Read More', 'prestro'); ?></a></p>
-					      </div>
-								<?php endwhile;endif;?>
-					   	</div>
-						<?php endif; ?>
+			      <?php
+			      	if (is_front_page() && ! is_home()) {
+			      		include('news.php');
+			      	}
+			      ?>
