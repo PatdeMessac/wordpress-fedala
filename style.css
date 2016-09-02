@@ -268,6 +268,11 @@ textarea {
 ------------------------------------------------*/
 .container-traiteur {
     width: 100%;
+    padding: 0;
+}
+
+.nopad {
+    padding: 0;
 }
 
 .img-container {
@@ -279,10 +284,11 @@ textarea {
 .img-right-background {
   position: absolute;
   z-index: -1;
-  min-height: 500px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 2s;
+  width: 100%;
 }
 
 /*.img-left-background {
