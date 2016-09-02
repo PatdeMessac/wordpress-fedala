@@ -1997,11 +1997,12 @@ h3.animateblock.animated{
     padding-left:0px;
 }
 .presentation{
-   background-color:blue;
+   background-color:#FFF;
+   color:#8a8c90;
    height:300px;
 }
 .paralax{
-   background-color:white;
+   background-color:blue;
    height:400px;
 }
 .services{
@@ -2012,3 +2013,4 @@ h3.animateblock.animated{
    background-color:blue;
    height:400px;
 }
+
