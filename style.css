@@ -294,7 +294,7 @@ textarea {
     background-color: #fff;
     color: #000;
 }
-.priceground {
+.price-ground {
     height: 500px;
     width: 100%;
     border: 1px solid #000;
@@ -303,8 +303,14 @@ textarea {
     justify-content: space-around;
     align-items: center;
 }
-.bordercenter {
+.border-center {
     border-left-style: none;
+    border-right-style: none;
+}
+.border-left {
+    border-left-style: none;
+}
+.border-right {
     border-right-style: none;
 }
 
@@ -348,15 +354,15 @@ textarea {
 
 .entre {
   width: 70%;
-  height: 60px;
+  height: 70px;
   background-color: rgba(0,0,0,0.9);
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
-  font-size: 25px;
-  font-family: 'Roboto';
+  font-size: 45px;
+  font-family: 'GreatVibes', serif;
   border-radius: 5px;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   color: #fff;
 }
 
