@@ -390,10 +390,26 @@ textarea {
 }
 
 .parallax {
-    background-image: url('./images/slider-3.jpg');
+    background-image: url('./images/slider-1.jpg');
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url('./images/slider-2.jpg');
     height: 500px; 
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image: url('./images/slider-3.jpg');
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2086,7 +2102,4 @@ h3.animateblock.animated{
 .services{
    background-color:red;
    height:500px;
-}
-.temoignages{
-   height:400px;
 }

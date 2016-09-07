@@ -29,7 +29,7 @@ get_header();
 		</div>
 		<!-- présentation - fin -->
 
-<div class="parallax"></div>
+<div class="parallax2"></div>
 
 		<!-- services - début -->
 		<div class="services col-md-12">
@@ -66,7 +66,7 @@ get_header();
 
 		<!-- témoignages - début -->
 		<div class="temoignages col-md-12">
-		<div class="parallax"></div>
+	<div class="parallax3"></div>
 			<?php include('temoignages.php'); ?>
 		</div>
 		<!-- services - début -->
