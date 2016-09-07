@@ -5,3 +5,18 @@
 .nivo-container-custom {
     background-color: darkcyan;
 }
+
+.img-1 {
+    width: 100%;
+    height: 180px;
+    background-color: brown;
+}
+
+.margin {
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.pad {
+    margin-top: 15px;
+}

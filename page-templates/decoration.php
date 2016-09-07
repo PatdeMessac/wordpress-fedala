@@ -9,12 +9,15 @@
 get_header();
 ?>
 <div class="container-fluid">
+
 <div class="row">
 <div class="col-md-8 col-sm-8 col-lg-8 col-xs-12">
 <!-- location debut -->
 <div class="slider-wrapper">
 	<div id="bottom-slider" class="nivoSlider">
-		<?php
+                <div class="slider-wrapper">
+                    <div id="bottom-slider" class="nivoSlider">
+                        <?php
 		  $args = array(
 			  'category_name' => 'temoignages',
 			  'posts_per_page' => esc_attr(get_theme_mod('slider_loop'))
@@ -47,14 +50,19 @@ get_header();
 		 		}
 		 	}
 		?>
-</div>
-<!-- location - fin -->
-</div>
-</div>
-</div>
-<div class="location">
-    
+                    </div>
+                    <!-- location - fin -->
+                </div>
+            </div>
+    </div>
+            <div class="location col-md-4 col-sm-4 col-lg-4 col-xs-4 margin">
+                
+                    <div class="img-1 img-responsive "></div>
+                    <div class="img-1 img-responsive pad"></div>
+
+            </div>
+
+        </div>
 </div>
 
-
-<?php get_footer(); ?>
+        <?php get_footer(); ?>
