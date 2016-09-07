@@ -8,7 +8,14 @@
  */
 get_header();
 ?>
-<div class="parallax"></div>
+<!--<div class="parallax"></div>-->
+<div id="box_service">
+    <div class="primary">
+            <div class="parallelogram standar"></div>
+            <div class="parallelogram small"></div>
+            <div class="parallelogram standar"></div>
+    </div>
+</div>
 <div class="container-fluid">
 	<div class="row">
 		
