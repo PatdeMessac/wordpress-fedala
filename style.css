@@ -390,10 +390,26 @@ textarea {
 }
 
 .parallax {
-    background-image: url('./images/slider-3.jpg');
+    background-image: url('./images/slider-1.jpg');
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url('./images/slider-2.jpg');
     height: 500px; 
     background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image: url('./images/slider-3.jpg');
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1776,7 +1792,6 @@ h3.animateblock.animated{
 #bottom-slider {
 	height: 400px;
 }
-.nivoSlider img{height: 100% !important;}
 
 .nivoSlider .blockquote-reverse {
 	border: none;
@@ -2088,9 +2103,10 @@ h3.animateblock.animated{
    height:500px;
 }
 
+
 /* text slider - début */
 
-.temoignages .parallax {
+.temoignages .parallax3 {
 	text-align: center;
 	display: flex;
 	justify-content: center;
