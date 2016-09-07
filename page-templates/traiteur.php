@@ -39,7 +39,7 @@ foreach ($variable as $key => $value) {
 
 <div class="container container-traiteur nopad price-bloc">
 	<div class="nopad col-xs-12 col-sm-4 col-lg-4">
-		<div class="priceground">
+		<div class="price-ground border-left">
 			<div class="entire-list">
 				<ul>
 					<li>Pizza</li>
@@ -71,7 +71,7 @@ foreach ($variable as $key => $value) {
 		</div>
 	</div>
 	<div class="nopad col-xs-12 col-sm-4 col-lg-4">
-		<div class="priceground">
+		<div class="price-ground border-center">
 			<div class="entire-list">
 				<ul>
 					<li>Pizza</li>
@@ -103,7 +103,7 @@ foreach ($variable as $key => $value) {
 		</div>
 	</div>
 	<div class="nopad col-xs-12 col-sm-4 col-lg-4">
-		<div class="priceground">
+		<div class="price-ground border-right">
 			<div class="entire-list">
 				<ul>
 					<li>Pizza</li>
