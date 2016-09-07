@@ -7,6 +7,13 @@
 */
 
 get_header();
+
+
+/*$display="";
+$children = get_sub_children();
+foreach ($variable as $key => $value) {
+	echo 
+}*/
 ?>
 
 <div class="container container-traiteur">
