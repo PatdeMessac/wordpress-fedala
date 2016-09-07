@@ -1128,25 +1128,8 @@ p.logged-in-as {
 }
 /*-------------------header style starts-------------------*/
 body.home .site-header{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 9;
-}
-body.blog .site-header{
-    position: relative !important;
-    top: 0;
-}
-body.blog.admin-bar .site-header {
-    top: 0px !important; /* Make this 32px if MP6 is installed */
-}
-body.admin-bar .site-header {
-    top: 28px /* Make this 32px if MP6 is installed */
-}
-nav.isStuck {
-    top: 28px !important;
-    display: none;
 }
 .site-logo img{
     max-height: 54px;

@@ -27,8 +27,3 @@
 			<?php include('navbar.php'); ?>
 				<div id="primary" class="fp-content-area">
 			    <main id="main" class="site-main slider-wrapper" role="main">
-			      <?php
-			      	if (is_front_page() && ! is_home()) {
-			      		include('news.php');
-			      	}
-			      ?>
