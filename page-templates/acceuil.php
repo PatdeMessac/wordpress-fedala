@@ -8,7 +8,7 @@
  */
 get_header();
 ?>
-
+<div class="parallax"></div>
 <div class="container-fluid">
 	<div class="row">
 		
@@ -28,7 +28,8 @@ get_header();
 			</div>
 		</div>
 		<!-- présentation - fin -->
-		
+<div class="parallax"></div>
+
 		<!-- parallax - début -->
 		<div class="paralax col-md-12">
 			

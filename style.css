@@ -389,6 +389,15 @@ textarea {
   /*animation: showHide 5s ease-in alternate infinite;*/
 }
 
+.parallax {
+    background-image: url('./images/slider-3.jpg');
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*@keyframes showHide {
   0%   {color: #000;}
   25%  {color: #ff3f34;}
