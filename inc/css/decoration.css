@@ -31,3 +31,7 @@
 .nivoSlider img {
     height: 0px;
 }
+
+body {
+    background-color:#fff !important;
+}
