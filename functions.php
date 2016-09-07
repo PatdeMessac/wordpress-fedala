@@ -143,7 +143,7 @@ include(get_template_directory() . "/inc/side-posts-widget.php");
 function prestro_enq_styles() {
 
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/inc/css/bootstrap.min.css');
-    wp_enqueue_style('evenement-2-css', get_template_directory_uri() . '/inc/css/evenement-2.css');
+    wp_enqueue_style('decoration', get_template_directory_uri() . '/inc/css/decoration.css');
     wp_enqueue_style('jquery-ui', get_template_directory_uri() . '/inc/css/jquery-ui.min.css');
     wp_enqueue_style('awesome-icons', get_template_directory_uri() . '/inc/css/font-awesome.css');
     wp_enqueue_style('wowcss', get_template_directory_uri() . '/inc/css/animate.css');
