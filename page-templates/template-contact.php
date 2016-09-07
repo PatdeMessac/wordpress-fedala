@@ -4,6 +4,9 @@ Template Name: Contact Us
 */
 get_header();
 ?>
+
+<section id="contact">
+
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="contact" role="form">
 
 			<!-- titre du formulaire -->
@@ -17,7 +20,7 @@ get_header();
 			<div class="row" >
 
 				<!-- colonne de gauche -->
-				<div class="col-md-3">
+				<div class="col-md-4">
 
 					<div class="form-group">
 						<label>Type d’événement :</label>
@@ -41,7 +44,7 @@ get_header();
 				</div>
 
 				<!-- colonne centrale -->
-				<div class="col-md-3">
+				<div class="col-md-4">
 
 					<div class="form-group">
 						<label>Nombre d’invités :</label>
@@ -105,7 +108,7 @@ get_header();
 				</div>
 
 	<!-- colonne de droite -->
-<div class="col-md-3">
+<div class="col-md-4">
 
 <div class="form-group">
        <label for="inputname"> votre nom</label>
@@ -185,5 +188,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 }
     }
 ?>
+
+</section>
+
 <?php get_footer(); ?>
 
