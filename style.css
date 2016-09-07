@@ -353,18 +353,6 @@ textarea {
     width: 100px;
 }
 
-/*.img-left-background {
-  background-image: url(../img/traiteur-accueil.jpg);
-}
-
-.img-center-background {
-  background-image: url(../img/Accueil-Event.jpg);
-}
-
-.img-right-background {
-  background-image: url(../img/location-accueil.jpg);
-}*/
-
 .img-foreground {
   height: 500px;
   display: flex;
@@ -385,7 +373,7 @@ textarea {
   letter-spacing: 1px;
   color: #000;
   padding:5px;
-  box-shadow:1px 1px 1px gray;
+  box-shadow:1px 1px 5px gray;
   /*animation: showHide 5s ease-in alternate infinite;*/
 }
 
@@ -421,14 +409,14 @@ textarea {
   100% {color: #000;}
 }*/
 
-.entre:hover,
+/*.entre:hover,
 .entre:focus,
 .entre:active{
     text-decoration: none;
     color: #ff3f34;
     cursor: pointer;
 }
-
+*/
 /* =Content
 ----------------------------------------------- */
 .navbar.prestro-navbar{font-family: "Montserrat"}
