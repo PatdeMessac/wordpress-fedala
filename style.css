@@ -370,7 +370,8 @@ textarea {
 .entre:focus,
 .entre:active{
     text-decoration: none;
-    color: white;
+    color: #ff3f34;
+    cursor: pointer;
 }
 
 /* =Content
