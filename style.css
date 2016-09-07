@@ -86,6 +86,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-weight: 300;
     font-style: normal;
 }
+
+/* fix Bootstrap mess - start */
+*,
+.container-fluid,
+.row,
+.col-md-12,
+.col-md-8,
+.col-md-3 {
+	margin: 0;
+	padding: 0;
+}
+/* fix Bootstrap mess - end */
+
+/* contact page - start */
+#contact .col-md-4 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* contact page - end */
+
 body {
     color:black;
     word-wrap: break-word;
@@ -1755,7 +1775,7 @@ h3.animateblock.animated{
 }
 .slide-info > h2{color: #fff;font-family: 'GreatVibes',serif}
 .gallery-slide .line-center,.gallery-slide h3{margin-bottom: 15px}
-.gallery-slide,.welcome .container{overflow: hidden;padding: 100px 0}
+/*.gallery-slide,.welcome .container{overflow: hidden;padding: 100px 0}*/
 .nivoSlider {
 	overflow: visible;
 	height: 670px;
@@ -2061,10 +2081,6 @@ h3.animateblock.animated{
     max-height: 300px;
     max-width: 460px;
     width: 460px;
-}
-.container-fluid{
-    padding-right:0px;
-    padding-left:0px;
 }
 .presentation{
    background-color:#FFF;
