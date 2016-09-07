@@ -2087,6 +2087,28 @@ h3.animateblock.animated{
    background-color:red;
    height:500px;
 }
-.temoignages{
-   height:400px;
+
+/* text slider - début */
+
+.temoignages .parallax {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+#text-slider .text-slideshow article {
+	color: white;
+	font-family: 'GreatVibes', serif;
+	font-size: 4rem;
+	text-shadow: 1px 1px 5px #000;
+}
+#text-slider .text-slideshow article span {
+	font-family: 'Open Sans', sans;
+	font-size: 2rem;
+}
+#text-slider-controls {
+	display: none;
+}
+
+/* text slider - fin */

@@ -66,8 +66,9 @@ get_header();
 
 		<!-- témoignages - début -->
 		<div class="temoignages col-md-12">
-		<div class="parallax"></div>
-			<?php include('temoignages.php'); ?>
+			<div class="parallax">
+				<?php wp_text_slider(); ?>
+			</div>
 		</div>
 		<!-- services - début -->
 		
