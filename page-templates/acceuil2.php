@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Accueil
+ * Template Name: Accueil2
  *
  * @package WordPress
  * @subpackage prestro
@@ -29,7 +29,7 @@ get_header();
 		</div>
 		<!-- présentation - fin -->
 
-<div class="parallax2"></div>
+<div class="parallax"></div>
 
 		<!-- services - début -->
 		<div class="services col-md-12">
@@ -66,9 +66,8 @@ get_header();
 
 		<!-- témoignages - début -->
 		<div class="temoignages col-md-12">
-			<div class="parallax3">
-				<?php wp_text_slider(); ?>
-			</div>
+		<div class="parallax"></div>
+			<?php include('temoignages.php'); ?>
 		</div>
 		<!-- services - début -->
 		

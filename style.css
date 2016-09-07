@@ -1792,7 +1792,6 @@ h3.animateblock.animated{
 #bottom-slider {
 	height: 400px;
 }
-.nivoSlider img{height: 100% !important;}
 
 .nivoSlider .blockquote-reverse {
 	border: none;
@@ -2103,3 +2102,29 @@ h3.animateblock.animated{
    background-color:red;
    height:500px;
 }
+
+
+/* text slider - début */
+
+.temoignages .parallax3 {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#text-slider .text-slideshow article {
+	color: white;
+	font-family: 'GreatVibes', serif;
+	font-size: 4rem;
+	text-shadow: 1px 1px 5px #000;
+}
+#text-slider .text-slideshow article span {
+	font-family: 'Open Sans', sans;
+	font-size: 2rem;
+}
+#text-slider-controls {
+	display: none;
+}
+
+/* text slider - fin */
