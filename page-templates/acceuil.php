@@ -36,7 +36,7 @@ get_header();
 		</div>
 		<!-- présentation - fin -->
 
-<div class="parallax"></div>
+<div class="parallax2"></div>
 
 		<!-- services - début -->
 		<div class="services col-md-12">
@@ -73,7 +73,7 @@ get_header();
 
 		<!-- témoignages - début -->
 		<div class="temoignages col-md-12">
-			<div class="parallax">
+			<div class="parallax3">
 				<?php wp_text_slider(); ?>
 			</div>
 		</div>
