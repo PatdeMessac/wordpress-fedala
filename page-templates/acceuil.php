@@ -9,7 +9,6 @@
 get_header();
 ?>
 <div class="container-fluid">
-	<div class="row">
 
 		<div class="presentation col-md-12">
         <div class="col-md-12 text-center">
@@ -56,7 +55,6 @@ get_header();
 			<?php include('temoignages.php'); ?>
 		</div>
 
-	</div>
 </div>
 
 <?php get_footer(); ?>
