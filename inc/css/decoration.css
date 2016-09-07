@@ -4,6 +4,9 @@
 }
 .nivo-container-custom {
     background-color: darkcyan;
+    height:94% !important;
+    margin-left: 15px;
+    width:97% !important;
 }
 
 .img-1 {
@@ -19,4 +22,12 @@
 
 .pad {
     margin-top: 15px;
+}
+
+.nivo-main-image {
+    display: none !important;
+}
+
+.nivoSlider img {
+    height: 0px;
 }
