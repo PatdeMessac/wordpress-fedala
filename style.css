@@ -355,7 +355,7 @@ textarea {
 .entre {
   width: 70%;
   height: 70px;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(255,255,255,0.8);
   display: flex;
   /*align-items: center;*/
   justify-content: center;
@@ -363,7 +363,7 @@ textarea {
   font-family: 'GreatVibes', serif;
   border-radius: 5px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #000;
 }
 
 .entre:hover,
