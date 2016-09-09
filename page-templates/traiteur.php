@@ -40,7 +40,7 @@ $nextID = $pages[$current+1];*/
 		<div id="img-left"><img class="img-left-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/entre.jpg"></div>
 		<div class="img-foreground fullwidth">
 			<p class="entre color-white">Entrée</p>
-		</div>
+		</div>it
 	</div>
 	<div class="nopad img-container col-xs-12 col-sm-4 col-lg-4">
 		<div id="img-left"><img class="img-center-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/plat.jpg"></div>
@@ -61,26 +61,30 @@ $nextID = $pages[$current+1];*/
 		<div class="price-ground border-left">
 			<div class="entire-list">
 				<ul>
-				<?php
-					$post_query = new WP_Query(array(
-						'category_name' => 'entree',
-						'posts_per_page' => 1
-					));
-					while ($post_query->have_posts()) {
-						$post_query->the_post();
-						echo "<li>";
-						the_title();
-						echo "<span class='point'>...</span>";
-						echo get_the_content();
-						echo "</li>";
-					}
-				?>
+					<?php
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+						$post_query = new WP_Query(array(
+							'category_name' => 'entree',
+							'posts_per_page' => 10,
+							'paged' => $paged
+						));
+						while ($post_query->have_posts()) {
+							$post_query->the_post();
+							echo "<li>";
+							the_title();
+							echo "...";
+							echo get_the_content();
+							echo "</li>";
+						}
+					?>
 				</ul>
 			</div>
-
-			<div class="bouton">
-			<?php next_post_link('%link', 'Suivant', TRUE); ?>
-			<?php previous_post_link('%link', 'Precedent', TRUE); ?>
+			<div>
+				<?php
+					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
+					previous_posts_link( '<span class="arrow"> →</span>' );
+					wp_reset_postdata();
+				?>
 			</div>
 		</div>
 	</div>
@@ -89,9 +93,11 @@ $nextID = $pages[$current+1];*/
 			<div class="entire-list">
 				<ul>
 				<?php
+					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 					$post_query = new WP_Query(array(
 						'category_name' => 'plat',
-						'posts_per_page' => 10
+						'posts_per_page' => 10,
+						'paged' => $paged
 					));
 					while ($post_query->have_posts()) {
 						$post_query->the_post();
@@ -104,9 +110,12 @@ $nextID = $pages[$current+1];*/
 				?>
 				</ul>
 			</div>
-
-			<div class="bouton">
-				<button type="submit">Next</button>
+			<div>
+				<?php
+					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
+					previous_posts_link( '<span class="arrow"> →</span>' );
+					wp_reset_postdata();
+				?>
 			</div>
 		</div>
 	</div>
@@ -115,9 +124,11 @@ $nextID = $pages[$current+1];*/
 			<div class="entire-list">
 				<ul>
 				<?php
+					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 					$post_query = new WP_Query(array(
 						'category_name' => 'dessert',
-						'posts_per_page' => 10
+						'posts_per_page' => 10,
+						'paged' => $paged
 					));
 					while ($post_query->have_posts()) {
 						$post_query->the_post();
@@ -130,9 +141,12 @@ $nextID = $pages[$current+1];*/
 				?>
 				</ul>
 			</div>
-
-			<div class="bouton">
-				<button type="submit">Next</button>
+			<div>
+				<?php
+					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
+					previous_posts_link( '<span class="arrow"> →</span>' );
+					wp_reset_postdata();
+				?>
 			</div>
 		</div>
 	</div>
