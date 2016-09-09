@@ -9,11 +9,30 @@
 get_header();
 
 
-/*$display="";
-$children = get_sub_children();
-foreach ($variable as $key => $value) {
-	echo 
-}*/
+
+// Set up the objects needed
+$my_wp_query = new WP_Query();
+$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+
+// Get the page as an Object
+$traiteur =  get_page_by_title('Traiteur');
+
+// Filter through all pages and find Portfolio's children
+$pagelist = get_page_children( $traiteur->ID, $all_wp_pages );
+
+/*print_r($traiteur_children);
+
+$pagelist = get_pages("child_of=".$post->post_parent."&parent=".$post->post_parent."&sort_column=menu_order&sort_order=asc");*/
+$pages = array();
+foreach ($pagelist as $page) {
+   $pages[] += $page->ID;
+   $nextID = $page->ID;
+}
+
+/*$current = array_search($post->ID, $pages);
+$prevID = $pages[$current-1];
+$nextID = $pages[$current+1];*/
+
 ?>
 
 <div class="container container-traiteur">
@@ -42,31 +61,25 @@ foreach ($variable as $key => $value) {
 		<div class="price-ground border-left">
 			<div class="entire-list">
 				<ul>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-				</ul>
-				<ul>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
+				<?php
+					$post_query = new WP_Query(array(
+						'category_name' => 'entree',
+						'posts_per_page' => 10
+					));
+					while ($post_query->have_posts()) {
+						$post_query->the_post();
+						echo "<li>";
+						the_title();
+						echo "...";
+						echo get_the_content();
+						echo "</li>";
+					}
+				?>
 				</ul>
 			</div>
 
 			<div class="bouton">
-				<button type="submit">Next</button>
+			<button type="submit">Next</button>
 			</div>
 		</div>
 	</div>
@@ -74,26 +87,20 @@ foreach ($variable as $key => $value) {
 		<div class="price-ground border-center">
 			<div class="entire-list">
 				<ul>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-				</ul>
-				<ul>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
+				<?php
+					$post_query = new WP_Query(array(
+						'category_name' => 'plat',
+						'posts_per_page' => 10
+					));
+					while ($post_query->have_posts()) {
+						$post_query->the_post();
+						echo "<li>";
+						the_title();
+						echo "...";
+						echo get_the_content();
+						echo "</li>";
+					}
+				?>
 				</ul>
 			</div>
 
@@ -106,26 +113,20 @@ foreach ($variable as $key => $value) {
 		<div class="price-ground border-right">
 			<div class="entire-list">
 				<ul>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-					<br>
-					<li>Pizza</li>
-				</ul>
-				<ul>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
-					<br>
-					<li>...5€</li>
+				<?php
+					$post_query = new WP_Query(array(
+						'category_name' => 'dessert',
+						'posts_per_page' => 10
+					));
+					while ($post_query->have_posts()) {
+						$post_query->the_post();
+						echo "<li>";
+						the_title();
+						echo "...";
+						echo get_the_content();
+						echo "</li>";
+					}
+				?>
 				</ul>
 			</div>
 
