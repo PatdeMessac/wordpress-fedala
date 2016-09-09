@@ -2121,12 +2121,12 @@ h3.animateblock.animated{
 #box_service{
     position: relative;
     overflow: hidden;
-    width: 1291px;
+    width: 100%;
     height: 670px;
 }
 .primary{
-    left: -150px;
-    width: 1570px;
+    left: -10%;
+    width: 121%;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -2139,11 +2139,11 @@ h3.animateblock.animated{
 }
 
 .standar{
-    width: 870px;
+    width: 100%;
     background: #db4437;
 }
 .small{
-    width: 120px;
+    width: 5%;
     background: #FFF;
 }
 .middle{
