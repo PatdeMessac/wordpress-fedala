@@ -2152,3 +2152,11 @@ h3.animateblock.animated{
     box-shadow: 3px 3px 10px -2px rgba(0,0,0,0.75);
 }
 /*Fin BLOCK SERVICES*/
+
+/* arrows on "Traiteur" page - début */
+.arrow {
+	font-weight: 700;
+	font-size: 30px;
+	color: black;
+}
+/* arrows on "Traiteur" page - fin */
