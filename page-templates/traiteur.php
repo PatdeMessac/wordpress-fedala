@@ -61,25 +61,30 @@ $nextID = $pages[$current+1];*/
 		<div class="price-ground border-left">
 			<div class="entire-list">
 				<ul>
-				<?php
-					$post_query = new WP_Query(array(
-						'category_name' => 'entree',
-						'posts_per_page' => 10
-					));
-					while ($post_query->have_posts()) {
-						$post_query->the_post();
-						echo "<li>";
-						the_title();
-						echo "...";
-						echo get_the_content();
-						echo "</li>";
-					}
-				?>
+					<?php
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+						$post_query = new WP_Query(array(
+							'category_name' => 'entree',
+							'posts_per_page' => 10,
+							'paged' => $paged
+						));
+						while ($post_query->have_posts()) {
+							$post_query->the_post();
+							echo "<li>";
+							the_title();
+							echo "...";
+							echo get_the_content();
+							echo "</li>";
+						}
+					?>
 				</ul>
 			</div>
-
-			<div class="bouton">
-			<button type="submit">Next</button>
+			<div>
+				<?php
+					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
+					previous_posts_link( '<span class="arrow"> →</span>' );
+					wp_reset_postdata();
+				?>
 			</div>
 		</div>
 	</div>
@@ -88,9 +93,11 @@ $nextID = $pages[$current+1];*/
 			<div class="entire-list">
 				<ul>
 				<?php
+					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 					$post_query = new WP_Query(array(
 						'category_name' => 'plat',
-						'posts_per_page' => 10
+						'posts_per_page' => 10,
+						'paged' => $paged
 					));
 					while ($post_query->have_posts()) {
 						$post_query->the_post();
@@ -103,9 +110,12 @@ $nextID = $pages[$current+1];*/
 				?>
 				</ul>
 			</div>
-
-			<div class="bouton">
-				<button type="submit">Next</button>
+			<div>
+				<?php
+					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
+					previous_posts_link( '<span class="arrow"> →</span>' );
+					wp_reset_postdata();
+				?>
 			</div>
 		</div>
 	</div>
@@ -114,9 +124,11 @@ $nextID = $pages[$current+1];*/
 			<div class="entire-list">
 				<ul>
 				<?php
+					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 					$post_query = new WP_Query(array(
 						'category_name' => 'dessert',
-						'posts_per_page' => 10
+						'posts_per_page' => 10,
+						'paged' => $paged
 					));
 					while ($post_query->have_posts()) {
 						$post_query->the_post();
@@ -129,9 +141,12 @@ $nextID = $pages[$current+1];*/
 				?>
 				</ul>
 			</div>
-
-			<div class="bouton">
-				<button type="submit">Next</button>
+			<div>
+				<?php
+					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
+					previous_posts_link( '<span class="arrow"> →</span>' );
+					wp_reset_postdata();
+				?>
 			</div>
 		</div>
 	</div>
