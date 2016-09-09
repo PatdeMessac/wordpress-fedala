@@ -40,7 +40,7 @@ $nextID = $pages[$current+1];*/
 		<div id="img-left"><img class="img-left-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/entre.jpg"></div>
 		<div class="img-foreground fullwidth">
 			<p class="entre color-white">Entrée</p>
-		</div>
+		</div>it
 	</div>
 	<div class="nopad img-container col-xs-12 col-sm-4 col-lg-4">
 		<div id="img-left"><img class="img-center-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/plat.jpg"></div>
