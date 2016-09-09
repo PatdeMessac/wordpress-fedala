@@ -34,7 +34,7 @@ get_header();
 
 					<div class="form-group">
 						<label>Date :</label>
-						<input class="form-control" placeholder="Un calendrier se trouvera bientôt ici…"/>
+						<input type="text" class="form-control" id="datepicker" placeholder=""/>
 					</div>
 					<div class="form-group">
 						<label>Adresse :</label>
@@ -188,5 +188,11 @@ if (!$errName && !$errEmail && !$errMessage) {
 ?>
 
 </section>
+
+ <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 
 <?php get_footer(); ?>
