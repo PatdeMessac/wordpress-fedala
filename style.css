@@ -344,6 +344,9 @@ textarea {
     font-size: 20px;
     list-style-type: none;
 }
+.point {
+    color: red;
+}
 .bouton {
     width: 100%;
     display: flex;

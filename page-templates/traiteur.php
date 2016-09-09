@@ -64,13 +64,13 @@ $nextID = $pages[$current+1];*/
 				<?php
 					$post_query = new WP_Query(array(
 						'category_name' => 'entree',
-						'posts_per_page' => 10
+						'posts_per_page' => 1
 					));
 					while ($post_query->have_posts()) {
 						$post_query->the_post();
 						echo "<li>";
 						the_title();
-						echo "...";
+						echo "<span class='point'>...</span>";
 						echo get_the_content();
 						echo "</li>";
 					}
@@ -79,7 +79,8 @@ $nextID = $pages[$current+1];*/
 			</div>
 
 			<div class="bouton">
-			<button type="submit">Next</button>
+			<?php next_post_link('%link', 'Suivant', TRUE); ?>
+			<?php previous_post_link('%link', 'Precedent', TRUE); ?>
 			</div>
 		</div>
 	</div>
