@@ -69,3 +69,145 @@ a {
 {
 	background-color: #000000;
 }
+
+.space {
+  height: 80px;
+}
+
+.space-color {
+  background-color: rgba(0,0,0,0.9);
+}
+
+#onglets {
+  font-size: 19px;
+  list-style-type : none;
+  margin-left : 0;
+  margin-bottom: 0;
+  margin-top: 250px;
+  transition: all 0.50s;
+}
+
+#onglets > li {
+  float : left;
+  height : 55px;
+  background-color: rgba(0,0,0,0.8);
+  margin : 2px 15px 0 2px !important;
+  border-bottom-style: none;
+  /*border-radius: 5px;*/
+  width: 250px;
+}
+
+#onglets > li > ul > li {
+  background-color: rgba(0,0,0,0.9);
+}
+
+#onglets > li > ul > li > a {
+  font-weight: 600;
+  height: 40px;
+  padding-top: 10px;
+}
+
+#onglets > li > ul > li > a:hover {
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+}
+
+.nav .open > a {
+  background-color: rgba(102, 255, 153, 0.6) !important;
+}
+
+#onglets li.active {
+  text-decoration: none;
+  border-bottom-style: none;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#onglets a {
+  display : block;
+  color : #ffffff;
+  text-decoration : none;
+  transition: all 0.30s;
+  text-align: center;
+  height: 55px;
+  font-family: 'roboto';
+  letter-spacing: 2px;
+  /*border-radius: 5px;*/
+}
+
+#onglets a:hover {
+  background-color: rgba(102, 255, 153, 0.6);
+  border-bottom-style: none !important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+background-color: #66ff99;
+text-align: center;
+margin-left: -1px;
+width: 250px;
+border-radius: 0;
+}
+
+.dropdown .dropdown-menu {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.content {
+  margin: auto;
+  width: 95%;
+  padding: 50px 0;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+  margin-top: 180px;
+  transition: all 0.50s;
+}
+
+header {
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.flex {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.marg-top {
+  margin-top: 50px;
+  border-top: 1px solid #fff;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.centrage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
