@@ -44,7 +44,7 @@ get_header();
         </div>
         <div style="clear:both;"></div>
     </div>
-    
+<div id ="vaiselle">
     <div class="row">
         <div class="scroll no-pad col-sm-3">
             <?php query_posts('category_name=image-deco-scroll'); ?>
@@ -52,6 +52,18 @@ get_header();
 	    <?php while(have_posts()) : the_post();?>
 			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
 
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
 				    <div class="tg img-responsive fullwidth">
 				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
 				    </div>
@@ -78,16 +90,339 @@ get_header();
             </div>
         </div>
 <div class="scroll no-pad col-sm-3">
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
+             <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
         </div>
     </div>
+</div>
+<div id ="mobilier">
+    <div class="row">
+        <div class="scroll no-pad col-sm-3">
+            <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
 
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+           <!-- <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>-->
+        </div>
+        <div class="col-sm-6">
+           <div class="contenu text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            </div>
+        </div>
+<div class="scroll no-pad col-sm-3">
+             <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+        </div>
+    </div>
+</div>
+<div id ="art_de_la_table">
+    <div class="row">
+        <div class="scroll no-pad col-sm-3">
+            <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+           <!-- <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>-->
+        </div>
+        <div class="col-sm-6">
+           <div class="contenu text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            </div>
+        </div>
+<div class="scroll no-pad col-sm-3">
+             <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+        </div>
+    </div>
+</div>
+<div id ="exterieur">
+    <div class="row">
+        <div class="scroll no-pad col-sm-3">
+            <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+           <!-- <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>-->
+        </div>
+        <div class="col-sm-6">
+           <div class="contenu text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            </div>
+        </div>
+<div class="scroll no-pad col-sm-3">
+             <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+        </div>
+    </div>
+</div>
+<div id ="accesoires">
+    <div class="row">
+        <div class="scroll no-pad col-sm-3">
+            <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+           <!-- <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>
+            <div class="img-1"></div>-->
+        </div>
+        <div class="col-sm-6">
+           <div class="contenu text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            </div>
+        </div>
+<div class="scroll no-pad col-sm-3">
+             <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+        </div>
+    </div>
+</div>
 
         <?php get_footer(); ?>
