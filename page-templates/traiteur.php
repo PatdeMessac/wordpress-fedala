@@ -11,23 +11,23 @@ get_header();
 
 
 // Set up the objects needed
-$my_wp_query = new WP_Query();
-$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+//$my_wp_query = new WP_Query();
+//$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
 
 // Get the page as an Object
-$traiteur =  get_page_by_title('Traiteur');
+//$traiteur =  get_page_by_title('Traiteur');
 
 // Filter through all pages and find Portfolio's children
-$pagelist = get_page_children( $traiteur->ID, $all_wp_pages );
+//$pagelist = get_page_children( $traiteur->ID, $all_wp_pages );
 
 /*print_r($traiteur_children);
 
 $pagelist = get_pages("child_of=".$post->post_parent."&parent=".$post->post_parent."&sort_column=menu_order&sort_order=asc");*/
-$pages = array();
+/*$pages = array();
 foreach ($pagelist as $page) {
    $pages[] += $page->ID;
    $nextID = $page->ID;
-}
+}*/
 
 /*$current = array_search($post->ID, $pages);
 $prevID = $pages[$current-1];
@@ -36,24 +36,22 @@ $nextID = $pages[$current+1];*/
 ?>
 
 <div class="container container-traiteur">
-	<div class="nopad img-container col-xs-12 col-sm-4 col-lg-4">
-		<div id="img-left"><img class="img-left-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/entre.jpg"></div>
-		<div class="img-foreground fullwidth">
-			<p class="entre color-white">Entrée</p>
-		</div>
-	</div>
-	<div class="nopad img-container col-xs-12 col-sm-4 col-lg-4">
-		<div id="img-left"><img class="img-center-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/plat.jpg"></div>
-		<div class="img-foreground fullwidth">
-			<p class="entre color-white">Plat</p>
-		</div>
-	</div>
-	<div class="nopad img-container col-xs-12 col-sm-4 col-lg-4">
-		<div id="img-left"><img class="img-right-background img-responsive fullwidth" src="<?php bloginfo('template_url'); ?>/images/dessert.jpg"></div>
-		<div class="img-foreground fullwidth">
-			<p class="entre color-white">Dessert</p>
-		</div>
-	</div>
+<!-- image à la une -->
+<?php query_posts('category_name=image-traiteur'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-4 col-lg-4">
+			    <div id="img-left">
+				    <div class="img-left-background img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+				</div>
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
 </div>
 
 <div class="container container-traiteur nopad price-bloc">
@@ -65,7 +63,7 @@ $nextID = $pages[$current+1];*/
 						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 						$post_query = new WP_Query(array(
 							'category_name' => 'entree',
-							'posts_per_page' => 10,
+							'posts_per_page' => 1,
 							'paged' => $paged
 						));
 						while ($post_query->have_posts()) {
