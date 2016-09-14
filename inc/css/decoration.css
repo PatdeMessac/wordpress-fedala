@@ -45,13 +45,6 @@ a {
     overflow-y: auto;
     height: 80vh;
 }
-
-.img-1 {
-    background-image: url(../../../prestro/images/slider-1.jpg);
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-}
 .contenu{
     color:white;
     background-color:orangered;
@@ -63,3 +56,11 @@ a {
 .contenu p{
     padding-top:14px;
 }
+.img-1 {
+    background-image: url(../../../prestro/images/slider-1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+
