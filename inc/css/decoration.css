@@ -29,3 +29,26 @@ header span {
 a {
     color: #1155CC;
 }
+
+#ninja-slider {
+    background-color: #FFFFE2 !important;
+}
+
+#thumbnail-slider div.inner {
+    background-color: white;
+}
+.no-pad {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.scroll {
+    overflow-y: auto;
+    height: 80vh;
+}
+
+.img-1 {
+    background-image: url(../../../prestro/images/slider-1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
