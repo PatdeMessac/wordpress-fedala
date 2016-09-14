@@ -57,8 +57,10 @@ get_header();
             <div class="img-1"></div>
         </div>
         <div class="col-sm-6">
-           <div class="contenu">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!
+           <div class="contenu text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ipsa odit dolore. Quos beatae, dolor voluptate officiis sequi suscipit aperiam optio alias, eaque minus nisi dolore ea maxime asperiores a!</p>
             </div>
         </div>
 <div class="scroll no-pad col-sm-3">

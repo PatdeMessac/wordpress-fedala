@@ -52,3 +52,14 @@ a {
     height: 200px;
     background-size: cover;
 }
+.contenu{
+    color:white;
+    background-color:orangered;
+    opacity:0.6;
+    height:300px;
+    margin:10vh;
+    margin-top:15vh;
+}
+.contenu p{
+    padding-top:14px;
+}
