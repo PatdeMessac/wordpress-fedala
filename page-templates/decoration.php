@@ -47,14 +47,28 @@ get_header();
     
     <div class="row">
         <div class="scroll no-pad col-sm-3">
+            <?php query_posts('category_name=image-deco-scroll'); ?>
+	<?php if(have_posts()) : ?>
+	    <?php while(have_posts()) : the_post();?>
+			<div class="nopad img-container col-xs-12 col-sm-12 col-lg-12">
+
+				    <div class="tg img-responsive fullwidth">
+				    	<img class="img-traiteur" src="<?php the_post_thumbnail_url(array(500,300)); ?>" />
+				    </div>
+					<div class="img-foreground fullwidth">
+						<p class="entre color-white"><?php the_title(); ?></p>
+					</div>
+
+			</div>
+	    <?php endwhile; ?>
+	<?php endif; ?>
+           <!-- <div class="img-1"></div>
             <div class="img-1"></div>
             <div class="img-1"></div>
             <div class="img-1"></div>
             <div class="img-1"></div>
             <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
-            <div class="img-1"></div>
+            <div class="img-1"></div>-->
         </div>
         <div class="col-sm-6">
            <div class="contenu text-center">
