@@ -81,8 +81,8 @@ $nextID = $pages[$current+1];*/
 			</div>
 			<div>
 				<?php
-					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
-					previous_posts_link( '<span class="arrow"> →</span>' );
+					previous_posts_link( '<span class="arrow">← </span>' );
+					next_posts_link( '<span class="arrow"> →</span>', $post_query->max_num_pages );
 					wp_reset_postdata();
 				?>
 			</div>
@@ -112,8 +112,8 @@ $nextID = $pages[$current+1];*/
 			</div>
 			<div>
 				<?php
-					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
-					previous_posts_link( '<span class="arrow"> →</span>' );
+					previous_posts_link( '<span class="arrow">← </span>' );
+					next_posts_link( '<span class="arrow"> →</span>', $post_query->max_num_pages );
 					wp_reset_postdata();
 				?>
 			</div>
@@ -143,8 +143,8 @@ $nextID = $pages[$current+1];*/
 			</div>
 			<div>
 				<?php
-					next_posts_link( '<span class="arrow">← </span>', $post_query->max_num_pages );
-					previous_posts_link( '<span class="arrow"> →</span>' );
+					previous_posts_link( '<span class="arrow">← </span>' );
+					next_posts_link( '<span class="arrow"> →</span>', $post_query->max_num_pages );
 					wp_reset_postdata();
 				?>
 			</div>
