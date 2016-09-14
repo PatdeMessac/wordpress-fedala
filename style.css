@@ -2163,3 +2163,11 @@ h3.animateblock.animated{
 	color: black;
 }
 /* arrows on "Traiteur" page - fin */
+
+/*Image traiteur*/
+
+.img-traiteur {
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+}
