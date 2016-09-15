@@ -487,10 +487,10 @@ textarea {
     font-family: 'GreatVibes', sans-serif;
 }
 .entry-title a {
-    color: #444;
+   /* color: #444;*/
 }
 .entry-title a:hover {
-    color: #666;
+    /*color: #666;*/
 }
 .btn.btn-default.read-more {
     float: right;
@@ -1439,12 +1439,12 @@ textarea.ninja-forms-field{
     margin-top: 25px;
 }
 .entry-title {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    position: relative;
+    border-bottom: 1px solid #ff3f34;
+    /*padding-bottom: 10px;
+    position: relative;*/
 }
 .entry-title::before {
-    background: #46d246;
+    background:#ff3f34;
     bottom: -2px;
     content: "";
     height: 3px;

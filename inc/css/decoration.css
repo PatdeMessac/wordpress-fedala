@@ -175,7 +175,7 @@ border-radius: 0;
 }
 
 header {
-  height: 290px;
+  /*height: 290px;*/
   display: flex;
   justify-content: center;
   align-items: center;
