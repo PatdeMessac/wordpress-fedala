@@ -284,30 +284,19 @@ textarea {
     height: 71px;
 }
 
-/* =Traiteur Page
+/* =Traiteur Page - début
 ------------------------------------------------*/
 .container-traiteur {
-    width: 100%;
-    padding: 0;
+	width: 100%;
+	padding: 0;
 }
-
-.nopad {
-    padding: 0;
+.container-traiteur .col-sm-4 {
+	padding: 0;
 }
-
-.img-container {
-  position: relative;
-}
-
-.img-left-background,
-.img-center-background,
-.img-right-background {
+.container-traiteur img {
   position: absolute;
   z-index: -1;
   height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 2s;
   width: 100%;
 }
 .price-bloc {
@@ -362,13 +351,11 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-
-.entre {
+.img-foreground p {
   width: 70%;
   height: 70px;
   background-color: rgba(255,255,255,0.8);
   display: flex;
-  /*align-items: center;*/
   justify-content: center;
   font-size: 45px;
   font-family: 'GreatVibes', serif;
@@ -377,8 +364,25 @@ textarea {
   color: #000;
   padding:5px;
   box-shadow:1px 1px 5px gray;
-  /*animation: showHide 5s ease-in alternate infinite;*/
 }
+.price-ground {
+	height: 500px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	overflow-y: scroll;
+	background-color: #fff;
+	text-align: center;
+}
+.price-ground li {
+	font-size: 20px;
+	list-style-type: none;
+}
+/*------------------------------------------------
+ =Traiteur Page - fin */
+
 
 .parallax {
     background-image: url('./images/slider-1.jpg');
@@ -2170,4 +2174,12 @@ h3.animateblock.animated{
     height: 100%;
     width: auto;
     min-width: 100%;
+}
+
+.parallelogram{
+    overflow: hidden;
+}
+.box_img{
+    display:block;
+    transform: skew(20deg);   
 }

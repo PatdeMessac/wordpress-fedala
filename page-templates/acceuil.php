@@ -11,9 +11,15 @@ get_header();
 <!--<div class="parallax"></div>-->
 <div id="box_service">
     <div class="primary">
-            <div class="parallelogram standar"></div>
+            <div class="parallelogram standar">
+                <img class="img-traiteur" src="<?php echo get_the_post_thumbnail_url(61);
+                                               ?>">
+            </div>
             <div class="parallelogram small"></div>
-            <div class="parallelogram standar"></div>
+            <div class="parallelogram standar">
+                
+                <img class="img-traiteur" src="<?php echo get_the_post_thumbnail_url(54); ?>" alt=""/>
+            </div>
     </div>
 </div>
 <div class="container-fluid">
