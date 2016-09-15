@@ -11,15 +11,23 @@ get_header();
 <!--<div class="parallax"></div>-->
 <div id="box_service">
     <div class="primary">
+    	<?php query_posts('category_name=image_gauche'); ?>
+           	<?php if(have_posts()) : ?>
+               	<?php while(have_posts()) : the_post();?>
             <div class="parallelogram standar">
-                <img class="img-traiteur" src="<?php echo get_the_post_thumbnail_url(61);
-                                               ?>">
+                <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
             </div>
+        		<?php endwhile; ?>
+           <?php endif; ?>
             <div class="parallelogram small"></div>
+            <?php query_posts('category_name=image_droite'); ?>
+           		<?php if(have_posts()) : ?>
+               		<?php while(have_posts()) : the_post();?>
             <div class="parallelogram standar">
-                
-                <img class="img-traiteur" src="<?php echo get_the_post_thumbnail_url(54); ?>" alt=""/>
+                <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
             </div>
+            	<?php endwhile; ?>
+           <?php endif; ?>
     </div>
 </div>
 <div class="container-fluid">
