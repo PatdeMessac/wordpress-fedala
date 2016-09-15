@@ -112,7 +112,7 @@ body {
     line-height: 1.7;
     font-size: 14px;
     font-family: 'Montserrat';
-    background-color: #181818;
+   /* background-color: #181818;*/
 }
 html,
 body {
@@ -299,6 +299,52 @@ textarea {
   height: 500px;
   width: 100%;
 }
+.price-bloc {
+    background-color: #fff;
+    color: #000;
+}
+.price-ground {
+    height: 500px;
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.border-center {
+    border-left-style: none;
+    border-right-style: none;
+}
+.border-left {
+    border-left-style: none;
+}
+.border-right {
+    border-right-style: none;
+}
+
+.entire-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.entire-list > ul > li {
+    font-size: 20px;
+    list-style-type: none;
+}
+.point {
+    color: red;
+}
+.bouton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.bouton > button {
+    width: 100px;
+}
+
 .img-foreground {
   height: 500px;
   display: flex;
@@ -435,9 +481,9 @@ textarea {
     margin-right: 10px;
 }
 .entry-title {
-    /*font-size: 26px;*/
+    /*font-size: 26px;
     color: #46d246;
-    text-align: center;
+    text-align: center;*/
     font-family: 'GreatVibes', sans-serif;
 }
 .entry-title a {
