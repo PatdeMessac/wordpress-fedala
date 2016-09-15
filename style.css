@@ -2179,12 +2179,13 @@ h3.animateblock.animated{
 .parallelogram{
     overflow: hidden;
 }
-.box_img{
+/*.box_img{
     display:block;
     transform: skew(20deg);   
-}
+}*/
 .img-accueil {
     height: 100%;
     width: auto;
     min-width: 100%;
+    transform: skew(20deg);
 }
