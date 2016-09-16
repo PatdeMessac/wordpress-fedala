@@ -385,7 +385,7 @@ textarea {
 
 .parallax2 {
     background-image: url('./images/slider-2.jpg');
-    height: 300px; 
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
