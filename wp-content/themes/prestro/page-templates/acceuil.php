@@ -37,14 +37,13 @@ get_header();
 		<div class="presentation col-md-12">
 			<div class="row">
 				<div class="col-md-12 text-center">
-				 <h2>Fedala</h2>
+				 <h2 class="fedala_title">Fedala</h2>
 				</div>
-				<div class="col-md-offset-2 col-md-8">
+				<div class="col-md-offset-3 col-md-6 text-center">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus sed architecto ut quasi laboriosam quam provident fuga voluptate aspernatur nisi maiores earum magnam, quidem ipsam omnis necessitatibus molestiae laborum! </br>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus sed architecto ut quasi laboriosam quam provident fuga voluptate aspernatur nisi maiores earum magnam, quidem ipsam omnis necessitatibus molestiae laborum! </br>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus sed architecto ut quasi laboriosam quam provident fuga voluptate aspernatur nisi maiores earum magnam, quidem ipsam omnis necessitatibus molestiae laborum!
-					</p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus sed architecto ut quasi laboriosam quam provident fuga voluptate aspernatur nisi maiores earum magnam, quidem ipsam omnis necessitatibus molestiae laborum! </p>
+
 				</div>
 			</div>
 		</div>
