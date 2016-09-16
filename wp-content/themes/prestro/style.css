@@ -2176,3 +2176,8 @@ h3.animateblock.animated{
     min-width: 100%;
     transform: skew(20deg, 0);
 }
+.fedala_title{
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-family: 'GreatVibes',serif;
+}
