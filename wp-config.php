@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'Q8cWmI>CN^zn,919#BO<Isb$RZxmK1s=u:*tDB~|:4ap;-w15CcVe5R,V$ ,,J)k');
+define('SECURE_AUTH_KEY',  'bk|x> 7eo/lVZ+(ZH:A$#c+SzPjZ]<u#!]s_+y/F_j|kglRzbntYE5U+UBm2NK|3');
+define('LOGGED_IN_KEY',    '_s?34fL|WHX<H}22c.~O|JdW[x!P|wIRGww&;2!$|Y~$043K||n*sL@C.)W`Rol%');
+define('NONCE_KEY',        '+flOd`|{M?o+dt3R-D-k&fP/2+*V=j3oTF6>|C5;&H.)gM4X[XsIH87df{A,<-g:');
+define('AUTH_SALT',        ':;YHJKm+(V.<>~Q[-(;seXQ.TBenL3Lj53[~${&$f2<:xuXC%xH(8H8lMj>i0/`;');
+define('SECURE_AUTH_SALT', '#`_eR!T=.?j6}|z)Q{ahONc&8U>P,yv1fM2Lur5GB^F_5|880gZ(V=]f,/tJKA9&');
+define('LOGGED_IN_SALT',   '{LzND{,(u%`m%TwTRsll<^7lfB|f+2vmB0ZJ]4c#&<%[@;YysZe@.i8%{1h3wR*c');
+define('NONCE_SALT',       '2#?ufX5J]1JOth##I4T>[l#XVH=&-_Q*(=+z?32|Z)ml*+[Q6n|pS!U[G@aes9nU');
 /**#@-*/
 
 /**
@@ -66,7 +66,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * si vous leur donnez chacune un préfixe unique.
  * N’utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés !
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'fedalawp_';
 
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
