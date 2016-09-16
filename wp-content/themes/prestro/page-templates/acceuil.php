@@ -8,8 +8,28 @@
  */
 get_header();
 ?>
-<div id="box_service">
-    <div class="primary">
+<div id="box_service container-fluid">
+   <div class="row">
+    	<?php query_posts('category_name=image_gauche'); ?>
+           	<?php if(have_posts()) : ?>
+               	<?php while(have_posts()) : the_post();?>
+            <div class="left col-lg-5 col-lg-offset-1">
+                <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+            </div>
+        		<?php endwhile; ?>
+           <?php endif; ?>
+            <!--<div class="parallelogram small"></div>-->
+            <?php query_posts('category_name=image_droite'); ?>
+           		<?php if(have_posts()) : ?>
+               		<?php while(have_posts()) : the_post();?>
+            <div class="right col-lg-5">
+                <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+            </div>
+            	<?php endwhile; ?>
+           <?php endif; ?>
+    </div>
+
+    <!--<div class="primary">
     	<?php query_posts('category_name=image_gauche'); ?>
            	<?php if(have_posts()) : ?>
                	<?php while(have_posts()) : the_post();?>
@@ -27,7 +47,7 @@ get_header();
             </div>
             	<?php endwhile; ?>
            <?php endif; ?>
-    </div>
+    </div>-->
 </div>
 <div class="parallax2"></div>
 <div class="container-fluid">
