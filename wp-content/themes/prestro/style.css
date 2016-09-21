@@ -2190,3 +2190,38 @@ h3.animateblock.animated{
     /*min-width: 100%;*/
  /*   transform: skew(20deg, 0);*/
 }
+
+/* =Deco Page - début
+------------------------------------------------*/
+
+.content-area {
+    width: 100%;
+}
+.content-area > .site-main:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+}
+
+.al_archive {
+    box-shadow: 0 0 5px #ff3f34;
+    width: 30.5%;
+}
+.al_archive .product-name {
+    background-color: rgb(255, 63, 52);
+    background-color: rgba(255, 63, 52, 0.8);
+    box-shadow: 0 0 5px #ff3f34;
+}
+.entry-title {
+    border: 2px inset #ff3f34;
+    padding: 7px;
+    font-size: 55px;
+    background-color: #fff;
+}
+.entry-header {
+    background-color: #ff554d;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*------------------------------------------------
+ =Deco Page - fin */
