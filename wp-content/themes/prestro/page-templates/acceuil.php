@@ -17,13 +17,16 @@ get_header();
 <div class="container-fluid">
 	
 	<!-- bandeau 2 images - début -->
-	<div class="row">
+	<div class="row bandeau-accueil">
 		
 		<!-- image "Décoration" -->
 		<?php $post = get_page_by_title('Décoration'); ?>
 		<div class="left col-lg-5 col-lg-offset-1">
 			<a href="<?php the_permalink(); ?>">
 				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+				<div class="img-foreground">
+					<p><?php the_title(); ?></p>
+				</div>
 			</a>
 		</div>
 		
@@ -32,6 +35,9 @@ get_header();
 		<div class="right col-lg-5">
 			<a href="<?php the_permalink(); ?>">
 				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+				<div class="img-foreground">
+					<p><?php the_title(); ?></p>
+				</div>
 			</a>
 		</div>
 		

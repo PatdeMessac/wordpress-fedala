@@ -2175,18 +2175,16 @@ h3.animateblock.animated{
     min-width: 100%;
 }
 
-/*.parallelogram{
-    overflow: hidden;
-}*/
-/*.box_img{
-    display:block;
-    transform: skew(20deg);   
-}*/
-.img-accueil {
-    /*height: auto;
-    width: 77%;*/
-    padding-top: 5%;
-    padding-bottom: 5%;
-    /*min-width: 100%;*/
- /*   transform: skew(20deg, 0);*/
+/* bandeau accueil */
+.bandeau-accueil {
+	height: 600px;
+}
+.bandeau-accueil img {
+	position: absolute;
+	top: 50px;
+	z-index: -1;
+	width: 100%;
+	height: 500px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
