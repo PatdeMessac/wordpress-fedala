@@ -7,7 +7,11 @@
 	<?php $post = get_page_by_title('Contact'); ?>
 	<div>
 		<a title="Contact" href="<?php the_permalink(); ?>">Contact</a>
-		<a title="Connexion" href="wp-login.php">Connexion</a>
+		<?php
+			if (!is_user_logged_in()) {
+				echo "<a title='Connexion' href='wp-login.php'>Connexion</a>";
+			}
+		?>
 	</div>
 </nav>
 <!-- barre de navigation - fin -->
