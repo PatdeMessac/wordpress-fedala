@@ -24,7 +24,7 @@ get_header();
 			<div class="img-foreground">
 				<p><?php the_title(); ?></p>
 			</div>
-			<div class="price-ground">
+			<div class="price-ground style-3">
 				<ul>
 					<?php 
 						$liste_de_plats = explode("\r\n\r\n", $post->post_content);
