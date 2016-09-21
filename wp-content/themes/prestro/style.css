@@ -2109,6 +2109,10 @@ h3.animateblock.animated{
     width: 100%;
     height: auto;
 }
+.wrapper_service{
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
 .primary{
 /*    left: -10%;*/
     width: 100%;
