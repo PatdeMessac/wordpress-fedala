@@ -30,8 +30,15 @@ get_header();
 						$liste_de_plats = explode("\n", $post->post_content);
 						foreach ($liste_de_plats as $plat) {
 							if (preg_match('/[a-z]/i', $plat)) {
+								$plat_splitted = explode(" - ", $plat);
+								$nom = $plat_splitted[0];
+								$prix = $plat_splitted[1];
 								echo "<li>";
-								echo $plat;
+								echo $nom;
+								if (is_user_logged_in()) {
+									echo " - ";
+									echo $prix;
+								}
 								echo "</li>\n";
 							}
 						}
