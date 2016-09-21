@@ -225,7 +225,6 @@ function content($limit) {
  return $content;
 
 }
-
 ?>
 
 <?php add_theme_support( 'post-thumbnails' ); ?>
