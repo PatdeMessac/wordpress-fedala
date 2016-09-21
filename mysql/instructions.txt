@@ -1,0 +1,8 @@
+IMPORT DE LA BASE DE DONNÉES
+
+1. Créez une base de données vide 'fedala'
+Si cette base de données existe déjà, supprimez toutes ses tables
+
+2. Créez un utilisateur 'fedala' avec comme mot de passe 'facesimplon' ayant tous les droits sur cette base de données
+
+3. Via l’interface de PHPMyAdmin, importez le fichier fedala.sql
