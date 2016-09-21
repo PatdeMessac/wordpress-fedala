@@ -1986,6 +1986,8 @@ h3.animateblock.animated{
 /* =Deco Page - début
 ------------------------------------------------*/
 
+/*********** section général **************/
+
 .content-area {
     width: 100%;
 }
@@ -2020,12 +2022,30 @@ h3.animateblock.animated{
     display: flex;
     justify-content: center;
 }
+
+/********* section decoration *********/
+
 h1.entry-title.product-listing-name {
     margin-top: 10px;
 }
 article#product_listing {
     margin-top: 65px;
 }
+
+.al_archive .product-name,
+#product_listing .al_archive .product-name,
+#product_listing .al_archive h3.product-name {
+    background-color: rgb(255, 63, 52);
+    background-color: rgba(255, 63, 52, 0.8);
+    box-shadow: 0 0 5px #ff3f34;
+}
+.taxonomy-image {
+    margin-right: 20px;
+}
+.al_archive.product-54.modern-grid-element.green-box.ic-design.publish {
+    margin-top: 75px;
+}
+
 
 /*------------------------------------------------
  =Deco Page - fin */
