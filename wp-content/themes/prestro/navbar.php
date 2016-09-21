@@ -8,8 +8,10 @@
 	<div>
 		<a title="Contact" href="<?php the_permalink(); ?>">Contact</a>
 		<?php
-			if (!is_user_logged_in()) {
-				echo "<a title='Connexion' href='wp-login.php'>Connexion</a>";
+			if (is_user_logged_in()) {
+				echo "<a title='Déconnexion' href='wp-login.php?action=logout&redirect_to=".esc_url(home_url('/'))."'>Déconnexion</a>";
+			} else {
+				echo "<a title='Connexion' href='wp-login.php?redirect_to=".esc_url(home_url('/'))."'>Connexion</a>";
 			}
 		?>
 	</div>
