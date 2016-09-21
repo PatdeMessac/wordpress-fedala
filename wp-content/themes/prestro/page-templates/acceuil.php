@@ -48,7 +48,15 @@ get_header();
 				 <h2 class="fedala_title">Fedala</h2>
 				</div>
 				<div class="col-md-offset-3 col-md-6 text-center">
-					<p><?php echo $description; ?></p>
+					<?php
+						foreach ( explode("\n", $description) as $bloc ) {
+							if (preg_match('/[a-z]/i', $bloc)) {
+								echo "<p>";
+								echo $bloc;
+								echo "</p>\n";
+							}
+						}
+					?>
 				</div>
 			</div>
 		</div>
