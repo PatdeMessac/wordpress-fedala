@@ -12,11 +12,15 @@ get_header();
 	<div class="row">
 		<?php $post = get_page_by_title('Décoration'); ?>
 		<div class="left col-lg-5 col-lg-offset-1">
-			<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+			<a href="<?php the_permalink(); ?>">
+				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+			</a>
 		</div>
 		<?php $post = get_page_by_title('Traiteur'); ?>
 		<div class="right col-lg-5">
-			<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+			<a href="<?php the_permalink(); ?>">
+				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+			</a>
 		</div>
 	</div>
 
