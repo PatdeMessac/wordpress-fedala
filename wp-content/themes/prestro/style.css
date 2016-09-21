@@ -2064,3 +2064,9 @@ article#product_listing {
 	padding-left: 5%;
 	padding-right: 5%;
 }
+
+/* barre admin */
+
+#wpadminbar {
+	position: fixed !important;
+}
