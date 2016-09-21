@@ -13,26 +13,50 @@ get_header();
     	<?php query_posts('category_name=image_gauche'); ?>
            	<?php if(have_posts()) : ?>
                	<?php while(have_posts()) : the_post();?>
-            <div class="left col-lg-5 col-lg-offset-1">
-                <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
-                <div class="content_service col-lg-12">
-                    <div class="d">
-                        <?php the_title('<h3  class="title_service">','</h3>'); ?>
-                    </div>
+        <div class="left col-lg-5 col-lg-offset-1">
+           <div class="bloc_ensemble">
+            <div class="block_img_service col-lg-12 row">
+            <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+            <div class="block_service col-lg-12 text-center">
+                <div class="box_title col-lg-12">
+                    <?php the_title('<h3  class="title_service col-lg-12">','</h3>'); ?>
+                </div>
+                <span class="separated"></span>
+                <div class="box_extract col-lg-12">
+                    <?php the_content('<p  class="content_service col-lg-12">','</p>'); ?>
                 </div>
             </div>
-        		<?php endwhile; ?>
-           <?php endif; ?>
-            <!--<div class="parallelogram small"></div>-->
-            <?php query_posts('category_name=image_droite'); ?>
-           		<?php if(have_posts()) : ?>
-               		<?php while(have_posts()) : the_post();?>
-            <div class="right col-lg-5">
+          </div>
+        </div>
+            <?php endwhile; ?>
+       <?php endif; ?>
+       </div>
+        <!--<div class="parallelogram small"></div>-->
+        <?php query_posts('category_name=image_droite'); ?>
+            <?php if(have_posts()) : ?>
+                <?php while(have_posts()) : the_post();?>
+        <div class="right col-lg-5">
+              <div class="bloc_ensemble">
+                <div class="block_img_service col-lg-12 row">
                 <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+                <div class="block_service col-lg-12 text-center">
+                    <div class="box_title col-lg-12">
+                        <?php the_title('<h3  class="title_service col-lg-12">','</h3>'); ?>
+                    </div>
+                    <span class="separated"></span>
+                    <div class="box_extract col-lg-12">
+                        <?php the_content('<p  class="content_service col-lg-12">','</p>'); ?>
+                    </div>
+                </div>
+              </div>
             </div>
-            	<?php endwhile; ?>
-           <?php endif; ?>
-    </div>
+           <!--<div class="bloc_ensemble">
+            <div class="block_img_service col-lg-12 row">
+                <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+        </div>-->
+            <?php endwhile; ?>
+       <?php endif; ?>
+</div>
 
     <!--<div class="primary">
     	<?php query_posts('category_name=image_gauche'); ?>
@@ -86,3 +110,14 @@ get_header();
 </div>
 
 <?php get_footer(); ?>
+<script>
+    /*$('.left').mouseover(function(){*/
+    $(window).load(function(){
+        $('.block_service').clearQueue().animate({"bottom": "110px"},1500);
+        $('.separated').delay(2000).animate({"width":"50%"});
+        $('.box_extract').delay(2000).fadeIn();
+    });
+    /*$('.left').mouseout(function(){
+        $('.block_service').clearQueue().animate({"bottom": "-90px"},1500);
+    });*/
+</script>
