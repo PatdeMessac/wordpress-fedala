@@ -2004,20 +2004,27 @@ h3.animateblock.animated{
     box-shadow: 0 0 5px #ff3f34;
 }
 .entry-title {
-    border: 2px inset #ff3f34;
+    border: 2px inset #ff9e99;
     padding: 7px;
     font-size: 55px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     width: 225px;
+    text-align: center;
 }
 .entry-header {
-    background-color: #ff6e66;
+    background-color: #dbc0bd;
     border-radius: 5px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
+}
+h1.entry-title.product-listing-name {
+    margin-top: 10px;
+}
+article#product_listing {
+    margin-top: 65px;
 }
 
 /*------------------------------------------------
