@@ -21,7 +21,7 @@ get_header();
 		
 		<!-- image "Décoration" -->
 		<?php $post = get_page_by_title('Décoration'); ?>
-		<div class="left col-lg-5 col-lg-offset-1">
+		<div class="left col-xs-5 col-xs-offset-1">
 			<a href="<?php the_permalink(); ?>">
 				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
 				<div class="img-foreground">
@@ -32,7 +32,7 @@ get_header();
 		
 		<!-- image "Traiteur" -->
 		<?php $post = get_page_by_title('Traiteur'); ?>
-		<div class="right col-lg-5">
+		<div class="right col-xs-5">
 			<a href="<?php the_permalink(); ?>">
 				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
 				<div class="img-foreground">
