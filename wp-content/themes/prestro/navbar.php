@@ -12,6 +12,7 @@
 				echo "<a title='Déconnexion' href='wp-login.php?action=logout&redirect_to=".esc_url(home_url('/'))."'>Déconnexion</a>";
 			} else {
 				echo "<a title='Connexion' href='wp-login.php?redirect_to=".esc_url(home_url('/'))."'>Connexion</a>";
+				echo "<a title='Inscription' href='wp-signup.php?redirect_to=".esc_url(home_url('/'))."'>Inscription</a>";
 			}
 		?>
 	</div>
