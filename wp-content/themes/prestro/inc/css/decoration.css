@@ -1,4 +1,4 @@
-body {
+/*body {
             font: normal 0.9em Arial;
             color: #222;
 }
@@ -6,7 +6,7 @@ body {
 header {
             display: block;
             font-size: 1.2em;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
 }
         
 header a,
@@ -93,7 +93,7 @@ a {
   background-color: rgba(0,0,0,0.8);
   margin : 2px 15px 0 2px !important;
   border-bottom-style: none;
-  /*border-radius: 5px;*/
+  /*border-radius: 5px;
   width: 250px;
 }
 
@@ -131,7 +131,7 @@ a {
   height: 55px;
   font-family: 'roboto';
   letter-spacing: 2px;
-  /*border-radius: 5px;*/
+  /*border-radius: 5px;
 }
 
 #onglets a:hover {
@@ -176,8 +176,7 @@ border-radius: 0;
 
 header {
   /*height: 290px;*/
-  display: flex;
-  justify-content: center;
+ /* justify-content: center;
   align-items: center;
 }
 
@@ -202,5 +201,5 @@ header {
 hr {
     margin-top:0px;
     margin-bottom: 0px;
-}
+}*/
 

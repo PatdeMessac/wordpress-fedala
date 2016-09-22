@@ -1,20 +1,20 @@
 
 <!-- barre de navigation - début -->
-<div class="site-header">
-	<nav id="prestro-top-nav" class="navbar prestro-navbar" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<div id="logo">
-					<div class="site-logo">
-					  <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-					    <span style="color:#<?php header_textcolor();?>"><?php bloginfo('name'); ?></span>
-					  </a>
-					</div>
-				</div>
-			</div>
-			<?php prestro_header_menu(); ?>
-		</div>
-	</nav>
-</div>
+<nav>
+	<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>" rel="home">
+		<span><?php bloginfo('name'); ?></span>
+	</a>
+	<?php $post = get_page_by_title('Contact'); ?>
+	<div>
+		<a title="Contact" href="<?php the_permalink(); ?>">Contact</a>
+		<?php
+			if (is_user_logged_in()) {
+				echo "<a title='Déconnexion' href='wp-login.php?action=logout&redirect_to=".esc_url(home_url('/'))."'>Déconnexion</a>";
+			} else {
+				echo "<a title='Connexion' href='wp-login.php?redirect_to=".esc_url(home_url('/'))."'>Connexion</a>";
+			}
+		?>
+	</div>
+</nav>
 <!-- barre de navigation - fin -->
 

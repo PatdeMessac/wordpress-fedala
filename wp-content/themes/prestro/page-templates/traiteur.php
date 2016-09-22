@@ -26,12 +26,21 @@ get_header();
 			</div>
 			<div class="price-ground style-3">
 				<ul>
-					<?php 
-						$liste_de_plats = explode("\r\n\r\n", $post->post_content);
+					<?php
+						$liste_de_plats = explode("\n", $post->post_content);
 						foreach ($liste_de_plats as $plat) {
-							echo "<li>";
-							echo $plat;
-							echo "</li>\n";
+							if (preg_match('/[a-z]/i', $plat)) {
+								$plat_splitted = explode(" - ", $plat);
+								$nom = $plat_splitted[0];
+								$prix = $plat_splitted[1];
+								echo "<li>";
+								echo $nom;
+								if (is_user_logged_in()) {
+									echo " - ";
+									echo $prix;
+								}
+								echo "</li>\n";
+							}
 						}
 					?>
 				</ul>
@@ -39,6 +48,6 @@ get_header();
 		</div>
 		<?php endforeach; ?>
 	</div>
-</div>	
+</div>
 
 <?php get_footer(); ?>
