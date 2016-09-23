@@ -316,10 +316,17 @@ textarea {
 	width: 100%;
 	padding: 0;
 }
+
+/* espacement entre les colonnes */
 .container-traiteur .col-lg-3,
 .container-traiteur .col-sm-6 {
-	padding: 0;
+	padding-left: 15px;
+	padding-right: 15px;
 }
+.container-traiteur img {
+	padding-right: 30px;
+}
+
 .container-traiteur img {
   position: absolute;
   z-index: -1;
