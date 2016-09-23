@@ -24,8 +24,15 @@ get_header();
     </div> -->
     <div class="modal-body">
     	<span class="close">×</span>
-    	<h3>Information</h3>
-    	<p>Inscrivez-vous puis connectez-vous pour connaître nos tarifs !</p>
+    <?php query_posts('category_name=modal'); ?>
+    	<?php if ( have_posts()) : ?>
+			<?php while ( have_posts()) : the_post(); ?>
+			        <h3><?php the_title(); ?></h3>
+			        <p><?php the_content(); ?></p>
+			<?php endwhile; ?>
+		<?php endif; ?>
+    	<!-- <h3>Information</h3>
+    	<p>Inscrivez-vous puis connectez-vous pour connaître nos tarifs !</p> -->
     </div>
     <!-- <div class="modal-footer">
       <h3>Modal Footer</h3>
