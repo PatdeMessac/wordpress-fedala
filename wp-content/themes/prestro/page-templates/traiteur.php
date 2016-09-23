@@ -6,6 +6,8 @@
 *
 */
 
+$separateur = " - ";
+
 get_header();
 
 ?>
@@ -19,8 +21,8 @@ get_header();
 			$subpages = array_reverse(get_page_children($traiteur->ID, $all_pages));
 			foreach ($subpages as $post):
 		?>
-		<div class="col-sm-3">
-			<img src="<?php the_post_thumbnail_url(); ?>" />
+		<div class="col-lg-3 col-sm-6">
+			<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" />
 			<div class="img-foreground">
 				<p><?php the_title(); ?></p>
 			</div>
@@ -30,13 +32,13 @@ get_header();
 						$liste_de_plats = explode("\n", $post->post_content);
 						foreach ($liste_de_plats as $plat) {
 							if (preg_match('/[a-z]/i', $plat)) {
-								$plat_splitted = explode(" - ", $plat);
+								$plat_splitted = explode($separateur, $plat);
 								$nom = $plat_splitted[0];
 								$prix = $plat_splitted[1];
-								echo "<li>";
+								echo "<li class='liste_prix'>";
 								echo $nom;
 								if (is_user_logged_in()) {
-									echo " - ";
+									echo $separateur;
 									echo $prix;
 								}
 								echo "</li>\n";

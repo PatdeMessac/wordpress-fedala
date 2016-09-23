@@ -15,7 +15,7 @@ get_header();
 ?>
 
 <div class="container-fluid">
-
+<a href="#" id="back-to-top" title="Retour en haut">▲</a>
 	<!--Antoine bandeau 2 images - début -->
 	<!--<div class="row bandeau-accueil">
 
@@ -142,4 +142,25 @@ get_header();
     /*$('.left').mouseout(function(){
         $('.block_service').clearQueue().animate({"bottom": "-90px"},1500);
     });*/
+    if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
 </script>
