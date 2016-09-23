@@ -68,7 +68,7 @@ get_header();
 								echo $nom;
 								if (is_user_logged_in()) {
 									echo $separateur;
-									echo $prix;
+									echo "<span class='prix_traiteur'>" . $prix . "</span>";
 								}
 								echo "</li>\n";
 							}
