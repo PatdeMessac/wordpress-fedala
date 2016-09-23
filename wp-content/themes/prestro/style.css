@@ -109,6 +109,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
     width: 100%;
     background-color: #DDD
 }
+
+.btn-submit {
+    background-color: #3F474D;
+    border: 1px solid #272E33;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+
+.btn-submit:hover {
+    background-color: #272E33;
+    border: 1px solid #3F474D;
+}
 /* contact page - end */
 
 body {
@@ -295,7 +308,7 @@ textarea {
 	width: 100%;
 	padding: 0;
 }
-.container-traiteur .col-sm-4 {
+.container-traiteur .col-sm-3 {
 	padding: 0;
 }
 .container-traiteur img {
@@ -373,7 +386,7 @@ textarea {
   background-color: rgba(255,255,255,0.8);
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 3.5rem;
   font-family: 'GreatVibes', serif;
   border-radius: 5px;
   letter-spacing: 1px;
