@@ -2228,9 +2228,9 @@ article#product_listing {
 .liste_prix:before {
     content : "";
     position: absolute;
-    left    : 30%;
+    left    : 35%;
     bottom  : 0;
     height  : 1px;
-    width   : 40%;
+    width   : 30%;
     border-bottom: 1px solid #ff3f34;
 }
