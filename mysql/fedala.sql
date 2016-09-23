@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Ven 23 Septembre 2016 à 09:42
--- Version du serveur :  5.7.15-0ubuntu0.16.04.1
+-- Généré le :  Ven 23 Septembre 2016 à 10:07
+-- Version du serveur :  5.7.13-0ubuntu0.16.04.2
 -- Version de PHP :  7.0.8-0ubuntu0.16.04.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -357,10 +357,10 @@ INSERT INTO `fedalawp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`)
 (10, 6, '_edit_lock', '1474026637:1'),
 (11, 6, '_wp_page_template', 'page-templates/acceuil.php'),
 (12, 8, '_edit_last', '1'),
-(13, 8, '_edit_lock', '1474452217:1'),
+(13, 8, '_edit_lock', '1474617366:1'),
 (14, 8, '_wp_page_template', 'default'),
 (15, 10, '_edit_last', '1'),
-(16, 10, '_edit_lock', '1474452993:1'),
+(16, 10, '_edit_lock', '1474617795:1'),
 (17, 10, '_wp_page_template', 'page-templates/traiteur.php'),
 (18, 12, '_edit_last', '1'),
 (19, 12, '_edit_lock', '1474451210:1'),
@@ -566,8 +566,8 @@ INSERT INTO `fedalawp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`)
 (569, 169, '_edit_last', '1'),
 (570, 169, '_edit_lock', '1474450778:1'),
 (571, 169, '_thumbnail_id', '28'),
-(574, 8, '_thumbnail_id', '27'),
-(575, 10, '_thumbnail_id', '30'),
+(574, 8, '_thumbnail_id', '176'),
+(575, 10, '_thumbnail_id', '177'),
 (576, 169, '_wp_trash_meta_status', 'publish'),
 (577, 169, '_wp_trash_meta_time', '1474452525'),
 (578, 169, '_wp_desired_post_slug', 'droite'),
@@ -593,7 +593,11 @@ INSERT INTO `fedalawp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`)
 (598, 175, '_sku', ''),
 (599, 175, '_wp_trash_meta_status', 'publish'),
 (600, 175, '_wp_trash_meta_time', '1474469771'),
-(601, 175, '_wp_desired_post_slug', 'porte-bougies');
+(601, 175, '_wp_desired_post_slug', 'porte-bougies'),
+(602, 176, '_wp_attached_file', '2016/09/slider-2-1.jpg'),
+(603, 176, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:1280;s:6:"height";i:853;s:4:"file";s:22:"2016/09/slider-2-1.jpg";s:5:"sizes";a:11:{s:9:"thumbnail";a:4:{s:4:"file";s:22:"slider-2-1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:22:"slider-2-1-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:22:"slider-2-1-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:23:"slider-2-1-1024x682.jpg";s:5:"width";i:1024;s:6:"height";i:682;s:9:"mime-type";s:10:"image/jpeg";}s:20:"classic-grid-listing";a:4:{s:4:"file";s:22:"slider-2-1-600x400.jpg";s:5:"width";i:600;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:20:"classic-list-listing";a:4:{s:4:"file";s:22:"slider-2-1-240x160.jpg";s:5:"width";i:240;s:6:"height";i:160;s:9:"mime-type";s:10:"image/jpeg";}s:19:"modern-grid-listing";a:4:{s:4:"file";s:22:"slider-2-1-600x384.jpg";s:5:"width";i:600;s:6:"height";i:384;s:9:"mime-type";s:10:"image/jpeg";}s:18:"product-page-image";a:4:{s:4:"file";s:22:"slider-2-1-600x400.jpg";s:5:"width";i:600;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:27:"product-category-page-image";a:4:{s:4:"file";s:22:"slider-2-1-600x400.jpg";s:5:"width";i:600;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"prestro_featured";a:4:{s:4:"file";s:22:"slider-2-1-730x410.jpg";s:5:"width";i:730;s:6:"height";i:410;s:9:"mime-type";s:10:"image/jpeg";}s:13:"prestro_small";a:4:{s:4:"file";s:20:"slider-2-1-60x60.jpg";s:5:"width";i:60;s:6:"height";i:60;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
+(604, 177, '_wp_attached_file', '2016/09/slider-3-2.jpg'),
+(605, 177, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:1280;s:6:"height";i:853;s:4:"file";s:22:"2016/09/slider-3-2.jpg";s:5:"sizes";a:11:{s:9:"thumbnail";a:4:{s:4:"file";s:22:"slider-3-2-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:22:"slider-3-2-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:22:"slider-3-2-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:23:"slider-3-2-1024x682.jpg";s:5:"width";i:1024;s:6:"height";i:682;s:9:"mime-type";s:10:"image/jpeg";}s:20:"classic-grid-listing";a:4:{s:4:"file";s:22:"slider-3-2-600x400.jpg";s:5:"width";i:600;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:20:"classic-list-listing";a:4:{s:4:"file";s:22:"slider-3-2-240x160.jpg";s:5:"width";i:240;s:6:"height";i:160;s:9:"mime-type";s:10:"image/jpeg";}s:19:"modern-grid-listing";a:4:{s:4:"file";s:22:"slider-3-2-600x384.jpg";s:5:"width";i:600;s:6:"height";i:384;s:9:"mime-type";s:10:"image/jpeg";}s:18:"product-page-image";a:4:{s:4:"file";s:22:"slider-3-2-600x400.jpg";s:5:"width";i:600;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:27:"product-category-page-image";a:4:{s:4:"file";s:22:"slider-3-2-600x400.jpg";s:5:"width";i:600;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"prestro_featured";a:4:{s:4:"file";s:22:"slider-3-2-730x410.jpg";s:5:"width";i:730;s:6:"height";i:410;s:9:"mime-type";s:10:"image/jpeg";}s:13:"prestro_small";a:4:{s:4:"file";s:20:"slider-3-2-60x60.jpg";s:5:"width";i:60;s:6:"height";i:60;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}');
 
 -- --------------------------------------------------------
 
@@ -639,9 +643,9 @@ INSERT INTO `fedalawp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`,
 (5, 1, '2016-09-16 13:50:12', '2016-09-16 11:50:12', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/wordpress-fedala/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2016-09-16 13:50:12', '2016-09-16 11:50:12', '', 2, 'http://localhost/wordpress-fedala/?p=5', 0, 'revision', '', 0),
 (6, 1, '2016-09-16 13:52:56', '2016-09-16 11:52:56', '', 'Accueil', '', 'publish', 'closed', 'closed', '', 'accueil', '', '', '2016-09-16 13:52:56', '2016-09-16 11:52:56', '', 0, 'http://localhost/wordpress-fedala/?page_id=6', 0, 'page', '', 0),
 (7, 1, '2016-09-16 13:52:56', '2016-09-16 11:52:56', '', 'Accueil', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2016-09-16 13:52:56', '2016-09-16 11:52:56', '', 6, 'http://localhost/wordpress-fedala/?p=7', 0, 'revision', '', 0),
-(8, 1, '2016-09-16 13:54:19', '2016-09-16 11:54:19', '[show_categories]', 'Décoration', '', 'publish', 'closed', 'closed', '', 'decoration', '', '', '2016-09-21 12:04:17', '2016-09-21 10:04:17', '', 0, 'http://localhost/wordpress-fedala/?page_id=8', 0, 'page', '', 0),
+(8, 1, '2016-09-16 13:54:19', '2016-09-16 11:54:19', '[show_categories]', 'Décoration', '', 'publish', 'closed', 'closed', '', 'decoration', '', '', '2016-09-23 09:58:25', '2016-09-23 07:58:25', '', 0, 'http://localhost/wordpress-fedala/?page_id=8', 0, 'page', '', 0),
 (9, 1, '2016-09-16 13:54:19', '2016-09-16 11:54:19', '', 'Décoration', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2016-09-16 13:54:19', '2016-09-16 11:54:19', '', 8, 'http://localhost/wordpress-fedala/?p=9', 0, 'revision', '', 0),
-(10, 1, '2016-09-16 13:54:32', '2016-09-16 11:54:32', '', 'Traiteur', '', 'publish', 'closed', 'closed', '', 'traiteur', '', '', '2016-09-21 12:11:03', '2016-09-21 10:11:03', '', 0, 'http://localhost/wordpress-fedala/?page_id=10', 0, 'page', '', 0),
+(10, 1, '2016-09-16 13:54:32', '2016-09-16 11:54:32', '', 'Traiteur', '', 'publish', 'closed', 'closed', '', 'traiteur', '', '', '2016-09-23 10:05:34', '2016-09-23 08:05:34', '', 0, 'http://localhost/wordpress-fedala/?page_id=10', 0, 'page', '', 0),
 (11, 1, '2016-09-16 13:54:32', '2016-09-16 11:54:32', '', 'Traiteur', '', 'inherit', 'closed', 'closed', '', '10-revision-v1', '', '', '2016-09-16 13:54:32', '2016-09-16 11:54:32', '', 10, 'http://localhost/wordpress-fedala/?p=11', 0, 'revision', '', 0),
 (12, 1, '2016-09-16 13:55:08', '2016-09-16 11:55:08', 'entrée 01 - 5,00 €\r\n\r\nentrée 02 - 5,00 €\r\n\r\nentrée 03 - 5,00 €', 'Entrées', '', 'publish', 'closed', 'closed', '', 'entrees', '', '', '2016-09-21 11:49:06', '2016-09-21 09:49:06', '', 10, 'http://localhost/wordpress-fedala/?page_id=12', 0, 'page', '', 0),
 (13, 1, '2016-09-16 13:55:08', '2016-09-16 11:55:08', 'entrée 01 - 5,00 €\n\nentrée 02 - 5,00 €\n\nentrée 03 - 5,00 €', 'Entrées', '', 'inherit', 'closed', 'closed', '', '12-revision-v1', '', '', '2016-09-16 13:55:08', '2016-09-16 11:55:08', '', 12, 'http://localhost/wordpress-fedala/?p=13', 0, 'revision', '', 0),
@@ -696,7 +700,9 @@ INSERT INTO `fedalawp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`,
 (172, 1, '2016-09-21 16:32:21', '2016-09-21 14:32:21', '[contact-form-7 id="23" title="Contact form 1"]', 'Contact', '', 'inherit', 'closed', 'closed', '', '21-revision-v1', '', '', '2016-09-21 16:32:21', '2016-09-21 14:32:21', '', 21, 'http://localhost/wordpress-fedala/?p=172', 0, 'revision', '', 0),
 (173, 1, '2016-09-21 16:51:50', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2016-09-21 16:51:50', '0000-00-00 00:00:00', '', 0, 'http://localhost/wordpress-fedala/?post_type=al_product&p=173', 0, 'al_product', '', 0),
 (174, 1, '2016-09-21 16:52:10', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2016-09-21 16:52:10', '0000-00-00 00:00:00', '', 0, 'http://localhost/wordpress-fedala/?post_type=al_product&p=174', 0, 'al_product', '', 0),
-(175, 1, '2016-09-21 16:53:59', '2016-09-21 14:53:59', '<img class="alignnone size-medium wp-image-33" src="http://localhost/wordpress-fedala/wp-content/uploads/2016/09/deco-chandelierrose-200x300.jpg" alt="deco-chandelierrose" width="200" height="300" />', 'porte bougies', '', 'trash', 'closed', 'closed', '', 'porte-bougies__trashed', '', '', '2016-09-21 16:56:11', '2016-09-21 14:56:11', '', 0, 'http://localhost/wordpress-fedala/?post_type=al_product&#038;p=175', 0, 'al_product', '', 0);
+(175, 1, '2016-09-21 16:53:59', '2016-09-21 14:53:59', '<img class="alignnone size-medium wp-image-33" src="http://localhost/wordpress-fedala/wp-content/uploads/2016/09/deco-chandelierrose-200x300.jpg" alt="deco-chandelierrose" width="200" height="300" />', 'porte bougies', '', 'trash', 'closed', 'closed', '', 'porte-bougies__trashed', '', '', '2016-09-21 16:56:11', '2016-09-21 14:56:11', '', 0, 'http://localhost/wordpress-fedala/?post_type=al_product&#038;p=175', 0, 'al_product', '', 0),
+(176, 1, '2016-09-23 09:58:19', '2016-09-23 07:58:19', '', 'slider-2', '', 'inherit', 'open', 'closed', '', 'slider-2', '', '', '2016-09-23 09:58:19', '2016-09-23 07:58:19', '', 8, 'http://localhost/wordpress-fedala/wp-content/uploads/2016/09/slider-2-1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(177, 1, '2016-09-23 10:04:54', '2016-09-23 08:04:54', '', 'slider-3', '', 'inherit', 'open', 'closed', '', 'slider-3', '', '', '2016-09-23 10:04:54', '2016-09-23 08:04:54', '', 10, 'http://localhost/wordpress-fedala/wp-content/uploads/2016/09/slider-3-2.jpg', 0, 'attachment', 'image/jpeg', 0);
 
 -- --------------------------------------------------------
 
@@ -821,13 +827,13 @@ INSERT INTO `fedalawp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`
 (11, 1, 'fedalawp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:5:{s:64:"21269efa57c1e08167851ed87c64ba9a2bdec15f1084fa0152811e1978d79afe";a:4:{s:10:"expiration";i:1475235932;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474026332;}s:64:"260f56ef346d805ce250b63e8cd7c8261d6c2da59bbb62fca6341c63bf0d583b";a:4:{s:10:"expiration";i:1474623625;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474450825;}s:64:"8f8d8de26cc1db1e52513170835de6391fd74b7d1101fe7a231e421a359a9335";a:4:{s:10:"expiration";i:1474636943;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474464143;}s:64:"29ac0a0299083ac2123b15ca78a446b3c9ebbb5d40a538cb2e101503d16208ce";a:4:{s:10:"expiration";i:1474703407;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474530607;}s:64:"678e567aeeef113c2d9dca53806ec9947ea8554bcf34197659b40ac5bbb0dd8b";a:4:{s:10:"expiration";i:1474789252;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474616452;}}'),
+(14, 1, 'session_tokens', 'a:6:{s:64:"21269efa57c1e08167851ed87c64ba9a2bdec15f1084fa0152811e1978d79afe";a:4:{s:10:"expiration";i:1475235932;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474026332;}s:64:"260f56ef346d805ce250b63e8cd7c8261d6c2da59bbb62fca6341c63bf0d583b";a:4:{s:10:"expiration";i:1474623625;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474450825;}s:64:"8f8d8de26cc1db1e52513170835de6391fd74b7d1101fe7a231e421a359a9335";a:4:{s:10:"expiration";i:1474636943;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474464143;}s:64:"29ac0a0299083ac2123b15ca78a446b3c9ebbb5d40a538cb2e101503d16208ce";a:4:{s:10:"expiration";i:1474703407;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474530607;}s:64:"678e567aeeef113c2d9dca53806ec9947ea8554bcf34197659b40ac5bbb0dd8b";a:4:{s:10:"expiration";i:1474789252;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474616452;}s:64:"ce969d834988e56ab6f34e877c2e9c61c03f727c42500884356ff6b2af33d108";a:4:{s:10:"expiration";i:1475827018;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474617418;}}'),
 (15, 1, 'fedalawp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
 (17, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:12:"add-post_tag";i:1;s:15:"add-post_format";}'),
 (18, 1, 'nav_menu_recently_edited', '2'),
-(19, 1, 'fedalawp_user-settings', 'libraryContent=browse&editor=tinymce'),
-(20, 1, 'fedalawp_user-settings-time', '1474471134');
+(19, 1, 'fedalawp_user-settings', 'libraryContent=browse'),
+(20, 1, 'fedalawp_user-settings-time', '1474617413');
 
 -- --------------------------------------------------------
 
@@ -986,12 +992,12 @@ ALTER TABLE `fedalawp_options`
 -- AUTO_INCREMENT pour la table `fedalawp_postmeta`
 --
 ALTER TABLE `fedalawp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=602;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=606;
 --
 -- AUTO_INCREMENT pour la table `fedalawp_posts`
 --
 ALTER TABLE `fedalawp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=176;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=178;
 --
 -- AUTO_INCREMENT pour la table `fedalawp_termmeta`
 --

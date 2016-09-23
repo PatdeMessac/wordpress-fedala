@@ -712,6 +712,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	background-color: #fff;
+	box-shadow: 1px 1px 5px #000;
 	z-index: 10;
 	padding: 10px;
 	display: flex;
