@@ -20,7 +20,7 @@ get_header();
 			foreach ($subpages as $post):
 		?>
 		<div class="col-sm-4">
-			<img src="<?php the_post_thumbnail_url(); ?>" />
+			<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" />
 			<div class="img-foreground">
 				<p><?php the_title(); ?></p>
 			</div>

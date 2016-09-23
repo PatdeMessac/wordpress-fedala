@@ -77,6 +77,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
     src: url(inc/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
+    font-family: OpenSans-Regular;
+    src: url(inc/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(inc/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
     font-family: 'FontAwesome';
     src: url('inc/fonts/fontawesome-webfont.eot');
     src: url('inc/fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg'),
