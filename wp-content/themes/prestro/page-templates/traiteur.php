@@ -21,7 +21,7 @@ get_header();
 			$subpages = array_reverse(get_page_children($traiteur->ID, $all_pages));
 			foreach ($subpages as $post):
 		?>
-		<div class="col-sm-4">
+		<div class="col-lg-3 col-sm-6">
 			<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" />
 			<div class="img-foreground">
 				<p><?php the_title(); ?></p>
