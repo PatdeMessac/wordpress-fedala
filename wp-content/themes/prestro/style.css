@@ -130,8 +130,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
     background-color: #272E33;
     border: 1px solid #3F474D;
 }
-/* contact page - end */
+/*CATALOG*/
+.taxonomy-description {
+    text-align: center;
+    display:none;
+    font-size: 30px;
+}
 
+.product-category-image, .entry-content img.product-category-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+h1.entry-title.product-listing-name::before {
+    display: none;
+}
+/* contact page - end */
 body {
     color:black;
     word-wrap: break-word;
