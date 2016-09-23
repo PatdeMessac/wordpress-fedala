@@ -2097,7 +2097,7 @@ article#product_listing {
 .block_service{
     position: absolute;
     bottom: -90px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 .wrapper_service{
     margin-top: 11%;
