@@ -2198,7 +2198,7 @@ article#product_listing {
     transition: opacity 0.2s ease-out;
     opacity: 0;
     font-size: 15px;
-    box-shadow: 0 0 5px #ff3f34;
+    box-shadow: 0 0 3px #ff3f34;
 }
 #back-to-top:hover {
     background: #e9ebec;
