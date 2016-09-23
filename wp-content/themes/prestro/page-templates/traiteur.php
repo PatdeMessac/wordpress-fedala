@@ -35,7 +35,7 @@ get_header();
 								$plat_splitted = explode($separateur, $plat);
 								$nom = $plat_splitted[0];
 								$prix = $plat_splitted[1];
-								echo "<li>";
+								echo "<li class='liste_prix'>";
 								echo $nom;
 								if (is_user_logged_in()) {
 									echo $separateur;
