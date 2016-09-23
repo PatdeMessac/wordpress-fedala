@@ -123,7 +123,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     border: 1px solid #272E33;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 150px;
+    margin-left: 170px;
 }
 
 .btn-submit:hover {
@@ -333,8 +333,10 @@ textarea {
   height: auto;
   width: 100%;
 }
-
-
+.prix_traiteur {
+    color: #ff3f34;
+    font-weight: bold;
+}
 .style-3::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -2023,14 +2025,14 @@ h3.animateblock.animated{
     display:block;
     transform: skew(20deg);
 }*/
-.img-accueil {
+/*.img-accueil {
     /*height: auto;
-    width: 77%;*/
+    width: 77%;
     padding-top: 5%;
     padding-bottom: 5%;
     /*min-width: 100%;*/
- /*   transform: skew(20deg, 0);*/
-}
+ /*   transform: skew(20deg, 0);
+}*/
 
 /* =Deco Page - début
 ------------------------------------------------*/
@@ -2203,9 +2205,9 @@ article#product_listing {
     color: white;
     font-size: 15px;
 }
-.img-accueil {
+/*.img-accueil {
     margin-top: 5%;
-}
+}*/
 /* Fin Partie Ronald*/
 
 /**** Scroll to top ****/
@@ -2255,4 +2257,104 @@ article#product_listing {
     height  : 1px;
     width   : 30%;
     border-bottom: 1px solid #ff3f34;
+}
+
+/**** La modal box ****/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    border: 0 !important;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    box-shadow: 1px 1px 5px #ff3f34;
+}
+
+/* The Close Button */
+
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: -15px;
+    width: 24px;
+    opacity:1;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover, .close:focus { 
+    background: #ff3f34;
+    color: #fff; 
+    opacity:1;
+}
+
+
+
+/*.modal-header {
+    padding: 2px 16px;
+    background-color: #ff3f34;
+    color: white;
+}*/
+
+.modal-body {padding: 2px 16px;}
+
+/*.modal-footer {
+    padding: 0 16px;
+    background-color: #5cb85c;
+    color: white;
+}*/
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
