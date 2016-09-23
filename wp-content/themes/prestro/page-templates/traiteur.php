@@ -25,7 +25,7 @@ get_header();
     <div class="modal-body">
     	<span class="close">×</span>
     	<h3>Information</h3>
-    	<p>Veuillez vous inscrire puis vous connectez vous pour connaître nos tarifs !</p>
+    	<p>Inscrivez-vous puis connectez-vous pour connaître nos tarifs !</p>
     </div>
     <!-- <div class="modal-footer">
       <h3>Modal Footer</h3>
