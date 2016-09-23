@@ -2225,3 +2225,20 @@ article#product_listing {
 }
 
 /**** Fin scroll to top ****/
+
+.liste_prix {
+    font-size: 13px !important;
+    font-family: 'Open Sans';
+    padding: 10px 0 10px 0;
+    position: relative;
+    z-index : 1;
+}
+.liste_prix:before {
+    content : "";
+    position: absolute;
+    left    : 80px;
+    bottom  : 0;
+    height  : 1px;
+    width   : 40%;
+    border-bottom: 1px solid #ff3f34;
+}
