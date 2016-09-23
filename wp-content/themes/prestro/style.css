@@ -308,7 +308,8 @@ textarea {
 	width: 100%;
 	padding: 0;
 }
-.container-traiteur .col-sm-3 {
+.container-traiteur .col-lg-3,
+.container-traiteur .col-sm-6 {
 	padding: 0;
 }
 .container-traiteur img {
