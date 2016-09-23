@@ -6,7 +6,7 @@
 *
 */
 
-$separateur = " - "
+$separateur = " - ";
 
 get_header();
 
