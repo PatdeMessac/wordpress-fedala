@@ -74,15 +74,95 @@ get_header();
 									echo "</li>\n";
 								}
 							}
-						?>
-					</ul>
-				</div>
+						}
+					?>
+				</ul>
+				<button id="<?php echo $post->ID; ?>" class="prev-bouton" onclick="dixListPrev(this)" disabled>Précédents</button>
+				<button id="<?php echo $post->ID; ?>" class="next-bouton" onclick="dixListNext(this)">Suivants</button>
 			</div>
 			<?php endforeach; ?>
 		</div>
 	</div>
 </div>
 <script>
+
+var liste_prix = document.getElementsByClassName("liste_prix");
+var list = document.getElementsByTagName("ul");
+
+for (i=0; i < liste_prix.length; i++) {
+	liste_prix[i].style.display = "none";
+}
+
+for (i=0; i < list.length; i++) {
+	var subList = list[i].children;
+	for (j=0; j < 10; j++) {
+		subList[j].style.display = "block";
+	}
+}
+
+function dixListNext (button) {
+	id = button.id;
+	button.previousElementSibling.disabled = false;
+	var liste = button.previousElementSibling.previousElementSibling.children;
+	var action = 'hide';
+	var compteur = 0;
+	for (i = 0; i < liste.length; i++) {
+		if (action == 'hide') {
+			if (liste[i].style.display == 'block') {
+				liste[i].style.display = 'none';
+				compteur++;
+				if (compteur == 10) {
+					action = 'show';
+					compteur = 0;
+				}
+			}
+		} else if (action == 'show') {
+			if (i == liste.length - 1) {
+				button.disabled = true;
+			}
+			liste[i].style.display = 'block';
+			compteur++;
+			if (compteur == 10) {
+				action = 'nothing';
+			}
+		}
+	}
+
+}
+function dixListPrev (button) {
+	button.nextElementSibling.disabled = false;
+	var liste = button.previousElementSibling.children;
+	var action = 'hide';
+	var compteur = 0;
+	for (i = liste.length - 1; i >= 0 ; i--) {
+		if (action == 'hide') {
+			if (liste[i].style.display == 'block') {
+				liste[i].style.display = 'none';
+				compteur++;
+				if (compteur == 10) {
+					action = 'show';
+					compteur = 0;
+				}
+			} else {
+				action = 'show'
+				liste[i].style.display = 'block';
+				compteur = 1;
+			}
+		} else if (action == 'show') {
+			if (i = 0) {
+				button.disabled = true;
+			}
+			liste[i].style.display = 'block';
+			compteur++;
+			if (compteur == 10) {
+				action = 'nothing';
+			}
+		}
+	}
+
+}
+
+<?php  if (!is_user_logged_in()):?>
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -108,6 +188,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+<?php endif; ?>
 </script>
 
 <?php get_footer(); ?>

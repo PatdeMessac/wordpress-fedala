@@ -443,9 +443,9 @@ textarea {
   height: 180px;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-	display: flex;
+/*	display: flex;
 	align-items: flex-start;
-	justify-content: space-around;
+	justify-content: space-around;*/
 	overflow-y: scroll;
 	background-color: #fff;
 	text-align: center;
@@ -2371,4 +2371,12 @@ article#product_listing {
     .modal-content {
         width: 100%;
     }
+}
+
+/**** Fin modal box ****/
+
+/**** Bouton suivant et precedent ****/
+
+.next-bouton {
+    
 }
