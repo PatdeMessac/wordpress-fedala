@@ -2193,7 +2193,7 @@ article#product_listing {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    z-index: 9999;
+    z-index: -9999;
     width: 32px;
     height: 32px;
     text-align: center;
@@ -2214,6 +2214,7 @@ article#product_listing {
 }
 #back-to-top.show {
     opacity: 1;
+    z-index: 9999;
 }
 
 /**** Fin scroll to top ****/
