@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Ven 23 Septembre 2016 à 13:51
--- Version du serveur :  10.0.27-MariaDB-0ubuntu0.16.04.1
+-- Généré le :  Ven 23 Septembre 2016 à 14:42
+-- Version du serveur :  5.7.13-0ubuntu0.16.04.2
 -- Version de PHP :  7.0.8-0ubuntu0.16.04.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `fedala`
 --
+CREATE DATABASE IF NOT EXISTS `fedala` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `fedala`;
 
 -- --------------------------------------------------------
 
@@ -199,7 +201,7 @@ INSERT INTO `fedalawp_options` (`option_id`, `option_name`, `option_value`, `aut
 (100, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (101, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (102, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(103, 'cron', 'a:4:{i:1474631566;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1474674278;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1474717532;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
+(103, 'cron', 'a:4:{i:1474674278;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1474717532;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1474717966;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (116, '_site_transient_timeout_browser_cad6a976fb71c45b22c81157d1534d3b', '1474631133', 'no'),
 (117, '_site_transient_browser_cad6a976fb71c45b22c81157d1534d3b', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:7:"Firefox";s:7:"version";s:4:"48.0";s:10:"update_url";s:23:"http://www.firefox.com/";s:7:"img_src";s:50:"http://s.wordpress.org/images/browsers/firefox.png";s:11:"img_src_ssl";s:49:"https://wordpress.org/images/browsers/firefox.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'no'),
 (119, 'can_compress_scripts', '1', 'no'),
@@ -326,7 +328,9 @@ INSERT INTO `fedalawp_options` (`option_id`, `option_name`, `option_value`, `aut
 (597, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:65:"https://downloads.wordpress.org/release/fr_FR/wordpress-4.6.1.zip";s:6:"locale";s:5:"fr_FR";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:65:"https://downloads.wordpress.org/release/fr_FR/wordpress-4.6.1.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.6.1";s:7:"version";s:5:"4.6.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.4";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1474631087;s:15:"version_checked";s:5:"4.6.1";s:12:"translations";a:1:{i:0;a:7:{s:4:"type";s:4:"core";s:4:"slug";s:7:"default";s:8:"language";s:5:"fr_FR";s:7:"version";s:5:"4.6.1";s:7:"updated";s:19:"2016-09-22 09:07:58";s:7:"package";s:64:"https://downloads.wordpress.org/translation/core/4.6.1/fr_FR.zip";s:10:"autoupdate";b:1;}}}', 'no'),
 (598, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1474631093;s:7:"checked";a:1:{s:7:"prestro";s:5:"1.1.1";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no');
 INSERT INTO `fedalawp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(599, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1474631091;s:8:"response";a:0:{}s:12:"translations";a:2:{i:0;a:7:{s:4:"type";s:6:"plugin";s:4:"slug";s:14:"contact-form-7";s:8:"language";s:5:"fr_FR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-08-09 12:25:19";s:7:"package";s:79:"https://downloads.wordpress.org/translation/plugin/contact-form-7/4.5/fr_FR.zip";s:10:"autoupdate";b:1;}i:1;a:7:{s:4:"type";s:6:"plugin";s:4:"slug";s:13:"wordpress-seo";s:8:"language";s:5:"fr_FR";s:7:"version";s:3:"3.5";s:7:"updated";s:19:"2016-09-07 22:40:13";s:7:"package";s:78:"https://downloads.wordpress.org/translation/plugin/wordpress-seo/3.5/fr_FR.zip";s:10:"autoupdate";b:1;}}s:9:"no_update";a:10:{s:35:"add-from-server/add-from-server.php";O:8:"stdClass":6:{s:2:"id";s:4:"2613";s:4:"slug";s:15:"add-from-server";s:6:"plugin";s:35:"add-from-server/add-from-server.php";s:11:"new_version";s:5:"3.3.2";s:3:"url";s:46:"https://wordpress.org/plugins/add-from-server/";s:7:"package";s:64:"https://downloads.wordpress.org/plugin/add-from-server.3.3.2.zip";}s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:3:"4.5";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:61:"https://downloads.wordpress.org/plugin/contact-form-7.4.5.zip";}s:55:"ecommerce-product-catalog/ecommerce-product-catalog.php";O:8:"stdClass":6:{s:2:"id";s:5:"47397";s:4:"slug";s:25:"ecommerce-product-catalog";s:6:"plugin";s:55:"ecommerce-product-catalog/ecommerce-product-catalog.php";s:11:"new_version";s:6:"2.5.20";s:3:"url";s:56:"https://wordpress.org/plugins/ecommerce-product-catalog/";s:7:"package";s:68:"https://downloads.wordpress.org/plugin/ecommerce-product-catalog.zip";}s:41:"sqlite-integration/sqlite-integration.php";O:8:"stdClass":6:{s:2:"id";s:5:"42039";s:4:"slug";s:18:"sqlite-integration";s:6:"plugin";s:41:"sqlite-integration/sqlite-integration.php";s:11:"new_version";s:5:"1.8.1";s:3:"url";s:49:"https://wordpress.org/plugins/sqlite-integration/";s:7:"package";s:67:"https://downloads.wordpress.org/plugin/sqlite-integration.1.8.1.zip";}s:27:"text-slider/text-slider.php";O:8:"stdClass":6:{s:2:"id";s:5:"50035";s:4:"slug";s:11:"text-slider";s:6:"plugin";s:27:"text-slider/text-slider.php";s:11:"new_version";s:5:"1.0.0";s:3:"url";s:42:"https://wordpress.org/plugins/text-slider/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/text-slider.zip";}s:24:"users-ultra/xoousers.php";O:8:"stdClass":6:{s:2:"id";s:5:"49626";s:4:"slug";s:11:"users-ultra";s:6:"plugin";s:24:"users-ultra/xoousers.php";s:11:"new_version";s:6:"1.5.87";s:3:"url";s:42:"https://wordpress.org/plugins/users-ultra/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/users-ultra.zip";}s:45:"wp-content-copy-protector/preventer-index.php";O:8:"stdClass":6:{s:2:"id";s:5:"47133";s:4:"slug";s:25:"wp-content-copy-protector";s:6:"plugin";s:45:"wp-content-copy-protector/preventer-index.php";s:11:"new_version";s:7:"1.5.0.5";s:3:"url";s:56:"https://wordpress.org/plugins/wp-content-copy-protector/";s:7:"package";s:68:"https://downloads.wordpress.org/plugin/wp-content-copy-protector.zip";}s:35:"wp-pdf-generator/wp_objects_pdf.php";O:8:"stdClass":6:{s:2:"id";s:5:"57017";s:4:"slug";s:16:"wp-pdf-generator";s:6:"plugin";s:35:"wp-pdf-generator/wp_objects_pdf.php";s:11:"new_version";s:3:"1.0";s:3:"url";s:47:"https://wordpress.org/plugins/wp-pdf-generator/";s:7:"package";s:59:"https://downloads.wordpress.org/plugin/wp-pdf-generator.zip";}s:27:"wp-super-cache/wp-cache.php";O:8:"stdClass":7:{s:2:"id";s:4:"1221";s:4:"slug";s:14:"wp-super-cache";s:6:"plugin";s:27:"wp-super-cache/wp-cache.php";s:11:"new_version";s:5:"1.4.8";s:3:"url";s:45:"https://wordpress.org/plugins/wp-super-cache/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/wp-super-cache.1.4.8.zip";s:14:"upgrade_notice";s:38:"Removed malware URL in a code comment.";}s:24:"wordpress-seo/wp-seo.php";O:8:"stdClass":6:{s:2:"id";s:4:"5899";s:4:"slug";s:13:"wordpress-seo";s:6:"plugin";s:24:"wordpress-seo/wp-seo.php";s:11:"new_version";s:3:"3.5";s:3:"url";s:44:"https://wordpress.org/plugins/wordpress-seo/";s:7:"package";s:60:"https://downloads.wordpress.org/plugin/wordpress-seo.3.5.zip";}}}', 'no');
+(599, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1474631091;s:8:"response";a:0:{}s:12:"translations";a:2:{i:0;a:7:{s:4:"type";s:6:"plugin";s:4:"slug";s:14:"contact-form-7";s:8:"language";s:5:"fr_FR";s:7:"version";s:3:"4.5";s:7:"updated";s:19:"2016-08-09 12:25:19";s:7:"package";s:79:"https://downloads.wordpress.org/translation/plugin/contact-form-7/4.5/fr_FR.zip";s:10:"autoupdate";b:1;}i:1;a:7:{s:4:"type";s:6:"plugin";s:4:"slug";s:13:"wordpress-seo";s:8:"language";s:5:"fr_FR";s:7:"version";s:3:"3.5";s:7:"updated";s:19:"2016-09-07 22:40:13";s:7:"package";s:78:"https://downloads.wordpress.org/translation/plugin/wordpress-seo/3.5/fr_FR.zip";s:10:"autoupdate";b:1;}}s:9:"no_update";a:10:{s:35:"add-from-server/add-from-server.php";O:8:"stdClass":6:{s:2:"id";s:4:"2613";s:4:"slug";s:15:"add-from-server";s:6:"plugin";s:35:"add-from-server/add-from-server.php";s:11:"new_version";s:5:"3.3.2";s:3:"url";s:46:"https://wordpress.org/plugins/add-from-server/";s:7:"package";s:64:"https://downloads.wordpress.org/plugin/add-from-server.3.3.2.zip";}s:36:"contact-form-7/wp-contact-form-7.php";O:8:"stdClass":6:{s:2:"id";s:3:"790";s:4:"slug";s:14:"contact-form-7";s:6:"plugin";s:36:"contact-form-7/wp-contact-form-7.php";s:11:"new_version";s:3:"4.5";s:3:"url";s:45:"https://wordpress.org/plugins/contact-form-7/";s:7:"package";s:61:"https://downloads.wordpress.org/plugin/contact-form-7.4.5.zip";}s:55:"ecommerce-product-catalog/ecommerce-product-catalog.php";O:8:"stdClass":6:{s:2:"id";s:5:"47397";s:4:"slug";s:25:"ecommerce-product-catalog";s:6:"plugin";s:55:"ecommerce-product-catalog/ecommerce-product-catalog.php";s:11:"new_version";s:6:"2.5.20";s:3:"url";s:56:"https://wordpress.org/plugins/ecommerce-product-catalog/";s:7:"package";s:68:"https://downloads.wordpress.org/plugin/ecommerce-product-catalog.zip";}s:41:"sqlite-integration/sqlite-integration.php";O:8:"stdClass":6:{s:2:"id";s:5:"42039";s:4:"slug";s:18:"sqlite-integration";s:6:"plugin";s:41:"sqlite-integration/sqlite-integration.php";s:11:"new_version";s:5:"1.8.1";s:3:"url";s:49:"https://wordpress.org/plugins/sqlite-integration/";s:7:"package";s:67:"https://downloads.wordpress.org/plugin/sqlite-integration.1.8.1.zip";}s:27:"text-slider/text-slider.php";O:8:"stdClass":6:{s:2:"id";s:5:"50035";s:4:"slug";s:11:"text-slider";s:6:"plugin";s:27:"text-slider/text-slider.php";s:11:"new_version";s:5:"1.0.0";s:3:"url";s:42:"https://wordpress.org/plugins/text-slider/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/text-slider.zip";}s:24:"users-ultra/xoousers.php";O:8:"stdClass":6:{s:2:"id";s:5:"49626";s:4:"slug";s:11:"users-ultra";s:6:"plugin";s:24:"users-ultra/xoousers.php";s:11:"new_version";s:6:"1.5.87";s:3:"url";s:42:"https://wordpress.org/plugins/users-ultra/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/users-ultra.zip";}s:45:"wp-content-copy-protector/preventer-index.php";O:8:"stdClass":6:{s:2:"id";s:5:"47133";s:4:"slug";s:25:"wp-content-copy-protector";s:6:"plugin";s:45:"wp-content-copy-protector/preventer-index.php";s:11:"new_version";s:7:"1.5.0.5";s:3:"url";s:56:"https://wordpress.org/plugins/wp-content-copy-protector/";s:7:"package";s:68:"https://downloads.wordpress.org/plugin/wp-content-copy-protector.zip";}s:35:"wp-pdf-generator/wp_objects_pdf.php";O:8:"stdClass":6:{s:2:"id";s:5:"57017";s:4:"slug";s:16:"wp-pdf-generator";s:6:"plugin";s:35:"wp-pdf-generator/wp_objects_pdf.php";s:11:"new_version";s:3:"1.0";s:3:"url";s:47:"https://wordpress.org/plugins/wp-pdf-generator/";s:7:"package";s:59:"https://downloads.wordpress.org/plugin/wp-pdf-generator.zip";}s:27:"wp-super-cache/wp-cache.php";O:8:"stdClass":7:{s:2:"id";s:4:"1221";s:4:"slug";s:14:"wp-super-cache";s:6:"plugin";s:27:"wp-super-cache/wp-cache.php";s:11:"new_version";s:5:"1.4.8";s:3:"url";s:45:"https://wordpress.org/plugins/wp-super-cache/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/wp-super-cache.1.4.8.zip";s:14:"upgrade_notice";s:38:"Removed malware URL in a code comment.";}s:24:"wordpress-seo/wp-seo.php";O:8:"stdClass":6:{s:2:"id";s:4:"5899";s:4:"slug";s:13:"wordpress-seo";s:6:"plugin";s:24:"wordpress-seo/wp-seo.php";s:11:"new_version";s:3:"3.5";s:3:"url";s:44:"https://wordpress.org/plugins/wordpress-seo/";s:7:"package";s:60:"https://downloads.wordpress.org/plugin/wordpress-seo.3.5.zip";}}}', 'no'),
+(602, '_site_transient_timeout_browser_a529db9a4dab9f73de6992576d0a17e8', '1475239056', 'no'),
+(603, '_site_transient_browser_a529db9a4dab9f73de6992576d0a17e8', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:12:"53.0.2785.92";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'no');
 
 -- --------------------------------------------------------
 
@@ -399,7 +403,7 @@ INSERT INTO `fedalawp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`)
 (54, 21, '_edit_last', '1'),
 (55, 21, '_edit_lock', '1474468199:1'),
 (56, 21, '_wp_page_template', 'default'),
-(57, 23, '_form', '<div class="row" style=" background: #DDD">\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\n<label>Type d’événement :\n[select* Evnement "Mariage" "Baptême" "Cocktail" "Départ en retraite"]</label>\n<label> Date:\n[date* date-65 min:2016-09-15 max:2100-09-01 placeholder "Exemple: aaaa-mm-jj"]</label>\n\n<label> Votre adresse :\n[text* text-514]</label>\n\n<label>Nombre d’invités : \n[number number-339 min:5 max:500]\n</label>\n<label> Réception :\n<label>[radio radio-395 default:1 "Assise"]</label><label>[radio radio-395 default:1 "Debout"]</label>\n\n</label>\n<label>Type de réception :\n<label>[checkbox* checkbox-111 use_label_element "Déjeuner"]</label>\n<label>[checkbox* checkbox-111 use_label_element "Dîner"]</label>\n<label>[checkbox* checkbox-111 use_label_element "Soirée"]</label>\n</label>\n<label>Prestations :\n<label>[checkbox* checkbox-111 use_label_element "Vaisselle"]</label> <label>[checkbox* checkbox-111 use_label_element  "Mobilier"]</label>\n\n<label>[checkbox* checkbox-111 use_label_element "Boissons"]</label> <label>[checkbox* checkbox-111 use_label_element "Décoration"]</label>\n\n<label>[checkbox* checkbox-111 use_label_element  "Nappage"]</label><label>[checkbox* checkbox-111 use_label_element "Personnel de service"]</label>\n\n</label>\n</div>\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\n\n<label> Votre nom\n\n    [text* your-name] </label>\n\n<label> votre email:\n    [email* your-email] </label>\n\n<label>Téléphone :\n[tel* tel-691]\n</label>\n\n<label> Sujet:\n    [text your-subject] </label>\n\n<label>Votre  Message:\n\n    [textarea your-message] </label>\n\n[submit "Envoyez"]\n</div>\n \n</div>'),
+(57, 23, '_form', '<div class="row" style=" background: #DDD">\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\n<label>Type d’événement :\n[select* Evnement "Mariage" "Baptême" "Cocktail" "Départ en retraite"]</label>\n<label> Date:\n[date* date-65 min:2016-09-15 max:2100-09-01 placeholder "Exemple: aaaa-mm-jj"]</label>\n\n<label> Votre adresse :\n[text* text-514]</label>\n\n<label>Nombre d’invités : \n[number number-339 min:5 max:500]\n</label>\n<label> Réception :\n<label>[radio radio-395 default:1 "Assise"]</label><label>[radio radio-395 default:1 "Debout"]</label>\n\n</label>\n<label>Type de réception :\n<label>[checkbox* checkbox-111 use_label_element "Déjeuner"]</label>\n<label>[checkbox* checkbox-111 use_label_element "Dîner"]</label>\n<label>[checkbox* checkbox-111 use_label_element "Soirée"]</label>\n</label>\n<label>Prestations :\n<label>[checkbox* checkbox-111 use_label_element "Vaisselle"]</label> <label>[checkbox* checkbox-111 use_label_element  "Mobilier"]</label>\n\n<label>[checkbox* checkbox-111 use_label_element "Boissons"]</label> <label>[checkbox* checkbox-111 use_label_element "Décoration"]</label>\n\n<label>[checkbox* checkbox-111 use_label_element  "Nappage"]</label><label>[checkbox* checkbox-111 use_label_element "Personnel de service"]</label>\n\n</label>\n</div>\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\n\n<label> Votre nom\n\n    [text* your-name] </label>\n\n<label> votre email:\n    [email* your-email] </label>\n\n<label>Téléphone :\n[tel* tel-691]\n</label>\n\n<label> Sujet:\n    [text your-subject] </label>\n\n<label>Votre  Message:\n\n    [textarea your-message] </label>\n\n<button type="submit" class="btn btn-primary btn-md btn-submit">Envoyer</button>\n</div>\n \n</div>'),
 (58, 23, '_mail', 'a:8:{s:7:"subject";s:23:"Fedala "[your-subject]"";s:6:"sender";s:40:"[your-name]<abdulrahman.rasho@gmail.com>";s:4:"body";s:570:"Nom et Mail de client: [your-name] <[your-email]>\nSujet: [your-subject]\n\nMessage Body:\n<h2>Evénement :</h2><br/>\nType d\'événement :[Evnement]\nDate : [date-65]\nAdresse de client : [text-514]\nNombre d’invités : [number-339]\nRéception : [radio-395]\nType de réception: [checkbox-111]\nPrestations : [menu-275]\n<h2> Information de client:</h2>\nNom de client : [your-name]\nMail de client:[your-email]\nnuméro de téléphone: [tel-691]\n<h2>Message de client</h2>\n[your-message]\n\n----\nThis e-mail was sent from a contact form on Fedala (http://localhost/wordpress-fedala)";s:9:"recipient";s:27:"abdulrahman.rasho@gmail.com";s:18:"additional_headers";s:22:"Reply-To: [your-email]";s:11:"attachments";s:0:"";s:8:"use_html";b:1;s:13:"exclude_blank";b:0;}'),
 (59, 23, '_mail_2', 'a:9:{s:6:"active";b:0;s:7:"subject";s:23:"Fedala "[your-subject]"";s:6:"sender";s:20:"Fedala <wordpress@_>";s:4:"body";s:119:"Message Body:\n[your-message]\n\n--\nThis e-mail was sent from a contact form on Fedala (http://localhost/wordpress-fedala)";s:9:"recipient";s:12:"[your-email]";s:18:"additional_headers";s:24:"Reply-To: root@127.0.0.1";s:11:"attachments";s:0:"";s:8:"use_html";b:0;s:13:"exclude_blank";b:0;}'),
 (60, 23, '_messages', 'a:23:{s:12:"mail_sent_ok";s:45:"Merci pour votre message. Il a été envoyé.";s:12:"mail_sent_ng";s:89:"Il y avait une erreur en essayant d\'envoyer votre message. Veuillez réessayer plus tard.";s:16:"validation_error";s:89:"Un ou plusieurs champs ont une erreur. S\'il vous plaît, vérifiez et essayez à nouveau.";s:4:"spam";s:89:"Il y avait une erreur en essayant d\'envoyer votre message. Veuillez réessayer plus tard.";s:12:"accept_terms";s:75:"Vous devez accepter les termes et conditions avant d\'envoyer votre message.";s:16:"invalid_required";s:25:"Le champ est obligatoire.";s:16:"invalid_too_long";s:23:"Le champ est trop long.";s:17:"invalid_too_short";s:24:"Le champ est trop court.";s:12:"invalid_date";s:33:"Le format de date est incorrecte.";s:14:"date_too_early";s:48:"La date choisie est inférieur celles possibles.";s:13:"date_too_late";s:49:"La date choisie est supérieur  celles possibles.";s:13:"upload_failed";s:57:"Il y avait une erreur inconnue, télécharger le fichier.";s:24:"upload_file_type_invalid";s:68:"Vous n\'êtes pas autorisé à télécharger des fichiers de ce type.";s:21:"upload_file_too_large";s:26:"Le fichier est trop grand.";s:23:"upload_failed_php_error";s:53:"Il y avait une erreur de téléchargement de fichier.";s:14:"invalid_number";s:34:"Le format du numéro est invalide.";s:16:"number_too_small";s:46:"Le nombre est inférieur au minimum autorisé.";s:16:"number_too_large";s:46:"Le nombre est supérieur au maximum autorisé.";s:23:"quiz_answer_not_correct";s:34:"La réponse du quiz est incorrect.";s:17:"captcha_not_match";s:31:"Your entered code is incorrect.";s:13:"invalid_email";s:37:"L\'adresse e-mail saisie est invalide.";s:11:"invalid_url";s:19:"L\'URL est invalide.";s:11:"invalid_tel";s:39:"Le numéro de téléphone est invalide.";}'),
@@ -602,8 +606,7 @@ INSERT INTO `fedalawp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`)
 (608, 178, '_edit_last', '1'),
 (609, 178, '_edit_lock', '1474624172:1'),
 (610, 178, '_thumbnail_id', '30'),
-(611, 178, '_wp_page_template', 'default'),
-(613, 23, '_config_errors', 'a:1:{s:11:"mail.sender";a:1:{i:0;a:2:{s:4:"code";i:103;s:4:"args";a:3:{s:7:"message";s:0:"";s:6:"params";a:0:{}s:4:"link";s:88:"http://contactform7.com/configuration-errors/#mail.sender:error_email_not_in_site_domain";}}}}');
+(611, 178, '_wp_page_template', 'default');
 
 -- --------------------------------------------------------
 
@@ -644,7 +647,6 @@ CREATE TABLE `fedalawp_posts` (
 INSERT INTO `fedalawp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2016-09-16 13:44:26', '2016-09-16 11:44:26', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous&nbsp;!', 'Bonjour tout le monde&nbsp;!', '', 'trash', 'open', 'open', '', 'bonjour-tout-le-monde__trashed', '', '', '2016-09-16 13:50:06', '2016-09-16 11:50:06', '', 0, 'http://localhost/wordpress-fedala/?p=1', 0, 'post', '', 1),
 (2, 1, '2016-09-16 13:44:26', '2016-09-16 11:44:26', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/wordpress-fedala/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'trash', 'closed', 'open', '', 'page-d-exemple__trashed', '', '', '2016-09-16 13:50:12', '2016-09-16 11:50:12', '', 0, 'http://localhost/wordpress-fedala/?page_id=2', 0, 'page', '', 0),
-(3, 1, '2016-09-16 13:45:33', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2016-09-16 13:45:33', '0000-00-00 00:00:00', '', 0, 'http://localhost/wordpress-fedala/?p=3', 0, 'post', '', 0),
 (4, 1, '2016-09-16 13:50:06', '2016-09-16 11:50:06', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous&nbsp;!', 'Bonjour tout le monde&nbsp;!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2016-09-16 13:50:06', '2016-09-16 11:50:06', '', 1, 'http://localhost/wordpress-fedala/?p=4', 0, 'revision', '', 0),
 (5, 1, '2016-09-16 13:50:12', '2016-09-16 11:50:12', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/wordpress-fedala/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2016-09-16 13:50:12', '2016-09-16 11:50:12', '', 2, 'http://localhost/wordpress-fedala/?p=5', 0, 'revision', '', 0),
 (6, 1, '2016-09-16 13:52:56', '2016-09-16 11:52:56', '', 'Accueil', '', 'publish', 'closed', 'closed', '', 'accueil', '', '', '2016-09-16 13:52:56', '2016-09-16 11:52:56', '', 0, 'http://localhost/wordpress-fedala/?page_id=6', 0, 'page', '', 0),
@@ -664,7 +666,7 @@ INSERT INTO `fedalawp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`,
 (20, 1, '2016-09-16 13:56:30', '2016-09-16 11:56:30', ' ', '', '', 'publish', 'closed', 'closed', '', '20', '', '', '2016-09-16 14:03:37', '2016-09-16 12:03:37', '', 0, 'http://localhost/wordpress-fedala/?p=20', 1, 'nav_menu_item', '', 0),
 (21, 1, '2016-09-16 13:57:04', '2016-09-16 11:57:04', '[contact-form-7 id="23" title="Contact form 1"]', 'Contact', '', 'publish', 'closed', 'closed', '', 'contact', '', '', '2016-09-21 16:32:21', '2016-09-21 14:32:21', '', 0, 'http://localhost/wordpress-fedala/?page_id=21', 0, 'page', '', 0),
 (22, 1, '2016-09-16 13:57:04', '2016-09-16 11:57:04', '', 'Contact', '', 'inherit', 'closed', 'closed', '', '21-revision-v1', '', '', '2016-09-16 13:57:04', '2016-09-16 11:57:04', '', 21, 'http://localhost/wordpress-fedala/?p=22', 0, 'revision', '', 0),
-(23, 1, '2016-09-16 14:00:11', '2016-09-16 12:00:11', '<div class="row" style=" background: #DDD">\r\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\r\n<label>Type d’événement :\r\n[select* Evnement "Mariage" "Baptême" "Cocktail" "Départ en retraite"]</label>\r\n<label> Date:\r\n[date* date-65 min:2016-09-15 max:2100-09-01 placeholder "Exemple: aaaa-mm-jj"]</label>\r\n\r\n<label> Votre adresse :\r\n[text* text-514]</label>\r\n\r\n<label>Nombre d’invités : \r\n[number number-339 min:5 max:500]\r\n</label>\r\n<label> Réception :\r\n<label>[radio radio-395 default:1 "Assise"]</label><label>[radio radio-395 default:1 "Debout"]</label>\r\n\r\n</label>\r\n<label>Type de réception :\r\n<label>[checkbox* checkbox-111 use_label_element "Déjeuner"]</label>\r\n<label>[checkbox* checkbox-111 use_label_element "Dîner"]</label>\r\n<label>[checkbox* checkbox-111 use_label_element "Soirée"]</label>\r\n</label>\r\n<label>Prestations :\r\n<label>[checkbox* checkbox-111 use_label_element "Vaisselle"]</label> <label>[checkbox* checkbox-111 use_label_element  "Mobilier"]</label>\r\n\r\n<label>[checkbox* checkbox-111 use_label_element "Boissons"]</label> <label>[checkbox* checkbox-111 use_label_element "Décoration"]</label>\r\n\r\n<label>[checkbox* checkbox-111 use_label_element  "Nappage"]</label><label>[checkbox* checkbox-111 use_label_element "Personnel de service"]</label>\r\n\r\n</label>\r\n</div>\r\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\r\n\r\n<label> Votre nom\r\n\r\n    [text* your-name] </label>\r\n\r\n<label> votre email:\r\n    [email* your-email] </label>\r\n\r\n<label>Téléphone :\r\n[tel* tel-691]\r\n</label>\r\n\r\n<label> Sujet:\r\n    [text your-subject] </label>\r\n\r\n<label>Votre  Message:\r\n\r\n    [textarea your-message] </label>\r\n\r\n[submit "Envoyez"]\r\n</div>\r\n \r\n</div>\nFedala "[your-subject]"\n[your-name]<abdulrahman.rasho@gmail.com>\nNom et Mail de client: [your-name] <[your-email]>\r\nSujet: [your-subject]\r\n\r\nMessage Body:\r\n<h2>Evénement :</h2><br/>\r\nType d\'événement :[Evnement]\r\nDate : [date-65]\r\nAdresse de client : [text-514]\r\nNombre d’invités : [number-339]\r\nRéception : [radio-395]\r\nType de réception: [checkbox-111]\r\nPrestations : [menu-275]\r\n<h2> Information de client:</h2>\r\nNom de client : [your-name]\r\nMail de client:[your-email]\r\nnuméro de téléphone: [tel-691]\r\n<h2>Message de client</h2>\r\n[your-message]\r\n\r\n----\r\nThis e-mail was sent from a contact form on Fedala (http://localhost/wordpress-fedala)\nabdulrahman.rasho@gmail.com\nReply-To: [your-email]\n\n1\n\n\nFedala "[your-subject]"\nFedala <wordpress@_>\nMessage Body:\r\n[your-message]\r\n\r\n--\r\nThis e-mail was sent from a contact form on Fedala (http://localhost/wordpress-fedala)\n[your-email]\nReply-To: root@127.0.0.1\n\n\n\nMerci pour votre message. Il a été envoyé.\nIl y avait une erreur en essayant d\'envoyer votre message. Veuillez réessayer plus tard.\nUn ou plusieurs champs ont une erreur. S\'il vous plaît, vérifiez et essayez à nouveau.\nIl y avait une erreur en essayant d\'envoyer votre message. Veuillez réessayer plus tard.\nVous devez accepter les termes et conditions avant d\'envoyer votre message.\nLe champ est obligatoire.\nLe champ est trop long.\nLe champ est trop court.\nLe format de date est incorrecte.\nLa date choisie est inférieur celles possibles.\nLa date choisie est supérieur  celles possibles.\nIl y avait une erreur inconnue, télécharger le fichier.\nVous n\'êtes pas autorisé à télécharger des fichiers de ce type.\nLe fichier est trop grand.\nIl y avait une erreur de téléchargement de fichier.\nLe format du numéro est invalide.\nLe nombre est inférieur au minimum autorisé.\nLe nombre est supérieur au maximum autorisé.\nLa réponse du quiz est incorrect.\nYour entered code is incorrect.\nL\'adresse e-mail saisie est invalide.\nL\'URL est invalide.\nLe numéro de téléphone est invalide.', 'Contact form 1', '', 'publish', 'closed', 'closed', '', 'contact-form-1', '', '', '2016-09-23 13:50:30', '2016-09-23 11:50:30', '', 0, 'http://localhost/wordpress-fedala/?post_type=wpcf7_contact_form&#038;p=23', 0, 'wpcf7_contact_form', '', 0),
+(23, 1, '2016-09-16 14:00:11', '2016-09-16 12:00:11', '<div class="row" style=" background: #DDD">\r\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\r\n<label>Type d’événement :\r\n[select* Evnement "Mariage" "Baptême" "Cocktail" "Départ en retraite"]</label>\r\n<label> Date:\r\n[date* date-65 min:2016-09-15 max:2100-09-01 placeholder "Exemple: aaaa-mm-jj"]</label>\r\n\r\n<label> Votre adresse :\r\n[text* text-514]</label>\r\n\r\n<label>Nombre d’invités : \r\n[number number-339 min:5 max:500]\r\n</label>\r\n<label> Réception :\r\n<label>[radio radio-395 default:1 "Assise"]</label><label>[radio radio-395 default:1 "Debout"]</label>\r\n\r\n</label>\r\n<label>Type de réception :\r\n<label>[checkbox* checkbox-111 use_label_element "Déjeuner"]</label>\r\n<label>[checkbox* checkbox-111 use_label_element "Dîner"]</label>\r\n<label>[checkbox* checkbox-111 use_label_element "Soirée"]</label>\r\n</label>\r\n<label>Prestations :\r\n<label>[checkbox* checkbox-111 use_label_element "Vaisselle"]</label> <label>[checkbox* checkbox-111 use_label_element  "Mobilier"]</label>\r\n\r\n<label>[checkbox* checkbox-111 use_label_element "Boissons"]</label> <label>[checkbox* checkbox-111 use_label_element "Décoration"]</label>\r\n\r\n<label>[checkbox* checkbox-111 use_label_element  "Nappage"]</label><label>[checkbox* checkbox-111 use_label_element "Personnel de service"]</label>\r\n\r\n</label>\r\n</div>\r\n<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">\r\n\r\n<label> Votre nom\r\n\r\n    [text* your-name] </label>\r\n\r\n<label> votre email:\r\n    [email* your-email] </label>\r\n\r\n<label>Téléphone :\r\n[tel* tel-691]\r\n</label>\r\n\r\n<label> Sujet:\r\n    [text your-subject] </label>\r\n\r\n<label>Votre  Message:\r\n\r\n    [textarea your-message] </label>\r\n\r\n<button type="submit" class="btn btn-primary btn-md btn-submit">Envoyer</button>\r\n</div>\r\n \r\n</div>\nFedala "[your-subject]"\n[your-name]<abdulrahman.rasho@gmail.com>\nNom et Mail de client: [your-name] <[your-email]>\r\nSujet: [your-subject]\r\n\r\nMessage Body:\r\n<h2>Evénement :</h2><br/>\r\nType d\'événement :[Evnement]\r\nDate : [date-65]\r\nAdresse de client : [text-514]\r\nNombre d’invités : [number-339]\r\nRéception : [radio-395]\r\nType de réception: [checkbox-111]\r\nPrestations : [menu-275]\r\n<h2> Information de client:</h2>\r\nNom de client : [your-name]\r\nMail de client:[your-email]\r\nnuméro de téléphone: [tel-691]\r\n<h2>Message de client</h2>\r\n[your-message]\r\n\r\n----\r\nThis e-mail was sent from a contact form on Fedala (http://localhost/wordpress-fedala)\nabdulrahman.rasho@gmail.com\nReply-To: [your-email]\n\n1\n\n\nFedala "[your-subject]"\nFedala <wordpress@_>\nMessage Body:\r\n[your-message]\r\n\r\n--\r\nThis e-mail was sent from a contact form on Fedala (http://localhost/wordpress-fedala)\n[your-email]\nReply-To: root@127.0.0.1\n\n\n\nMerci pour votre message. Il a été envoyé.\nIl y avait une erreur en essayant d\'envoyer votre message. Veuillez réessayer plus tard.\nUn ou plusieurs champs ont une erreur. S\'il vous plaît, vérifiez et essayez à nouveau.\nIl y avait une erreur en essayant d\'envoyer votre message. Veuillez réessayer plus tard.\nVous devez accepter les termes et conditions avant d\'envoyer votre message.\nLe champ est obligatoire.\nLe champ est trop long.\nLe champ est trop court.\nLe format de date est incorrecte.\nLa date choisie est inférieur celles possibles.\nLa date choisie est supérieur  celles possibles.\nIl y avait une erreur inconnue, télécharger le fichier.\nVous n\'êtes pas autorisé à télécharger des fichiers de ce type.\nLe fichier est trop grand.\nIl y avait une erreur de téléchargement de fichier.\nLe format du numéro est invalide.\nLe nombre est inférieur au minimum autorisé.\nLe nombre est supérieur au maximum autorisé.\nLa réponse du quiz est incorrect.\nYour entered code is incorrect.\nL\'adresse e-mail saisie est invalide.\nL\'URL est invalide.\nLe numéro de téléphone est invalide.', 'Contact form 1', '', 'publish', 'closed', 'closed', '', 'contact-form-1', '', '', '2016-09-23 14:40:13', '2016-09-23 12:40:13', '', 0, 'http://localhost/wordpress-fedala/?post_type=wpcf7_contact_form&#038;p=23', 0, 'wpcf7_contact_form', '', 0),
 (24, 1, '2016-09-16 14:02:27', '2016-09-16 12:02:27', '[contact-form-7 id="23" title="Contact form 1"]', 'Contact', '', 'inherit', 'closed', 'closed', '', '21-revision-v1', '', '', '2016-09-16 14:02:27', '2016-09-16 12:02:27', '', 21, 'http://localhost/wordpress-fedala/?p=24', 0, 'revision', '', 0),
 (25, 1, '2016-09-16 14:03:38', '2016-09-16 12:03:38', ' ', '', '', 'publish', 'closed', 'closed', '', '25', '', '', '2016-09-16 14:03:38', '2016-09-16 12:03:38', '', 0, 'http://localhost/wordpress-fedala/?p=25', 4, 'nav_menu_item', '', 0),
 (26, 1, '2016-09-16 14:03:39', '2016-09-16 12:03:39', '', 'Connexion', '', 'publish', 'closed', 'closed', '', 'connexion', '', '', '2016-09-16 14:03:39', '2016-09-16 12:03:39', '', 0, 'http://localhost/wordpress-fedala/?p=26', 5, 'nav_menu_item', '', 0),
@@ -724,43 +726,8 @@ INSERT INTO `fedalawp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`,
 (190, 1, '2016-09-23 11:44:00', '2016-09-23 09:44:00', 'Croissant à la viande - 0,50 €\r\n\r\nCroissant au fromage et ail concassé - 0,50 €\r\n\r\nTarte napolitaine - 0,50 €\r\n\r\nTarte saumon à la crème et aux herbes - 0,50 €\r\n\r\nTarte saumon et fondue de poireaux - 0,50 €\r\n\r\nCiabbata au saumon fromage frais crudités - 1,65 €\r\n\r\nMini ciabbata poulet à l’indienne - 1,65 €\r\n\r\nNavette crudités thon - 0,90 €\r\n\r\nNavette crudités poulet - 0,90 €\r\n\r\nSamoussa bœuf et légumes - 0,90 €\r\n\r\nSamoussa au poulet épices douces - 0,90 €\r\n\r\nSamoussa aux fruits de mer - 1,00 €\r\n\r\nRouleau de printemps poulet crudités - 1,10 €\r\n\r\nCake au thon olive et fromage - 0,55 €\r\n\r\nCake mimolette poulet paprika - 0,55 €\r\n\r\nCake chèvre figue et noix grillées - 0,55 €\r\n\r\nAccras de morue - 0,29 €\r\n\r\nCarré pain polaire au saumon - 0,80 €\r\n\r\nToasts aux tapenades variées - 0,35 €\r\n\r\nVerrines variées - 1,10 €', 'Mini salés', '', 'inherit', 'closed', 'closed', '', '16-revision-v1', '', '', '2016-09-23 11:44:00', '2016-09-23 09:44:00', '', 16, 'http://localhost/wordpress-fedala/?p=190', 0, 'revision', '', 0),
 (191, 1, '2016-09-23 11:45:01', '2016-09-23 09:45:01', 'Croissant à la viande - 0,50 €\r\n\r\nCroissant au fromage et ail concassé - 0,50 €\r\n\r\nTarte napolitaine - 0,50 €\r\n\r\nTarte saumon à la crème et aux herbes - 0,50 €\r\n\r\nTarte saumon et fondue de poireaux - 0,50 €\r\n\r\nCiabbata au saumon fromage frais crudités - 1,65 €\r\n\r\nMini ciabbata poulet à l’indienne - 1,65 €\r\n\r\nNavette crudités thon - 0,90 €\r\n\r\nNavette crudités poulet - 0,90 €\r\n\r\nSamoussa bœuf et légumes - 0,90 €\r\n\r\nSamoussa au poulet épices douces - 0,90 €\r\n\r\nSamoussa aux fruits de mer - 1,00 €\r\n\r\nRouleau de printemps poulet crudités - 1,10 €\r\n\r\nCake au thon olive et fromage - 0,55 €\r\n\r\nCake mimolette poulet paprika - 0,55 €\r\n\r\nCake chèvre figue et noix grillées - 0,55 €\r\n\r\nAccras de morue - 0,29 €\r\n\r\nCarré pain polaire au saumon - 0,80 €\r\n\r\nToasts aux tapenades variées - 0,35 €\r\n\r\nVerrines variées - 1,10 €', 'Mini salés', '', 'inherit', 'closed', 'closed', '', '16-revision-v1', '', '', '2016-09-23 11:45:01', '2016-09-23 09:45:01', '', 16, 'http://localhost/wordpress-fedala/?p=191', 0, 'revision', '', 0),
 (192, 1, '2016-09-23 11:50:27', '2016-09-23 09:50:27', 'Maxi cup cake varié - 1,30 €\n\nMuffin - 1,30 €\n\nCarrot’cake - 1,70 €\nCheese cake - 2,00 €\nMini brownie - 0,70 €\nMini financier - 0,55 €\nMini éclair - 0,45 €\nMini macaron varié - 0,66 €\nBriouate - 0,80 €\nBaklava - 0,60 €\nFondant aux dattes - 0,45 €\nGribas noix de coco - 0,50 €\nMakroud - 0,40 €\nChabbakias - 0,60 €\nNoix (pâtisserie en forme de noix) - 0,70 €\nTartelette chocolat - 0,55 €\nTartelette citron - 0,55 €\n\nSalade de fruits frais de saison - 2,40 €\n\nCookies - 0,70 €', 'Petites douceurs', '', 'inherit', 'closed', 'closed', '', '178-autosave-v1', '', '', '2016-09-23 11:50:27', '2016-09-23 09:50:27', '', 178, 'http://localhost/wordpress-fedala/?p=192', 0, 'revision', '', 0),
-(193, 1, '2016-09-23 11:50:45', '2016-09-23 09:50:45', 'Maxi cup cake varié - 1,30 €\r\n\r\nMuffin - 1,30 €\r\n\r\nCarrot’cake - 1,70 €\r\n\r\nCheese cake - 2,00 €\r\n\r\nMini brownie - 0,70 €\r\n\r\nMini financier - 0,55 €\r\n\r\nMini éclair - 0,45 €\r\n\r\nMini macaron varié - 0,66 €\r\n\r\nBriouate - 0,80 €\r\n\r\nBaklava - 0,60\r\n\r\nFondant aux dattes - 0,45 €\r\n\r\nGribas noix de coco - 0,50 €\r\n\r\nMakroud - 0,40 €\r\n\r\nChabbakias - 0,60 €\r\n\r\nNoix (pâtisserie en forme de noix) - 0,70 €\r\n\r\nTartelette chocolat - 0,55 €\r\n\r\nTartelette citron - 0,55 €\r\n\r\nSalade de fruits frais de saison - 2,40 €\r\n\r\nCookies - 0,70 €', 'Petites douceurs', '', 'inherit', 'closed', 'closed', '', '178-revision-v1', '', '', '2016-09-23 11:50:45', '2016-09-23 09:50:45', '', 178, 'http://localhost/wordpress-fedala/?p=193', 0, 'revision', '', 0);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `fedalawp_termmeta`
---
-
-CREATE TABLE `fedalawp_termmeta` (
-  `meta_id` bigint(20) UNSIGNED NOT NULL,
-  `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
-  `meta_key` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL,
-  `meta_value` longtext COLLATE utf8mb4_bin
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `fedalawp_terms`
---
-
-CREATE TABLE `fedalawp_terms` (
-  `term_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(200) COLLATE utf8mb4_bin NOT NULL DEFAULT '',
-  `slug` varchar(200) COLLATE utf8mb4_bin NOT NULL DEFAULT '',
-  `term_group` bigint(10) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Contenu de la table `fedalawp_terms`
---
-
-INSERT INTO `fedalawp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Non classé', 'non-classe', 0),
-(2, 'navbar-top', 'navbar-top', 0),
-(3, 'Vaisselle', 'vaisselle', 0),
-(4, 'Décoration', 'decoration', 0);
+(193, 1, '2016-09-23 11:50:45', '2016-09-23 09:50:45', 'Maxi cup cake varié - 1,30 €\r\n\r\nMuffin - 1,30 €\r\n\r\nCarrot’cake - 1,70 €\r\n\r\nCheese cake - 2,00 €\r\n\r\nMini brownie - 0,70 €\r\n\r\nMini financier - 0,55 €\r\n\r\nMini éclair - 0,45 €\r\n\r\nMini macaron varié - 0,66 €\r\n\r\nBriouate - 0,80 €\r\n\r\nBaklava - 0,60\r\n\r\nFondant aux dattes - 0,45 €\r\n\r\nGribas noix de coco - 0,50 €\r\n\r\nMakroud - 0,40 €\r\n\r\nChabbakias - 0,60 €\r\n\r\nNoix (pâtisserie en forme de noix) - 0,70 €\r\n\r\nTartelette chocolat - 0,55 €\r\n\r\nTartelette citron - 0,55 €\r\n\r\nSalade de fruits frais de saison - 2,40 €\r\n\r\nCookies - 0,70 €', 'Petites douceurs', '', 'inherit', 'closed', 'closed', '', '178-revision-v1', '', '', '2016-09-23 11:50:45', '2016-09-23 09:50:45', '', 178, 'http://localhost/wordpress-fedala/?p=193', 0, 'revision', '', 0),
+(194, 1, '2016-09-23 14:37:36', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2016-09-23 14:37:36', '0000-00-00 00:00:00', '', 0, 'http://localhost/wordpress-fedala/?p=194', 0, 'post', '', 0);
 
 -- --------------------------------------------------------
 
@@ -821,6 +788,42 @@ INSERT INTO `fedalawp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`,
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `fedalawp_termmeta`
+--
+
+CREATE TABLE `fedalawp_termmeta` (
+  `meta_id` bigint(20) UNSIGNED NOT NULL,
+  `term_id` bigint(20) UNSIGNED NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL,
+  `meta_value` longtext COLLATE utf8mb4_bin
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `fedalawp_terms`
+--
+
+CREATE TABLE `fedalawp_terms` (
+  `term_id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(200) COLLATE utf8mb4_bin NOT NULL DEFAULT '',
+  `slug` varchar(200) COLLATE utf8mb4_bin NOT NULL DEFAULT '',
+  `term_group` bigint(10) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+--
+-- Contenu de la table `fedalawp_terms`
+--
+
+INSERT INTO `fedalawp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
+(1, 'Non classé', 'non-classe', 0),
+(2, 'navbar-top', 'navbar-top', 0),
+(3, 'Vaisselle', 'vaisselle', 0),
+(4, 'Décoration', 'decoration', 0);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `fedalawp_usermeta`
 --
 
@@ -850,7 +853,7 @@ INSERT INTO `fedalawp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`
 (12, 1, 'dismissed_wp_pointers', ''),
 (13, 1, 'show_welcome_panel', '1'),
 (14, 1, 'session_tokens', 'a:8:{s:64:"21269efa57c1e08167851ed87c64ba9a2bdec15f1084fa0152811e1978d79afe";a:4:{s:10:"expiration";i:1475235932;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474026332;}s:64:"8f8d8de26cc1db1e52513170835de6391fd74b7d1101fe7a231e421a359a9335";a:4:{s:10:"expiration";i:1474636943;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474464143;}s:64:"29ac0a0299083ac2123b15ca78a446b3c9ebbb5d40a538cb2e101503d16208ce";a:4:{s:10:"expiration";i:1474703407;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474530607;}s:64:"678e567aeeef113c2d9dca53806ec9947ea8554bcf34197659b40ac5bbb0dd8b";a:4:{s:10:"expiration";i:1474789252;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474616452;}s:64:"ce969d834988e56ab6f34e877c2e9c61c03f727c42500884356ff6b2af33d108";a:4:{s:10:"expiration";i:1475827018;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474617418;}s:64:"25e586cfc16b332e6de9d3f75db07964d0b37f359a0736e753bd1477cc18f51a";a:4:{s:10:"expiration";i:1474792993;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:104:"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.92 Safari/537.36";s:5:"login";i:1474620193;}s:64:"4a10be68b3fdd65461b0f8e891fbb2899805180c80f3b2240f7da3aecd157fb6";a:4:{s:10:"expiration";i:1474793733;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474620933;}s:64:"8ed5f094a74f969bd79f81c382d90fa9de6aa0c6f78cfe03272b3d5396f0d324";a:4:{s:10:"expiration";i:1474803773;s:2:"ip";s:9:"127.0.0.1";s:2:"ua";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0";s:5:"login";i:1474630973;}}'),
-(15, 1, 'fedalawp_dashboard_quick_press_last_post_id', '3'),
+(15, 1, 'fedalawp_dashboard_quick_press_last_post_id', '194'),
 (16, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";i:4;s:15:"title-attribute";}'),
 (17, 1, 'metaboxhidden_nav-menus', 'a:2:{i:0;s:12:"add-post_tag";i:1;s:15:"add-post_format";}'),
 (18, 1, 'nav_menu_recently_edited', '2'),
@@ -939,6 +942,21 @@ ALTER TABLE `fedalawp_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
+-- Index pour la table `fedalawp_term_relationships`
+--
+ALTER TABLE `fedalawp_term_relationships`
+  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
+  ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
+
+--
+-- Index pour la table `fedalawp_term_taxonomy`
+--
+ALTER TABLE `fedalawp_term_taxonomy`
+  ADD PRIMARY KEY (`term_taxonomy_id`),
+  ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
+  ADD KEY `taxonomy` (`taxonomy`);
+
+--
 -- Index pour la table `fedalawp_termmeta`
 --
 ALTER TABLE `fedalawp_termmeta`
@@ -953,21 +971,6 @@ ALTER TABLE `fedalawp_terms`
   ADD PRIMARY KEY (`term_id`),
   ADD KEY `slug` (`slug`(191)),
   ADD KEY `name` (`name`(191));
-
---
--- Index pour la table `fedalawp_term_relationships`
---
-ALTER TABLE `fedalawp_term_relationships`
-  ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
-  ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
-
---
--- Index pour la table `fedalawp_term_taxonomy`
---
-ALTER TABLE `fedalawp_term_taxonomy`
-  ADD PRIMARY KEY (`term_taxonomy_id`),
-  ADD UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
-  ADD KEY `taxonomy` (`taxonomy`);
 
 --
 -- Index pour la table `fedalawp_usermeta`
@@ -1009,7 +1012,7 @@ ALTER TABLE `fedalawp_links`
 -- AUTO_INCREMENT pour la table `fedalawp_options`
 --
 ALTER TABLE `fedalawp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=601;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=604;
 --
 -- AUTO_INCREMENT pour la table `fedalawp_postmeta`
 --
@@ -1019,7 +1022,12 @@ ALTER TABLE `fedalawp_postmeta`
 -- AUTO_INCREMENT pour la table `fedalawp_posts`
 --
 ALTER TABLE `fedalawp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+--
+-- AUTO_INCREMENT pour la table `fedalawp_term_taxonomy`
+--
+ALTER TABLE `fedalawp_term_taxonomy`
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `fedalawp_termmeta`
 --
@@ -1030,11 +1038,6 @@ ALTER TABLE `fedalawp_termmeta`
 --
 ALTER TABLE `fedalawp_terms`
   MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
---
--- AUTO_INCREMENT pour la table `fedalawp_term_taxonomy`
---
-ALTER TABLE `fedalawp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `fedalawp_usermeta`
 --
