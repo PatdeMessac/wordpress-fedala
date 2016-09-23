@@ -314,7 +314,7 @@ textarea {
 ------------------------------------------------*/
 .container-traiteur {
 	width: 100%;
-	padding: 0;
+	padding-top: 11%;
 }
 
 /* espacement entre les colonnes */
@@ -324,13 +324,12 @@ textarea {
 	padding-right: 15px;
 }
 .container-traiteur img {
-	padding-right: 30px;
+	/*padding-right: 30px;*/
 }
 
 .container-traiteur img {
-  position: absolute;
   z-index: -1;
-  height: 500px;
+  height: auto;
   width: 100%;
 }
 
@@ -391,13 +390,24 @@ textarea {
 }
 */
 .img-foreground {
-  height: 500px;
-  display: flex;
+  height: 280px;
+  padding: 0;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
+
 .img-foreground p {
-  width: 70%;
+  position: absolute;
+  top: 6%;
+  font-family: 'OpenSans-Bold',sans-serif;
+  color: #FFFFFF;
+  padding-top: 2%;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+/*  width: 70%;
   height: 70px;
   background-color: rgba(255,255,255,0.8);
   display: flex;
@@ -408,10 +418,10 @@ textarea {
   letter-spacing: 1px;
   color: #000;
   padding:5px;
-  box-shadow:1px 1px 5px gray;
+  box-shadow:1px 1px 5px gray;*/
 }
 .price-ground {
-	height: 500px;
+	height: 350px;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	display: flex;
@@ -422,7 +432,8 @@ textarea {
 	text-align: center;
 }
 .price-ground li {
-	font-size: 20px;
+  font-family: "Opensans-Regular", sans-serif;
+	font-size: 13px;
 	list-style-type: none;
 }
 /*------------------------------------------------
@@ -2226,7 +2237,7 @@ article#product_listing {
 
 /**** Fin scroll to top ****/
 
-.liste_prix {
+.liste_prix ul li{
     font-size: 13px !important;
     font-family: 'Open Sans';
     padding: 10px 0 10px 0;
