@@ -2344,3 +2344,9 @@ article#product_listing {
         width: 100%;
     }
 }
+
+.wpcf7-submit{
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
+}
