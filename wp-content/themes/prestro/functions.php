@@ -144,6 +144,8 @@ function prestro_enq_styles() {
     wp_enqueue_style('ninja-slider', get_template_directory_uri() . '/inc/css/ninja-slider.css');
     wp_enqueue_style('thumbnail-slider', get_template_directory_uri() . '/inc/css/thumbnail-slider.css');
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/inc/css/bootstrap.min.css');
+    wp_enqueue_style('accueil', get_template_directory_uri() . '/inc/css/accueil.css');
+    wp_enqueue_style('contact', get_template_directory_uri() . '/inc/css/contact.css');
     wp_enqueue_style('decoration', get_template_directory_uri() . '/inc/css/decoration.css');
     wp_enqueue_style('traiteur', get_template_directory_uri() . '/inc/css/traiteur.css');
     wp_enqueue_style('jquery-ui', get_template_directory_uri() . '/inc/css/jquery-ui.min.css');

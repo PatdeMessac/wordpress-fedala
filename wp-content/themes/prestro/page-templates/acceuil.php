@@ -60,8 +60,8 @@ get_header();
 		</div>
 	</div>
 	<!--ronald bandeau 2 images - fin -->
-
-	<div class="parallax2"></div>
+	
+	<div class="parallax2 row"></div>
 
 	<!-- présentation - début -->
 	<div class="row">
@@ -85,17 +85,17 @@ get_header();
 		</div>
 	</div>
 	<!-- présentation - fin -->
-
+	
 	<!-- témoignages - début -->
 	<div class="row">
-		<div class="temoignages col-md-12">
+		<div class="temoignages">
 			<div class="parallax3">
 				<?php wp_text_slider(); ?>
 			</div>
 		</div>
 	</div>
 	<!-- témoignages - fin -->
-
+	
 </div>
 
 <?php get_footer(); ?>

@@ -32,7 +32,7 @@ get_header();
 </div>
 <?php endif;?>
 
-<div class="container-traiteur">
+<div class="container-traiteur container-fluid">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<?php

@@ -143,6 +143,41 @@
 	font-size: 13px;
 	list-style-type: none;
 }
+.block_img_service{
+	overflow: hidden;
+}
+.box_title h3{
+	font-size: 20px;
+	color:white!important;
+	text-transform: uppercase;
+}
+.separated{
+	background-color: white;
+	height: 4px;
+	width: 0;
+	margin: 0 auto;
+}
+.box_extract{
+	display: none;
+	color: white;
+	font-size: 15px;
+}
+.liste_prix {
+	font-size: 13px !important;
+	font-family: 'Open Sans';
+	padding: 10px 0 5px 0;
+	position: relative;
+	z-index : 1;
+}
+.liste_prix:before {
+	content : "";
+	position: absolute;
+	left    : 35%;
+	bottom  : 0;
+	height  : 1px;
+	width   : 30%;
+	border-bottom: 1px solid #ff3f34;
+}
 
 /* scrollbars */
 .price-ground::-webkit-scrollbar-track
