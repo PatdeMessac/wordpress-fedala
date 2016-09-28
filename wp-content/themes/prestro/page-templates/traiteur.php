@@ -15,29 +15,20 @@ get_header();
 <?php  if (!is_user_logged_in()):?>
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <!-- <div class="modal-header">
-      <span class="close">times</span>
-      <h2><a href="#">Connectez-vous</a></h2>
-    </div> -->
-    <div class="modal-body">
-    	<span class="close">×</span>
-    <?php query_posts('category_name=modal'); ?>
-    	<?php if ( have_posts()) : ?>
-			<?php while ( have_posts()) : the_post(); ?>
-			        <h3><?php the_title(); ?></h3>
-			        <p><?php the_content(); ?></p>
-			<?php endwhile; ?>
-		<?php endif; ?>
-    	<!-- <h3>Information</h3>
-    	<p>Inscrivez-vous puis connectez-vous pour connaître nos tarifs !</p> -->
-    </div>
-    <!-- <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div> -->
-  </div>
+	<!-- Modal content -->
+	<div class="modal-content">
+		<div class="modal-body">
+			<span class="close">×</span>
+			<?php
+				query_posts('category_name=modal');
+				while (have_posts()) {
+					the_post();
+					echo "<h3>"; the_title(); echo "</h3>\n";
+					echo "<p>"; the_content(); echo "</p>\n";
+				}
+			?>
+		</div>
+	</div>
 </div>
 <?php endif;?>
 
@@ -76,8 +67,6 @@ get_header();
 							}
 						?>
 					</ul>
-					<button id="<?php echo $post->ID; ?>" class="prev-bouton" onclick="dixListPrev(this)" disabled>Précédents</button>
-					<button id="<?php echo $post->ID; ?>" class="next-bouton" onclick="dixListNext(this)">Suivants</button>
 				</div>
 			</div>
 			<?php endforeach; ?>
@@ -85,83 +74,6 @@ get_header();
 	</div>
 </div>
 <script>
-
-var liste_prix = document.getElementsByClassName("liste_prix");
-var list = document.getElementsByTagName("ul");
-
-for (i=0; i < liste_prix.length; i++) {
-	liste_prix[i].style.display = "none";
-}
-
-for (i=0; i < list.length; i++) {
-	var subList = list[i].children;
-	for (j=0; j < 10; j++) {
-		subList[j].style.display = "block";
-	}
-}
-
-function dixListNext (button) {
-	id = button.id;
-	button.previousElementSibling.disabled = false;
-	var liste = button.previousElementSibling.previousElementSibling.children;
-	var action = 'hide';
-	var compteur = 0;
-	for (i = 0; i < liste.length; i++) {
-		if (action == 'hide') {
-			if (liste[i].style.display == 'block') {
-				liste[i].style.display = 'none';
-				compteur++;
-				if (compteur == 10) {
-					action = 'show';
-					compteur = 0;
-				}
-			}
-		} else if (action == 'show') {
-			if (i == liste.length - 1) {
-				button.disabled = true;
-			}
-			liste[i].style.display = 'block';
-			compteur++;
-			if (compteur == 10) {
-				action = 'nothing';
-			}
-		}
-	}
-
-}
-function dixListPrev (button) {
-	button.nextElementSibling.disabled = false;
-	var liste = button.previousElementSibling.children;
-	var action = 'hide';
-	var compteur = 0;
-	for (i = liste.length - 1; i >= 0 ; i--) {
-		if (action == 'hide') {
-			if (liste[i].style.display == 'block') {
-				liste[i].style.display = 'none';
-				compteur++;
-				if (compteur == 10) {
-					action = 'show';
-					compteur = 0;
-				}
-			} else {
-				action = 'show'
-				liste[i].style.display = 'block';
-				compteur = 1;
-			}
-		} else if (action == 'show') {
-			if (i = 0) {
-				button.disabled = true;
-			}
-			liste[i].style.display = 'block';
-			compteur++;
-			if (compteur == 10) {
-				action = 'nothing';
-			}
-		}
-	}
-
-}
-
 <?php  if (!is_user_logged_in()):?>
 // Get the modal
 var modal = document.getElementById('myModal');
