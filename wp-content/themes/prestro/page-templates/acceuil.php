@@ -20,7 +20,7 @@ get_header();
 	<div class="wrapper_service row">
 		<!-- image "Décoration" -->
 		<?php $post = get_page_by_title('Décoration'); ?>
-		<div class="col-sm-5 col-sm-offset-1">
+		<div class="col-sm-5 col-sm-offset-1 marg-resp">
 			<a href="<?php the_permalink(); ?>">
 				<div class="bloc_ensemble">
 					<div class="block_img_service col-lg-12 row">
