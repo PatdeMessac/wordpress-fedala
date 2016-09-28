@@ -16,52 +16,74 @@
 	justify-content: center;
 	align-items: center;
 }
+.zmdi-info-outline:before {
+	content: '\f1f7';
+}
 .modal-content {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	border: 0 !important;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-	box-shadow: 1px 1px 5px #ff3f34;
-	max-width: 70vw;
-	height: 150px;
+	background-color: #B2DFDB;
+    height: auto;/*400px;*/
+    width: 650px;
+    border-radius: 2px;
+}
+.modal-body h3, .modal-body p{
+	color: white;
+	text-align: center;
+}
+.modal-body h3{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 35px;
+	text-transform: capitalize;
+}
+.modal-body p{
+	font-size: 15px;
+}
+.modal-body button{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px;
+	background: orange;
+	border: 0px none;
+}
+.modal-body .icon_info{
+	height: auto;
+	width: 100%;
+	margin-top: 15px;
+	text-align: center;
+}
+.modal-body i{
+	font-size: 140px;
+	color: white;
 }
 @media screen and (max-width: 768px) {
 	.modal-body { max-height: 100%; }
 	.modal-body p { font-size: 12px; }
 	.modal-body h3 { font-size: 20px; }
+	.modal-content {
+		width: 300px;
+	}
+	.modal-body i{
+		font-size: 100px;
+	}
+	.close {
+		font-size: 30px;
+	}
 }
 .close {
-	background: #606061;
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: -30px;
+	right: 0;
 	text-align: center;
 	top: -15px;
 	width: 24px;
 	opacity:1;
 	text-decoration: none;
 	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
 }
-.close:hover, .close:focus { 
-	background: #ff3f34;
-	color: #fff; 
-	opacity:1;
-}
+
 .modal-body {
-	padding: 2px 16px;
+	padding: 0;
 }
 .modal-content, #caption {    
 	-webkit-animation-name: zoom;
@@ -76,9 +98,6 @@
 @keyframes zoom {
 	from { transform:scale(0) } 
 	to { transform:scale(1) }
-}
-@media only screen and (max-width: 700px){
-	.modal-content { width: 100%; }
 }
 /* connection box - end */
 

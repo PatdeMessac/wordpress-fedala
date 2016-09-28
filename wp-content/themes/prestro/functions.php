@@ -147,6 +147,7 @@ function prestro_enq_styles() {
     wp_enqueue_style('decoration', get_template_directory_uri() . '/inc/css/decoration.css');
     wp_enqueue_style('traiteur', get_template_directory_uri() . '/inc/css/traiteur.css');
     wp_enqueue_style('contact', get_template_directory_uri() . '/inc/css/contact.css');
+    wp_enqueue_style('iconic', get_template_directory_uri() . '/inc/css/material-design-iconic-font.min.css');
     wp_enqueue_style('prestro-style', get_stylesheet_uri());
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {

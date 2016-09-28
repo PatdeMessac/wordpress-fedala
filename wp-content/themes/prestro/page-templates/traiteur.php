@@ -19,6 +19,9 @@ get_header();
 	<div class="modal-content">
 		<div class="modal-body">
 			<span class="close">×</span>
+			<div class="icon_info">
+	        	<i class="zmdi zmdi-info-outline"></i>
+	        </div>
 			<?php
 				query_posts('category_name=modal');
 				while (have_posts()) {
@@ -27,6 +30,9 @@ get_header();
 					echo "<p>"; the_content(); echo "</p>\n";
 				}
 			?>
+			<button>
+            Inscrivez-vous!
+          	</button>
 		</div>
 	</div>
 </div>
