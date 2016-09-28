@@ -2262,7 +2262,7 @@ article#product_listing {
 .liste_prix {
     font-size: 13px !important;
     font-family: 'Open Sans';
-    padding: 10px 0 10px 0;
+    padding: 10px 0 5px 0;
     position: relative;
     z-index : 1;
 }
