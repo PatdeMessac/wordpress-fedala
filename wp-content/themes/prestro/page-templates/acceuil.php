@@ -15,83 +15,50 @@ get_header();
 ?>
 
 <div class="container-fluid">
-<a href="#" id="back-to-top" title="Retour en haut">▲</a>
-	<!--Antoine bandeau 2 images - début -->
-	<!--<div class="row bandeau-accueil">
-
-		<!- image "Décoration" -->
-		<!--<?php $post = get_page_by_title('Décoration'); ?>
-		<div class="left col-xs-5 col-xs-offset-1">
-			<a href="<?php the_permalink(); ?>">
-				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
-				<div class="img-foreground">
-					<p><?php the_title(); ?></p>
-				</div>
-			</a>
-		</div>-->
-
-		<!-- image "Traiteur" -->
-	<!--	<?php $post = get_page_by_title('Traiteur'); ?>
-		<div class="right col-xs-5">
-			<a href="<?php the_permalink(); ?>">
-				<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
-				<div class="img-foreground">
-					<p><?php the_title(); ?></p>
-				</div>
-			</a>
-		</div>
-
-	</div>-->
-	<!-- bandeau 2 images - fin -->
+	<a href="#" id="back-to-top" title="Retour en haut">▲</a>
 	<!-- ronald bandeau 2 images -->
-	<div id="box_service container-fluid">
-	   <div class="wrapper_service row">
-
-	     	<!-- image "Décoration" -->
-
-	    <?php $post = get_page_by_title('Décoration'); ?>
-	    <div class="left col-lg-5 col-lg-offset-1">
-	      <a href="<?php the_permalink(); ?>">
-	        <div class="bloc_ensemble">
-	          <div class="block_img_service col-lg-12 row">
-	            <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
-	            <div class="block_service col-lg-12 text-center">
-	              <div class="box_title col-lg-12">
-	                  <?php the_title('<h3  class="title_service col-lg-12">','</h3>'); ?>
-	              </div>
-	              <span class="separated"></span>
-	              <div class="box_extract col-lg-12">
-	                  <?php the_content('<p  class="content_service col-lg-12">','</p>'); ?>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-	      </a>
-	    </div>
-
-	      <!-- image "Traiteur" -->
-
-	    <?php $post = get_page_by_title('Traiteur'); ?>
-	    <div class="right col-lg-5">
-	      <a href="<?php the_permalink(); ?>">
-	        <div class="bloc_ensemble">
-	          <div class="block_img_service col-lg-12 row">
-	              <img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
-	              <div class="block_service col-lg-12 text-center">
-	                  <div class="box_title col-lg-12">
-	                      <?php the_title('<h3  class="title_service col-lg-12">','</h3>'); ?>
-	                  </div>
-	                  <span class="separated"></span>
-	                  <div class="box_extract col-lg-12">
-	                      <?php the_content('<p  class="content_service col-lg-12">','</p>'); ?>
-	                  </div>
-	              </div>
-	            </div>
-	          </div>
-	        </a>
-	      </div>
-			</div>
+	<div class="wrapper_service row">
+		<!-- image "Décoration" -->
+		<?php $post = get_page_by_title('Décoration'); ?>
+		<div class="col-sm-5 col-sm-offset-1">
+			<a href="<?php the_permalink(); ?>">
+				<div class="bloc_ensemble">
+					<div class="block_img_service col-lg-12 row">
+						<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+						<div class="block_service col-lg-12 text-center">
+							<div class="box_title col-lg-12">
+								<?php the_title('<h3  class="title_service col-lg-12">','</h3>'); ?>
+							</div>
+							<span class="separated"></span>
+							<div class="box_extract col-lg-12">
+								<?php the_content('<p  class="content_service col-lg-12">','</p>'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
 		</div>
+		<!-- image "Traiteur" -->
+		<?php $post = get_page_by_title('Traiteur'); ?>
+		<div class="col-sm-5">
+			<a href="<?php the_permalink(); ?>">
+				<div class="bloc_ensemble">
+					<div class="block_img_service col-lg-12 row">
+						<img class="img-accueil" src="<?php the_post_thumbnail_url(array(250,250)); ?>" />
+						<div class="block_service col-lg-12 text-center">
+							<div class="box_title col-lg-12">
+								<?php the_title('<h3  class="title_service col-lg-12">','</h3>'); ?>
+							</div>
+							<span class="separated"></span>
+							<div class="box_extract col-lg-12">
+								<?php the_content('<p  class="content_service col-lg-12">','</p>'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
 	<!--ronald bandeau 2 images - fin -->
 
 	<div class="parallax2"></div>
@@ -135,7 +102,7 @@ get_header();
 <script>
     /*$('.left').mouseover(function(){*/
     $(window).load(function(){
-        $('.block_service').clearQueue().animate({"bottom": "110px"},1500);
+        $('.block_service').clearQueue().animate({"bottom": "30%"},1500);
         $('.separated').delay(2000).animate({"width":"50%"});
         $('.box_extract').delay(2000).fadeIn();
     });
