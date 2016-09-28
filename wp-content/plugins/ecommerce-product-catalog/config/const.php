@@ -14,7 +14,6 @@ if ( !defined( 'ABSPATH' ) ) {
  */
 define( 'DEF_SHIPPING_OPTIONS_NUMBER', '1' );
 define( 'DEF_ATTRIBUTES_OPTIONS_NUMBER', '3' );
-define( 'DEF_CURRENCY', 'USD' );
 define( 'DEF_VALUE', '0' );
 if ( !defined( 'DEF_CATALOG_SINGULAR' ) ) {
 	define( 'DEF_CATALOG_SINGULAR', __( 'Product', 'ecommerce-product-catalog' ) );

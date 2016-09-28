@@ -39,7 +39,7 @@ function ic_attributes_metabox( $names ) {
 function al_product_attributes() {
 	global $post;
 	echo '<input type="hidden" name="attributesmeta_noncename" id="attributesmeta_noncename" value="' .
-	wp_create_nonce( plugin_basename( __FILE__ ) ) . '" />';
+	wp_create_nonce( AL_BASE_PATH . 'attributes_meta' ) . '" />';
 	echo '<div class="al-box info">' . __( 'Only attributes with values set will be shown on product page.', 'ecommerce-product-catalog' ) . ' ' . sprintf( __( 'See <a target="_blank" href="%s">docs</a>.', 'ecommerce-product-catalog' ), 'https://implecode.com/docs/ecommerce-product-catalog/product-attributes/?cam=catalog-add-page-box&key=product-attributes' ) . '</div>';
 	do_action( 'before_product_attributes_edit_single' );
 	echo '<table class="sort-settings attributes">

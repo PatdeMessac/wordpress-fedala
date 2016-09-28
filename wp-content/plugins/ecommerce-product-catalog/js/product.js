@@ -37,7 +37,7 @@ jQuery( document ).ready( function ( $ ) {
 
     $.ic = {
         /**
-         * Implement a WordPress-link Hook System for Javascript 
+         * Implement a WordPress-link Hook System for Javascript
          * TODO: Change 'tag' to 'args', allow number (priority), string (tag), object (priority+tag)
          */
         hooks: { action: { }, filter: { } },
@@ -102,6 +102,7 @@ function initialize_ic_tabs() {
     } else if ( jQuery( ".boxed" ).length ) {
         ic_tabs();
     }
+    jQuery( document ).trigger( "ic_tabs_initialized" );
 }
 
 function redefine_ic_tabs() {
@@ -237,8 +238,7 @@ function is_element_visible( element ) {
     var top_of_screen = jQuery( window ).scrollTop();
     if ( top_of_screen < top_of_element ) {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }
@@ -258,8 +258,7 @@ function reponsive_product_catalog() {
         jQuery( "article.al_product" ).addClass( "responsive" );
         jQuery( ".product-list" ).addClass( "responsive" );
 
-    }
-    else {
+    } else {
         jQuery( "article.al_product" ).removeClass( "responsive" );
         jQuery( ".product-list" ).removeClass( "responsive" );
 

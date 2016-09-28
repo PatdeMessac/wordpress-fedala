@@ -1845,6 +1845,10 @@ article.al_product.boxed * {
     list-style-position: inside;
 }
 
+.boxed #product_details p {
+    margin-bottom: 0.8em;
+}
+
 .boxed .after-product-details * {
     list-style-position: inside;
 }
