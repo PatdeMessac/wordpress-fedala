@@ -20,13 +20,13 @@
 	content: '\f1f7';
 }
 .modal-content {
-	background-color: #B2DFDB;
+	background-color: #FAFAFA;
     height: auto;/*400px;*/
     width: 650px;
     border-radius: 2px;
 }
-.modal-body h3, .modal-body p{
-	color: white;
+.modal-body .icon_info i, .modal-body h3, .modal-body p, .modal-body span{
+	color: #616161;
 	text-align: center;
 }
 .modal-body h3{
@@ -39,10 +39,11 @@
 	font-size: 15px;
 }
 .modal-body button{
+    color: #FAFAFA;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 10px;
-	background: orange;
+	background: #FF7043;;
 	border: 0px none;
 }
 .modal-body .icon_info{
@@ -70,6 +71,8 @@
 	}
 }
 .close {
+    margin-top: 5px;
+    margin-right: 5px;
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
@@ -81,7 +84,12 @@
 	text-decoration: none;
 	font-weight: bold;
 }
-
+.close:hover{
+    color: #FF7043;
+}
+button:hover{
+    color:#BF360C; 
+}
 .modal-body {
 	padding: 0;
 }
@@ -116,6 +124,7 @@
 	background-size: cover;
 	display: flex;
 	align-items: center;
+	box-shadow: 6px 6px 5px #999;
 }
 .img-foreground p {
   font-family: 'OpenSans-Bold',sans-serif;
@@ -127,11 +136,17 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.75);
 }
+@media screen and (max-width: 768px) {
+	.img-foreground {
+		margin-top: 25px;
+	}
+}
 .price-ground {
   height: 180px;
 	overflow-y: scroll;
 	background-color: #fff;
 	text-align: center;
+	box-shadow: 6px 5px 5px #999;
 }
 .price-ground ul {
 	padding-inline-start: 0;
