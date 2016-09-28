@@ -74,11 +74,11 @@ get_header();
 									echo "</li>\n";
 								}
 							}
-						}
-					?>
-				</ul>
-				<button id="<?php echo $post->ID; ?>" class="prev-bouton" onclick="dixListPrev(this)" disabled>Précédents</button>
-				<button id="<?php echo $post->ID; ?>" class="next-bouton" onclick="dixListNext(this)">Suivants</button>
+						?>
+					</ul>
+					<button id="<?php echo $post->ID; ?>" class="prev-bouton" onclick="dixListPrev(this)" disabled>Précédents</button>
+					<button id="<?php echo $post->ID; ?>" class="next-bouton" onclick="dixListNext(this)">Suivants</button>
+				</div>
 			</div>
 			<?php endforeach; ?>
 		</div>
