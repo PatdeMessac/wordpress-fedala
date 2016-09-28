@@ -122,7 +122,7 @@ function is_ic_catalog_admin_page() {
 			return true;
 		}
 	}
-	return false;
+	return apply_filters( 'is_ic_catalog_admin_page', false );
 }
 
 function is_ic_product_listing_enabled() {
@@ -140,10 +140,15 @@ function ic_string_contains( $string, $contains ) {
 	return false;
 }
 
+/**
+ * Checks if new entry screen is being displayed
+ *
+ * @return boolean
+ */
 function is_ic_new_product_screen() {
 	if ( is_admin() ) {
 		$screen = get_current_screen();
-		if ( is_ic_catalog_admin_page() && $screen->action == 'add' ) {
+		if ( $screen->action == 'add' ) {
 			return true;
 		}
 	}

@@ -124,6 +124,7 @@ button:hover{
 	background-size: cover;
 	display: flex;
 	align-items: center;
+	box-shadow: 6px 6px 5px #999;
 }
 .img-foreground p {
   font-family: 'OpenSans-Bold',sans-serif;
@@ -135,11 +136,17 @@ button:hover{
   text-align: center;
   background-color: rgba(0, 0, 0, 0.75);
 }
+@media screen and (max-width: 768px) {
+	.img-foreground {
+		margin-top: 25px;
+	}
+}
 .price-ground {
   height: 180px;
 	overflow-y: scroll;
 	background-color: #fff;
 	text-align: center;
+	box-shadow: 6px 5px 5px #999;
 }
 .price-ground ul {
 	padding-inline-start: 0;
