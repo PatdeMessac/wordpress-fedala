@@ -41,7 +41,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* set default fonts */
 body {
-	font-family: 'Open Sans', sans;
+	font-family: 'OpenSans-Regular', sans;
 	font-size: 1.4rem;
 }
 .entry-title {

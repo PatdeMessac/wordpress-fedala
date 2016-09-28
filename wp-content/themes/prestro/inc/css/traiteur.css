@@ -84,45 +84,21 @@
 
 .container-traiteur {
 	width: 100%;
-	padding-top: 10.7%;
+	padding-top: 140px;
   padding-bottom: 2%
-}
-.container-traiteur .col-lg-3,
-.container-traiteur .col-sm-6 {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.container-traiteur img {
-	z-index: -1;
-	width: 100%;
-	min-height: 100%;
 }
 .prix_traiteur {
 	color: #ff3f34;
 	font-weight: bold;
 }
-.price-bloc {
-    background-color: #fff;
-    color: #000;
-}
-.entire-list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.entire-list > ul > li {
-    font-size: 20px;
-    list-style-type: none;
-}
 .img-foreground {
 	height: 280px;
 	padding: 0;
-	overflow: hidden;
+	background-size: cover;
+	display: flex;
+	align-items: center;
 }
 .img-foreground p {
-  position: absolute;
-  top: 6%;
   font-family: 'OpenSans-Bold',sans-serif;
   color: #FFFFFF;
   line-height: 50px;
@@ -138,61 +114,36 @@
 	background-color: #fff;
 	text-align: center;
 }
+.price-ground ul {
+	padding-inline-start: 0;
+}
 .price-ground li {
-  font-family: "Opensans-Regular", sans-serif;
-	font-size: 13px;
+  font-family: 'Opensans-Regular', sans;
+	font-size: 1.3rem;
 	list-style-type: none;
-}
-.block_img_service{
-	overflow: hidden;
-}
-.box_title h3{
-	font-size: 20px;
-	color:white!important;
-	text-transform: uppercase;
-}
-.separated{
-	background-color: white;
-	height: 4px;
-	width: 0;
-	margin: 0 auto;
-}
-.box_extract{
-	display: none;
-	color: white;
-	font-size: 15px;
-}
-.liste_prix {
-	font-size: 13px !important;
-	font-family: 'Open Sans';
 	padding: 10px 0 5px 0;
 	position: relative;
-	z-index : 1;
 }
-.liste_prix:before {
-	content : "";
+.price-ground li:before {
+	content: "";
 	position: absolute;
-	left    : 35%;
-	bottom  : 0;
-	height  : 1px;
-	width   : 30%;
+	left: 35%;
+	bottom: 0;
+	width: 30%;
 	border-bottom: 1px solid #ff3f34;
 }
 
 /* scrollbars */
-.price-ground::-webkit-scrollbar-track
-{
+.price-ground::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
-.price-ground::-webkit-scrollbar
-{
+.price-ground::-webkit-scrollbar {
 	width: 5px;
 	background-color: #F5F5F5;
 }
-.price-ground::-webkit-scrollbar-thumb
-{
+.price-ground::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #FF5D34;
