@@ -326,6 +326,12 @@ textarea {
 
 /* =Traiteur Page - début
 ------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .marg-resp {
+        margin-bottom: 10px;
+    }
+}
+
 .container-traiteur {
 	width: 100%;
 	padding-top: 10.7%;
