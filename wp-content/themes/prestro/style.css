@@ -2373,10 +2373,8 @@ article#product_listing {
     }
 }
 
-/**** Fin modal box ****/
-
-/**** Bouton suivant et precedent ****/
-
-.next-bouton {
-    
+.wpcf7-submit{
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
 }
