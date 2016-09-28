@@ -23,6 +23,7 @@ if ( !empty( $price ) ) {
 		$class .= ' ' . design_schemes( null, 0 );
 	}
 	?>
+	<?php if (is_user_logged_in()): ?>
 	<div class="price-container">
 		<table class="price-table">
 			<tr>
@@ -37,5 +38,5 @@ if ( !empty( $price ) ) {
 		</table>
 		<?php do_action( 'after_price_table', $product_id ) ?>
 	</div>
-	<?php
+	<?php endif;
 }
