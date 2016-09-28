@@ -441,8 +441,10 @@ textarea {
 .price-ground {
 	/*height: 350px;*/
   height: 180px;
-	border-top: 1px solid #000;
+	/*border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;*/
 /*	display: flex;
 	align-items: flex-start;
 	justify-content: space-around;*/
@@ -904,6 +906,7 @@ p.logged-in-as {
     background-color: #fff;
     color: #CCC;
     font-size: 12px;
+    box-shadow: 1px 1px 5px #000;
 }
 #footer-area a {
     color: #ccc;
