@@ -2259,7 +2259,7 @@ article#product_listing {
 
 /**** Fin scroll to top ****/
 
-.liste_prix ul li{
+.liste_prix {
     font-size: 13px !important;
     font-family: 'Open Sans';
     padding: 10px 0 10px 0;
