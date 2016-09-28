@@ -61,7 +61,8 @@ get_header();
 	</div>
 	<!--ronald bandeau 2 images - fin -->
 
-	<div class="parallax2"></div>
+	<?php $post = get_page_by_title('Parallax1'); ?>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_post_thumbnail_url();?>"></div>
 
 	<!-- présentation - début -->
 	<div class="row">
@@ -89,9 +90,8 @@ get_header();
 	<!-- témoignages - début -->
 	<div class="row">
 		<div class="temoignages col-md-12">
-			<div class="parallax3">
-				<?php wp_text_slider(); ?>
-			</div>
+			<?php $post = get_page_by_title('Parallax2'); ?>
+			<div class="parallax-window" data-parallax="scroll" data-image-src="<?php the_post_thumbnail_url();?>"><?php wp_text_slider(); ?></div>
 		</div>
 	</div>
 	<!-- témoignages - fin -->
