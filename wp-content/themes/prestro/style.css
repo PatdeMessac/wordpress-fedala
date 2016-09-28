@@ -344,7 +344,7 @@ textarea {
 
 .container-traiteur img {
   z-index: -1;
-  height: auto;
+  height: 100%;/*height: auto;*/
   width: 100%;
 }
 .prix_traiteur {
