@@ -65,6 +65,12 @@ body {
 #wpadminbar {
 	position: fixed !important;
 }
+#primary {
+	min-height: 94vh;
+}
+#footer-area {
+	height: 6vh;
+}
 
 /* images */
 img {
