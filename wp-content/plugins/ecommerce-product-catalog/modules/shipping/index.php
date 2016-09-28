@@ -12,10 +12,11 @@ if ( !defined( 'ABSPATH' ) ) {
  * @package		ecommerce-product-catalog/includes
  * @author 		Norbert Dreszer
  */
-require_once(AL_BASE_PATH . '/modules/shipping/shipping-conditionals.php');
-require_once(AL_BASE_PATH . '/modules/shipping/shipping-functions.php');
-require_once(AL_BASE_PATH . '/modules/shipping/shipping-meta.php');
-require_once(AL_BASE_PATH . '/modules/shipping/shipping-settings.php');
-require_once(AL_BASE_PATH . '/modules/shipping/shipping-shortcodes.php');
+$dirname = dirname( __FILE__ );
+require_once($dirname . '/shipping-conditionals.php');
+require_once($dirname . '/shipping-functions.php');
+require_once($dirname . '/shipping-meta.php');
+require_once($dirname . '/shipping-settings.php');
+require_once($dirname . '/shipping-shortcodes.php');
 
 

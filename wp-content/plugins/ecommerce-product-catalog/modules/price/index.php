@@ -12,12 +12,13 @@ if ( !defined( 'ABSPATH' ) ) {
  * @package		ecommerce-product-catalog/includes
  * @author 		Norbert Dreszer
  */
-require_once(AL_BASE_PATH . '/modules/price/price-conditionals.php');
-require_once(AL_BASE_PATH . '/modules/price/price-filters.php');
-require_once(AL_BASE_PATH . '/modules/price/price-functions.php');
-require_once(AL_BASE_PATH . '/modules/price/price-meta.php');
-require_once(AL_BASE_PATH . '/modules/price/price-settings.php');
-require_once(AL_BASE_PATH . '/modules/price/price-shortcodes.php');
-require_once(AL_BASE_PATH . '/modules/price/config/currencies.php');
+$dirname = dirname( __FILE__ );
+require_once($dirname . '/price-conditionals.php');
+require_once($dirname . '/price-filters.php');
+require_once($dirname . '/price-functions.php');
+require_once($dirname . '/price-meta.php');
+require_once($dirname . '/price-settings.php');
+require_once($dirname . '/price-shortcodes.php');
+require_once($dirname . '/config/currencies.php');
 
 

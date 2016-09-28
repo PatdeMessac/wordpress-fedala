@@ -20,15 +20,15 @@ add_action( 'init', 'ic_create_product_attributes' );
  */
 function ic_create_product_attributes() {
 
-	$args = array(
+	$args		 = array(
 		'label'			 => 'Attributes',
 		'hierarchical'	 => true,
 		'public'		 => false,
 		'query_var'		 => false,
 		'rewrite'		 => false,
 	);
-
-	register_taxonomy( 'al_product-attributes', array( 'al_product' ), $args );
+	$post_types	 = apply_filters( 'ic_attributes_register_post_types', array( 'al_product' ) );
+	register_taxonomy( 'al_product-attributes', $post_types, $args );
 }
 
 /**

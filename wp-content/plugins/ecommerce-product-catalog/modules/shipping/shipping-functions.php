@@ -28,7 +28,7 @@ function get_shipping_options( $product_id ) {
 	$shipping_values	 = array();
 	for ( $i = 1; $i <= $shipping_options; $i++ ) {
 		$sh_val = get_shipping_option( $i, $product_id );
-		if ( function_exists( 'price_format' ) ) {
+		if ( function_exists( 'price_format' ) && !empty( $sh_val ) ) {
 			$test_val = price_format( $sh_val );
 		} else if ( !empty( $sh_val ) ) {
 			$test_val = 1;

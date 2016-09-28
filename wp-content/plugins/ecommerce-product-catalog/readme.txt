@@ -1,10 +1,10 @@
-=== Plugin Name ===
+﻿=== Plugin Name ===
 Contributors: impleCode, ndre
 Donate link: https://implecode.com/wordpress/plugins/premium-support/#cam=wordpress-org-catalog-page&key=donate-link
 Tags: ecommerce, e-commerce, commerce, product catalog, product catalogue, catalog, catalogue, product, implecode, wordpress ecommerce, store, sales, sell, shop, shopping, shipping, attributes, manage, plugin, display products, list products, products, wp catalog, blog catalog, product feed, product management, product portfolio, directory, gallery, product gallery, widget, post, plugin, admin, posts, inventory, restaurant menu, responsive, wp catalogue, catalog of goods, collection, catalogs, digital goods, e-shop, ecomerce, list, listing, online shop, online store, products catalog, sell products, selling, shopping cart, woocommerce catalog, WordPress shopping cart, wordpress store, wp catalog, wp e-commerce, cart
 Requires at least: 3.5
 Tested up to: 4.6
-Stable tag: 2.5.20
+Stable tag: 2.5.21
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -213,6 +213,12 @@ This is not a store. It's main purpose is to present products or services on the
 == Changelog ==
 
 Use [impleCode Translate Project](http://translate.implecode.com/projects/ecommerce-product-catalog/#cam=wordpress-org-changelog&key=epc-translate "eCommerce Product Catalog Translation Project") to add new or fix the existing translations.
+
+= 2.5.21 - 27/09/2016 =
+
+* Tweak - code improvements for even better organization and performance
+* Localisation - Dutch language improved thanks to Hugo on impleCode Translate Project
+* Localisation - Romanian language improved thanks to Cojocar Alexandru  on impleCode Translate Project
 
 = 2.5.20 - 08/09/2016 =
 

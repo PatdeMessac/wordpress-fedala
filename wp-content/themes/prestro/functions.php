@@ -160,6 +160,7 @@ add_action('wp_enqueue_scripts', 'prestro_enq_styles');
 function prestro_enq_scripts(){
     wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/inc/js/bootstrap.min.js', array('jquery'), '3.3.4', true);
     wp_enqueue_script('para-plug', get_template_directory_uri() . '/inc/js/parallax.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/inc/js/script.js', array('jquery'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'prestro_enq_scripts');

@@ -88,7 +88,7 @@ add_filter( 'price_format', 'ic_after_price_text' );
  * @return string
  */
 function ic_after_price_text( $price ) {
-	if ( is_ic_product_page() ) {
+	if ( function_exists( 'is_ic_product_page' ) && is_ic_product_page() ) {
 		$labels = get_single_names();
 		if ( !empty( $labels[ 'after_price' ] ) ) {
 			$price .= ' <span class="after-price">' . $labels[ 'after_price' ] . '</span>';
@@ -182,7 +182,7 @@ function show_archive_price( $post ) {
 
 /**
  * Sets product listing price
- * 
+ *
  * @param type $archive_price
  * @param type $post
  * @return string

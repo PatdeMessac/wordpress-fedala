@@ -229,6 +229,15 @@ function al_product_desc() {
 	wp_editor( $desc, 'content', $desc_settings );
 }
 
+add_action( 'post_updated', 'implecode_save_products_meta', 1, 2 );
+
+/**
+ * Handles product data save
+ * 
+ * @param type $post_id
+ * @param type $post
+ * @return type
+ */
 function implecode_save_products_meta( $post_id, $post ) {
 	$post_type_now = substr( $post->post_type, 0, 10 );
 	if ( $post_type_now == 'al_product' ) {
@@ -269,8 +278,6 @@ function implecode_save_products_meta( $post_id, $post ) {
 		do_action( 'product_edit_save', $post );
 	}
 }
-
-add_action( 'post_updated', 'implecode_save_products_meta', 1, 2 );
 
 add_action( 'edit_form_after_title', 'ic_remove_default_desc_editor' );
 

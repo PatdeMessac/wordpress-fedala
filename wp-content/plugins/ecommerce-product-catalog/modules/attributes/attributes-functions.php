@@ -25,7 +25,7 @@ function show_product_attributes() {
 	//echo get_product_attributes( $post->ID, $single_names );
 }
 
-add_action( 'after_product_details', 'boxed_template_desc_first', 2, 0 );
+add_action( 'single_product_begin', 'boxed_template_desc_first', 2, 0 );
 
 /**
  * Sets products description as first tab
@@ -83,7 +83,7 @@ function get_attribute_value( $i = 1, $product_id ) {
 		$value = get_post_meta( $product_id, "_attribute" . $i, true );
 		ic_save_global( $product_id . "_attribute" . $i, $value );
 	}
-	if ( is_ic_product_page() && !is_array( $value ) ) {
+	if ( function_exists( 'is_ic_product_page' ) && is_ic_product_page() && !is_array( $value ) ) {
 		$value = str_replace( 'rel="nofollow"', '', make_clickable( $value ) );
 		ic_save_global( $product_id . "_attribute" . $i, $value );
 	}

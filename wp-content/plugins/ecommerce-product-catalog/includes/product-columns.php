@@ -117,9 +117,10 @@ function restrict_listings_by_product_cat() {
 			'selected'			 => $selected,
 			'hierarchical'		 => true,
 			'depth'				 => 3,
-			'show_count'		 => true,
+			//'show_count'		 => true,
 			'hide_empty'		 => true,
-			'hide_if_empty'		 => true
+			'hide_if_empty'		 => true,
+			'value_field'		 => 'slug'
 		)
 		);
 	}
@@ -145,11 +146,12 @@ class ic_walker_tax_slug_dropdown extends Walker_CategoryDropdown {
 		}
 		$output .= '>';
 		$output .= $pad . $cat_name;
-		if ( $args[ 'show_count' ] ) {
-			$output .= '&nbsp;&nbsp;(' . $category->count . ')';
-		}
+		//if ( $args[ 'show_count' ] ) {
+		$output .= '&nbsp;&nbsp;(' . $category->count . ')';
+		//	}
 
 		$output .= "</option>\n";
+		return $output;
 	}
 
 }

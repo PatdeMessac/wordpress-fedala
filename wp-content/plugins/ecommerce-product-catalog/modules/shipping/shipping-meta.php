@@ -40,7 +40,7 @@ function ic_shipping_metabox( $names ) {
 function al_product_shipping() {
 	global $post;
 	echo '<input type="hidden" name="shippingmeta_noncename" id="shippingmeta_noncename" value="' .
-	wp_create_nonce( plugin_basename( __FILE__ ) ) . '" />';
+	wp_create_nonce( AL_BASE_PATH . 'shipping_meta' ) . '" />';
 	$currency = '';
 	if ( function_exists( 'product_currency' ) ) {
 		$currency = product_currency();

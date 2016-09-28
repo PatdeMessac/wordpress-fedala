@@ -82,7 +82,7 @@ function product_extensions() {
 	?>
 	<div id="implecode_settings" class="wrap">
 		<h2><?php echo sprintf( __( 'Extensions for %s', 'ecommerce-product-catalog' ), IC_CATALOG_PLUGIN_NAME ) ?></h2>
-		<h3><?php _e( 'All the extensions come with premium support provided by dev team.<br>Feel free to contact impleCode for configuration help, troubleshooting, installation assistance and any other plugin support at any time!', 'ecommerce-product-catalog' ) ?></h3>
+		<h3><?php _e( 'All premium extensions come with premium support provided by dev team.<br>Feel free to contact impleCode for configuration help, troubleshooting, installation assistance and any other plugin support at any time!', 'ecommerce-product-catalog' ) ?></h3>
 		<h2 class="nav-tab-wrapper">
 			<?php do_action( 'extensions-menu' ) ?>
 			<a id="help" class="nav-tab"
@@ -97,8 +97,8 @@ function product_extensions() {
 				?>
 				<div class="extension-list">
 					<script>
-		                jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
-		                jQuery( '.nav-tab-wrapper a#extensions' ).addClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a#extensions' ).addClass( 'nav-tab-active' );
 					</script><?php
 					start_implecode_install();
 					start_free_implecode_install();
@@ -140,8 +140,8 @@ function product_extensions() {
 				?>
 				<div class="extension-list">
 					<script>
-		                jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
-		                jQuery( '.nav-tab-wrapper a#new-extensions' ).addClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a#new-extensions' ).addClass( 'nav-tab-active' );
 					</script><?php
 					start_implecode_install();
 					if ( false === ($extensions = get_site_transient( 'implecode_new_extensions_data' )) ) {
@@ -180,8 +180,8 @@ function product_extensions() {
 				?>
 				<div class="extension-list">
 					<script>
-		                jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
-		                jQuery( '.nav-tab-wrapper a#extensions' ).addClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a#extensions' ).addClass( 'nav-tab-active' );
 					</script><?php
 					start_implecode_install();
 					if ( false === ($extensions = get_site_transient( 'implecode_extensions_data' )) ) {
@@ -220,8 +220,8 @@ function product_extensions() {
 				?>
 				<div class="help">
 					<script>
-		                jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
-		                jQuery( '.nav-tab-wrapper a#help' ).addClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a' ).removeClass( 'nav-tab-active' );
+						jQuery( '.nav-tab-wrapper a#help' ).addClass( 'nav-tab-active' );
 					</script> <?php
 					echo '<h3>How to Install the extension?</h3>';
 					echo '<ol><li>Click the "Get your key" button on the extension that you want to install;</li>';

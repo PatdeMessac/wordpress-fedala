@@ -12,9 +12,10 @@ if ( !defined( 'ABSPATH' ) ) {
  * @package		ecommerce-product-catalog/includes
  * @author 		Norbert Dreszer
  */
-require_once(AL_BASE_PATH . '/modules/sku/sku-conditionals.php');
-require_once(AL_BASE_PATH . '/modules/sku/sku-functions.php');
-require_once(AL_BASE_PATH . '/modules/sku/sku-meta.php');
-require_once(AL_BASE_PATH . '/modules/sku/sku-settings.php');
-require_once(AL_BASE_PATH . '/modules/sku/sku-shortcodes.php');
+$dirname = dirname( __FILE__ );
+require_once($dirname . '/sku-conditionals.php');
+require_once($dirname . '/sku-functions.php');
+require_once($dirname . '/sku-meta.php');
+require_once($dirname . '/sku-settings.php');
+require_once($dirname . '/sku-shortcodes.php');
 
