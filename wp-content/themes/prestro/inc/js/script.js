@@ -44,8 +44,12 @@ jQuery(document).ready(function () {
     });
     // Initalize mean menu
     jQuery('#prestro-top-nav .main-nav').meanmenu();
+    
+   
 });
 jQuery(window).load(function () {
+     $('.taxonomy-description').insertBefore('.taxonomy-image');
+    $('.taxonomy-description').fadeIn()
     jQuery('#home-slider').nivoSlider({
         effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
         pauseTime: 4000, // How long each slide will show
@@ -66,6 +70,7 @@ jQuery(window).load(function () {
         nextText: '<i class="fa fa-chevron-right"></i>', // Next directionNav text
         randomStart: true             // Start on a random slide
     });
+
 });
 /*-------Scrolling Effects-------*/
 jQuery(function ($) {
