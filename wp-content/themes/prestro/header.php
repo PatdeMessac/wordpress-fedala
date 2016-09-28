@@ -16,12 +16,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-		<script type="text/javascript">
-			jQuery(window).load(function() {
-				jQuery('#slider').nivoSlider();
-			});
-		</script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
