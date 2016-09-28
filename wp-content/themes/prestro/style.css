@@ -436,6 +436,11 @@ textarea {
     align-items: center;
     text-align: center;
 }
+@media screen and (max-width: 768px) {
+    .parallax-window {
+        min-height: 200px;
+    }
+}
 
 /*@keyframes showHide {
   0%   {color: #000;}
@@ -1912,6 +1917,11 @@ h3.animateblock.animated{
    color:#8a8c90;
    height:300px;
 }
+@media screen and (max-width: 768px) {
+    .presentation {
+        height: 200px;
+    }
+}
 .paralax{
    background-color:white;
    height:400px;
@@ -1940,6 +1950,14 @@ h3.animateblock.animated{
 #text-slider .text-slideshow article span {
 	font-family: 'Open Sans', sans;
 	font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    #text-slider .text-slideshow article {
+        font-size: 3rem;
+    }
+    #text-slider .text-slideshow article span {
+        font-size: 1.5rem;
+    }
 }
 #text-slider-controls {
 	display: none;
