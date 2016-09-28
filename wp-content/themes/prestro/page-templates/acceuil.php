@@ -15,7 +15,7 @@ get_header();
 ?>
 
 <div class="container-fluid">
-	<a href="#" id="back-to-top" title="Retour en haut">▲</a>
+	<a href="#" id="back-to-top" title="Retour en haut"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 	<!-- ronald bandeau 2 images -->
 	<div class="wrapper_service row">
 		<!-- image "Décoration" -->
