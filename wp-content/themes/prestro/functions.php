@@ -158,17 +158,9 @@ function prestro_enq_styles() {
 add_action('wp_enqueue_scripts', 'prestro_enq_styles');
 
 function prestro_enq_scripts(){
-<<<<<<< HEAD
-     wp_enqueue_script('main-js', get_template_directory_uri() . '/inc/js/script.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/inc/js/bootstrap.min.js', array('jquery'), '3.3.4', true);
-    wp_enqueue_script('ui-js', get_template_directory_uri() . '/inc/js/jquery-ui.min.js', array('jquery'), '1.11.4', true);
-    wp_enqueue_script('wowjs', get_template_directory_uri() . '/inc/js/wow.min.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('meanmenu', get_template_directory_uri() . '/inc/js/jquery.meanmenu.min.js', array('jquery'), '3.2.0', true);
-    wp_enqueue_script('fancybox', get_template_directory_uri() . '/inc/js/jquery.fancybox.pack.js', array('jquery'), '2.1.5', true);
-=======
-    wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/inc/js/bootstrap.min.js', array('jquery'), '3.3.4', true);
->>>>>>> master
     wp_enqueue_script('para-plug', get_template_directory_uri() . '/inc/js/parallax.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/inc/js/script.js', array('jquery'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'prestro_enq_scripts');
