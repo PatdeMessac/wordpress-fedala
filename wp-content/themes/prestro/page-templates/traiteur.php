@@ -34,7 +34,7 @@ get_header();
 
 <div class="container-traiteur">
 	<div class="row">
-		<div class="wrapper_tarif col-md-10 col-md-offset-1">
+		<div class="col-md-10 col-md-offset-1">
 			<?php
 				$query = new WP_Query();
 				$all_pages = $query->query(array('post_type' => 'page'));
@@ -47,7 +47,7 @@ get_header();
 					<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" />
 					<p><?php the_title(); ?></p>
 				</div>
-				<div class="price-ground style-3 col-lg-12">
+				<div class="price-ground col-lg-12">
 					<ul>
 						<?php
 							$liste_de_plats = explode("\n", $post->post_content);
