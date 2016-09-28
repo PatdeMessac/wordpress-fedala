@@ -49,8 +49,7 @@ get_header();
 				foreach ($subpages as $post):
 			?>
 			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="img-foreground col-lg-12">
-					<img class="img-responsive" src="<?php the_post_thumbnail_url(); ?>" />
+				<div class="img-foreground col-lg-12" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
 					<p><?php the_title(); ?></p>
 				</div>
 				<div class="price-ground col-lg-12">
@@ -62,11 +61,9 @@ get_header();
 									$plat_splitted = explode($separateur, $plat);
 									$nom = $plat_splitted[0];
 									$prix = $plat_splitted[1];
-									echo "<li class='liste_prix'>";
-									echo $nom;
+									echo "<li>$nom";
 									if (is_user_logged_in()) {
-										echo $separateur;
-										echo "<span class='prix_traiteur'>" . $prix . "</span>";
+										echo "$separateur<span class='prix_traiteur'>$prix</span>";
 									}
 									echo "</li>\n";
 								}
