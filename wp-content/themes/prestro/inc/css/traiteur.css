@@ -43,7 +43,7 @@
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 10px;
-	background: #FF7043;;
+	background: #ff3f34;
 	border: 0px none;
 }
 .modal-body .icon_info{
@@ -88,23 +88,23 @@
     color: #FF7043;
 }
 button:hover{
-    color:#BF360C; 
+    color:#BF360C;
 }
 .modal-body {
 	padding: 0;
 }
-.modal-content, #caption {    
+.modal-content, #caption {
 	-webkit-animation-name: zoom;
 	-webkit-animation-duration: 0.6s;
 	animation-name: zoom;
 	animation-duration: 0.6s;
 }
 @-webkit-keyframes zoom {
-	from { -webkit-transform:scale(0) } 
+	from { -webkit-transform:scale(0) }
 	to { -webkit-transform:scale(1) }
 }
 @keyframes zoom {
-	from { transform:scale(0) } 
+	from { transform:scale(0) }
 	to { transform:scale(1) }
 }
 /* connection box - end */
@@ -124,7 +124,7 @@ button:hover{
 	background-size: cover;
 	display: flex;
 	align-items: center;
-	box-shadow: 6px 6px 5px #999;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.12);
 }
 .img-foreground p {
   font-family: 'OpenSans-Bold',sans-serif;
@@ -146,7 +146,7 @@ button:hover{
 	overflow-y: scroll;
 	background-color: #fff;
 	text-align: center;
-	box-shadow: 6px 5px 5px #999;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.12);
 }
 .price-ground ul {
 	padding-inline-start: 0;

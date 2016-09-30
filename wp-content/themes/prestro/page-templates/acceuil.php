@@ -58,6 +58,8 @@ get_header();
 				</div>
 			</a>
 		</div>
+		<div class="svg_service">
+		</div>
 	</div>
 	<!--ronald bandeau 2 images - fin -->
 
