@@ -254,17 +254,8 @@ add_shortcode( 'product_listing_title', 'get_product_catalog_page_title' );
 function get_product_catalog_page_title() {
 	if ( is_ic_taxonomy_page() ) {
 		$archive_names	 = get_archive_names();
-		//$the_tax		 = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 		$the_tax		 = get_queried_object();
-		if ( !empty( $archive_names[ 'all_prefix' ] ) ) {
-			if ( has_shortcode( $archive_names[ 'all_prefix' ], 'product_category_name' ) ) {
-				$title = do_shortcode( $archive_names[ 'all_prefix' ] );
-			} else {
-				$title = do_shortcode( $archive_names[ 'all_prefix' ] ) . ' ' . $the_tax->name;
-			}
-		} else {
-			$title = $the_tax->name;
-		}
+		$title = $the_tax->name;
 	} else if ( is_ic_product_search() ) {
 		$title = __( 'Search Results for:', 'ecommerce-product-catalog' ) . ' ' . $_GET[ 's' ];
 	} else if ( is_ic_product_listing() ) {
