@@ -416,36 +416,6 @@ function get_product_listing_template() {
 	return apply_filters( 'product_listing_template', $archive_template );
 }
 
-/*
-  function show_parent_product_categories( $echo = 1, $return = '' ) {
-  $multiple_settings	 = get_multiple_settings();
-  $taxonomy_name		 = apply_filters( 'current_product_catalog_taxonomy', 'al_product-cat' );
-  $archive_template	 = get_product_listing_template();
-  if ( $multiple_settings[ 'product_listing_cats' ] == 'on' ) {
-  if ( $multiple_settings[ 'cat_template' ] != 'template' ) {
-  $product_subcategories = wp_list_categories( 'show_option_none=No_cat&echo=0&title_li=&taxonomy=' . $taxonomy_name . '&parent=0' );
-  if ( !strpos( $product_subcategories, 'No_cat' ) ) {
-  ic_save_global( 'current_product_categories', $product_subcategories );
-  ob_start();
-  ic_show_template_file( 'product-listing/categories-list.php' );
-  $return = ob_get_clean();
-  }
-  } else {
-  $show_categories = do_shortcode( '[show_categories parent="0"]' );
-  if ( !empty( $show_categories ) ) {
-  $return = '<div class="product-subcategories ' . $archive_template . '">' . $show_categories;
-  if ( $archive_template != 'list' ) {
-  $return .= '<hr>';
-  }
-  $return .= '</div>';
-  }
-  }
-  }
-  return echo_ic_setting( $return, $echo );
-  }
- */
-//add_filter( 'the_title', 'override_product_page_title', 10, 2 );
-
 /**
  * Replaces auto products listing, product category pages and product search title with appropriate entries
  *
