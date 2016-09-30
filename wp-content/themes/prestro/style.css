@@ -69,7 +69,15 @@ body {
 	min-height: 94vh;
 }
 #footer-area {
-	height: 6vh;
+	height: 50px;
+}
+@media screen and (max-width: 768px) {
+	#primary {
+		min-height: 87vh;
+	}
+	#footer-area {
+		height: 60px;
+	}
 }
 
 /* images */

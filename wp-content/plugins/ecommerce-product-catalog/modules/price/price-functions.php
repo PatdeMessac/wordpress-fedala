@@ -171,7 +171,7 @@ add_action( 'archive_price', 'show_archive_price', 10, 1 );
  */
 function show_archive_price( $post ) {
 	$price_value = product_price( $post->ID );
-	if ( !empty( $price_value ) ) {
+	if ( !empty( $price_value ) && is_user_logged_in() ) {
 		?>
 		<div class="product-price <?php design_schemes( 'color' ); ?>">
 			<?php echo price_format( $price_value ) ?>
@@ -189,7 +189,7 @@ function show_archive_price( $post ) {
  */
 function set_archive_price( $archive_price, $post ) {
 	$price_value = product_price( $post->ID );
-	if ( !empty( $price_value ) ) {
+	if ( !empty( $price_value ) && is_user_logged_in() ) {
 		$archive_price = '<span class="product-price ' . design_schemes( 'color', 0 ) . '">';
 		$archive_price .= price_format( $price_value );
 		$archive_price .= '</span>';
