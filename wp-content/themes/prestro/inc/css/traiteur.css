@@ -119,7 +119,7 @@ button:hover{
 	font-weight: bold;
 }
 .img-foreground {
-	height: 280px;
+	height: 40vh;
 	padding: 0;
 	background-size: cover;
 	display: flex;
@@ -142,7 +142,7 @@ button:hover{
 	}
 }
 .price-ground {
-  height: 180px;
+  	height: 30vh;
 	overflow-y: scroll;
 	background-color: #fff;
 	text-align: center;
